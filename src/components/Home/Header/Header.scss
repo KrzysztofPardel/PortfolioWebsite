@@ -1,9 +1,10 @@
 @import '../../../style/main.scss';
-
 body {
-	background: #01080f;
+	background: url('../../../../public/assets/background.jpg');
+	background-size: cover;
 }
 .container {
+	// background: #01080f;
 	max-width: 1240px;
 	height: 100vh;
 	margin: auto;

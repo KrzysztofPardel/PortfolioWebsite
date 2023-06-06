@@ -1,0 +1,42 @@
+@import '../../style/main.scss';
+
+.container-footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: #01080f;
+	max-width: 1240px;
+	height: 15vh;
+	margin: auto;
+	padding: 2rem;
+	gap: 1rem;
+}
+.icon-container {
+	height: auto;
+	width: 5rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	.line {
+		color: white;
+		height: 3rem;
+		border-right: 2px solid;
+	}
+	.arrow {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 2rem;
+		text-align: center;
+		color: white;
+		width: 3rem;
+		height: 1rem;
+		background: none;
+		border: transparent;
+	}
+}
+.copyright {
+	color: white;
+	font-size: 0.7rem;
+}

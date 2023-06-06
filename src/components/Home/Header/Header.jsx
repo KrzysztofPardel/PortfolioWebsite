@@ -1,11 +1,8 @@
 'use client';
 import React, { useState } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import './Header.scss';
 
-import mySignBlue from '../../../../public/assets/mySignBlue.png';
-import containerWrap from './containerWrap';
 export const Header = () => {
 	const [toggleWrap, setToggleWrap] = useState('false');
 	const [logo, setLogo] = useState('false');

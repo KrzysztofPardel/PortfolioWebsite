@@ -16,6 +16,7 @@ export const Navigation = () => {
 				<div className='links'>
 					<Link href='/#projects' className='link'>
 						projects
+						<div className='bottomline' />
 					</Link>
 					<Link href='/#skills' className='link'>
 						skills

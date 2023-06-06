@@ -1,5 +1,4 @@
 @import '../style/main.scss';
-// @import '../../../style/main.scss';
 
 .container-nav {
 	background: #ffffff;
@@ -12,10 +11,10 @@
 }
 
 .mySignature {
-	height: 8rem;
-	width: 8rem;
+	height: 5rem;
+	width: 5.5rem;
 	margin-left: 2rem;
-	margin-top: -2rem;
+	margin-top: -0.5rem;
 }
 .adjustments {
 	display: flex;
@@ -60,10 +59,11 @@
 	.link {
 		text-decoration: none;
 		color: rgb(52, 52, 223);
-		border-bottom: 0px solid;
+		border-bottom: 0.1px transparent;
+		transition: border-bottom 0.5s ease-in-out;
 		&:hover {
-			transition: border-bottom 0.2s ease-in-out;
 			border-bottom: 1px solid black;
+			border-bottom-width: 1px;
 		}
 	}
 }
