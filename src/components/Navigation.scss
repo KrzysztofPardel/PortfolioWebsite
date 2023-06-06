@@ -12,8 +12,44 @@
 }
 
 .mySignature {
-	height: 5rem;
-	width: 5rem;
+	height: 8rem;
+	width: 8rem;
+	margin-left: 2rem;
+	margin-top: -2rem;
+}
+.adjustments {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.mode {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.mode-icon {
+			height: 2rem;
+			width: 2rem;
+			&:hover {
+				color: burlywood;
+			}
+		}
+	}
+	.languages {
+		height: auto;
+		width: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.line {
+			height: 1.5rem;
+			border-right: 2px solid;
+		}
+		.language {
+			width: 3rem;
+			height: 1rem;
+			background: none;
+			border: transparent;
+		}
+	}
 }
 
 .links {
@@ -24,5 +60,10 @@
 	.link {
 		text-decoration: none;
 		color: rgb(52, 52, 223);
+		border-bottom: 0px solid;
+		&:hover {
+			transition: border-bottom 0.2s ease-in-out;
+			border-bottom: 1px solid black;
+		}
 	}
 }

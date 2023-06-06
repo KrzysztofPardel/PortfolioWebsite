@@ -35,6 +35,8 @@ body {
 		font-size: 1rem;
 
 		&:hover {
+			transition: border-bottom ease-in-out;
+			border-bottom: 1px solid black;
 			color: burlywood;
 		}
 	}
@@ -95,6 +97,4 @@ body {
 			}
 		}
 	}
-}
-.move-left {
 }
