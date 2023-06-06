@@ -3,7 +3,7 @@
 .container-about {
 	background: #01080f;
 	max-width: 900px;
-	height: 100vh;
+	height: auto;
 	margin: auto;
 	padding: 2rem;
 }
@@ -13,7 +13,7 @@
 		justify-content: center;
 		align-items: center;
 		background-color: white;
-		border-radius: 10%;
+		border-radius: 10px;
 		width: 7.5rem;
 		height: 3rem;
 		background: rgb(2, 0, 36);
@@ -29,4 +29,43 @@
 			align-items: center;
 		}
 	}
+}
+
+.article {
+	margin-top: 2rem;
+	display: flex;
+	border: 2px solid rgb(138, 138, 138);
+	border-radius: 20px;
+	width: 100%;
+	height: auto;
+}
+.article-image {
+	height: 15rem;
+	width: auto;
+	width: 50%;
+}
+.second {
+	height: 17rem;
+}
+.third {
+	height: 15rem;
+	padding: 1.5rem;
+}
+.article-text {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-direction: column;
+	color: white;
+	padding: 1.5rem;
+	.article-title {
+		font-size: 1.5rem;
+	}
+	.article-paragraph {
+		text-align: justify;
+	}
+}
+
+.reverse {
+	flex-direction: row-reverse;
 }
