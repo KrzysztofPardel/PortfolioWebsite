@@ -14,10 +14,10 @@ const Home = () => {
 			<Header />
 			<Navigation />
 			<About />
-			{/* <Values />
-			<Skills />
-			<Projects />
-			<Contact /> */}
+			{/* <Values /> */}
+			{/* <Skills /> */}
+			{/* <Projects /> */}
+			<Contact />
 			<Footer />
 		</>
 	);
