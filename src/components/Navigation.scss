@@ -1,0 +1,28 @@
+@import '../style/main.scss';
+// @import '../../../style/main.scss';
+
+.container-nav {
+	background: #ffffff;
+	max-width: 1240px;
+	height: 10vh;
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	padding: 0.5rem;
+}
+
+.mySignature {
+	height: 5rem;
+	width: 5rem;
+}
+
+.links {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 35vw;
+	.link {
+		text-decoration: none;
+		color: rgb(52, 52, 223);
+	}
+}
