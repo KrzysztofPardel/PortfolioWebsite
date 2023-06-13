@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import Link from 'next/link';
+import { Link as LinkScroll, animateScroll as scroll } from 'react-scroll';
 import './Header.scss';
 
 export const Header = () => {
@@ -16,12 +16,12 @@ export const Header = () => {
 			<div id='header' className='container'>
 				<div className='intro'>
 					<h1 className='title'>
-						Hi! I&apos;m <span className='blue'>Krzysztof Pardel</span>.
+						Hi!I&apos;m <span className='blue'>Krzysztof Pardel</span>.
 					</h1>
-					<h2 className='profession'>Fontend Web Developer</h2>
-					<Link href='/#navigation' className='invitation'>
+					<h2 className='profession'>Frontend Web Developer</h2>
+					<LinkScroll to='navigation' spy smooth duration={1200} className='invitation'>
 						Please, come in.
-					</Link>
+					</LinkScroll>
 				</div>
 			</div>
 		</>

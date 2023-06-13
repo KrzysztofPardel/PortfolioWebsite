@@ -6,6 +6,7 @@
 	height: auto;
 	margin: auto;
 	padding: 2rem;
+	font-family: $font-base;
 }
 .rectangle {
 	display: flex;
@@ -17,7 +18,7 @@
 	height: 3rem;
 	background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(1, 8, 15, 1) 26%, burlywood 100%);
 	&:hover {
-		background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(1, 8, 15, 1) 26%, rgba(0, 212, 255, 1) 100%);
+		background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(1, 8, 15, 1) 26%, rgba(49, 62, 247) 100%);
 	}
 
 	.contact {
@@ -31,6 +32,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-family: $font-alt;
 	.line {
 		color: white;
 		height: 15rem;
@@ -54,13 +56,13 @@
 		padding: 0.5rem;
 		border: 1px solid black;
 		border-radius: 5px;
+		font-family: $font-alt;
+		font-size: 1rem;
 		&:hover {
-			background-color: rgb(151, 158, 252);
-			color: aliceblue;
+			background-color: #e5ebf7;
 		}
 		&:focus {
-			background-color: rgb(125, 134, 250);
-			color: aliceblue;
+			background-color: #e5ebf7;
 		}
 	}
 	.textarea {

@@ -6,6 +6,7 @@
 	height: auto;
 	margin: auto;
 	padding: 2rem;
+	font-family: $font-base;
 }
 .logo-about {
 	.rectangle {
@@ -16,9 +17,10 @@
 		border-radius: 10px;
 		width: 7.5rem;
 		height: 3rem;
+
 		background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(1, 8, 15, 1) 26%, burlywood 100%);
 		&:hover {
-			background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(1, 8, 15, 1) 26%, rgba(0, 212, 255, 1) 100%);
+			background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(1, 8, 15, 1) 26%, rgba(49, 62, 247) 100%);
 		}
 
 		.about {
@@ -37,6 +39,8 @@
 	border-radius: 20px;
 	width: 100%;
 	height: auto;
+	font-family: $font-alt;
+	box-shadow: rgba(255, 255, 255, 0.879) 0px 4px 8px -2px, rgb(255, 255, 255) 0px 0px 0px 1px;
 }
 .article-image {
 	height: 15rem;
