@@ -7,6 +7,8 @@ import Link from 'next/link';
 import { CgDarkMode } from 'react-icons/cg';
 import { GrMenu, GrFormClose } from 'react-icons/gr';
 import mySignBlue from '../../public/assets/mySignBlue.png';
+// import AOS from 'aos';
+// import 'aos/dist/aos.com';
 
 export const Navigation = () => {
 	const [nav, setNav] = useState(false);
@@ -14,9 +16,13 @@ export const Navigation = () => {
 	const handleNav = () => {
 		setNav(!nav);
 	};
+	// useEffect(() => {
+	// 	AOS.init({ dration: 2000 });
+	// }, []);
+
 	useEffect(() => {
 		const handleShow = () => {
-			if (window.scrollY >= 120) {
+			if (window.scrollY >= 20) {
 				setShow(true);
 			} else {
 				setShow(false);
@@ -64,8 +70,9 @@ export const Navigation = () => {
 			{/* </div> */}
 
 			{/* Navigation Mobile*/}
-			<button onClick={handleNav} className={nav && show ? 'mobile-button off' : 'mobile-button on'}>
-				{nav ? '' : <GrMenu className='icon_ss' />}
+			{/* Pojawiający się przycisk */}
+			<button onClick={handleNav} data-aos='fade-down' className={nav ? 'mobile-button off' : 'mobile-button on'}>
+				{nav ? 'hidden' : <GrMenu />}
 			</button>
 			<div className={nav ? 'container-nav_mobile' : 'hidden'}>
 				<button onClick={handleNav} className='mobile-button'>

@@ -7,8 +7,8 @@ export const Contact = () => {
 	return (
 		<>
 			<div id='contact' className='container-contact'>
-				<div className='rectangle'>
-					<p className='contact'>contact</p>
+				<div className='section-rectangle '>
+					<p className='section-title'>contact</p>
 				</div>
 				<div className='container-contact_form'>
 					<div className='contact-animation'>

@@ -33,8 +33,8 @@ const Skills = () => {
 	return (
 		<>
 			<div className='container-skills'>
-				<div className='rectangle'>
-					<p className='skills'>skills</p>
+				<div className='section-rectangle'>
+					<p className='section-title'>skills</p>
 				</div>
 				<div className='subcontainer'>
 					<h1 className='skills-kind_title'>Soft Skills</h1>

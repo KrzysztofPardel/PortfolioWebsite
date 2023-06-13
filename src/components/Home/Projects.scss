@@ -1,0 +1,31 @@
+@import '../../style/main.scss';
+.container-projects {
+	background: #01080f;
+	max-width: 900px;
+	height: auto;
+	margin: auto;
+	padding: 2rem;
+	font-family: $font-base;
+}
+
+.carousel {
+	cursor: grab;
+	overflow: hidden;
+	// background: rgb(214, 90, 111);
+}
+
+.inner-carousel {
+	display: flex;
+	// background: lightblue;
+}
+.item {
+	min-height: 30rem;
+	min-width: 20rem;
+	padding: 30px;
+}
+.image {
+	width: 100%;
+	height: 100%;
+	border-radius: 2rem;
+	pointer-events: none;
+}

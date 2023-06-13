@@ -8,29 +8,6 @@
 	padding: 2rem;
 	font-family: $font-base;
 }
-.logo-about {
-	.rectangle {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background-color: white;
-		border-radius: 10px;
-		width: 7.5rem;
-		height: 3rem;
-
-		background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(1, 8, 15, 1) 26%, burlywood 100%);
-		&:hover {
-			background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(1, 8, 15, 1) 26%, rgba(49, 62, 247) 100%);
-		}
-
-		.about {
-			color: aliceblue;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-	}
-}
 
 .article {
 	margin-top: 2rem;

@@ -1,0 +1,34 @@
+@import '../../style/main.scss';
+.container-values {
+	background: #01080f;
+	max-width: 900px;
+	height: auto;
+	margin: auto;
+	padding: 2rem;
+	font-family: $font-base;
+}
+
+.values-con {
+	display: flex;
+	margin: 4rem 0;
+	justify-content: space-around;
+	gap: 1.5rem;
+	.v-line {
+		height: 10rem;
+		border: 1px solid red;
+	}
+}
+
+.v-box {
+	.v-icon {
+		height: 4rem;
+		font-size: 2rem;
+		font-weight: 600;
+		background: linear-gradient(to right, #cb356b, #bd3f32);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	.v-paragraph {
+		color: white;
+	}
+}
