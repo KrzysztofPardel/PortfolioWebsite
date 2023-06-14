@@ -29,3 +29,14 @@
 	border-radius: 2rem;
 	pointer-events: none;
 }
+.t-box {
+	display: flex;
+	// justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	// margin-bottom: 1rem;
+}
+.t-menu,
+.t-show {
+	color: white;
+}

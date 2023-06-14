@@ -65,24 +65,28 @@ export const Projects = () => {
 					<p className='section-title'>projects</p>
 				</div>
 				{/* Tabs */}
-				<Box sx={{ width: '100%' }}>
+				{/* <Box sx={{ width: '100%' }} className='t-box'>
 					<Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
 						<Tabs value={value} onChange={handleChange} aria-label='basic tabs example'>
-							<Tab label='Item One' {...a11yProps(0)} />
-							<Tab label='Item Two' {...a11yProps(1)} />
-							<Tab label='Item Three' {...a11yProps(2)} />
+							<Tab label='Item One' {...a11yProps(0)} className='t-menu' />
+							<Tab label='Item Two' {...a11yProps(1)} className='t-menu' />
+							<Tab label='Item Three' {...a11yProps(2)} className='t-menu' />
 						</Tabs>
 					</Box>
-					<TabPanel value={value} index={0}>
-						Item One
+					<TabPanel value={value} index={0} className='t-show'>
+						Kuba
 					</TabPanel>
-					<TabPanel value={value} index={1}>
-						Item Two
+					<TabPanel value={value} index={1} className='t-show'>
+						Staś
 					</TabPanel>
-					<TabPanel value={value} index={2}>
-						Item Three
+					<TabPanel value={value} index={2} className='t-show'>
+						Jestem kuzynem
 					</TabPanel>
-				</Box>
+				</Box> */}
+			
+			<div className="tab-cont">
+
+			</div>
 				{/* Carousel */}
 				<motion.div ref={carousel} className='carousel' whileTap={{ cursor: 'grabbing' }}>
 					<motion.div drag='x' dragConstraints={{ right: 0, left: -width }} className='inner-carousel'>
