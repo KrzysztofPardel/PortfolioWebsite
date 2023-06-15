@@ -83,10 +83,14 @@ export const Projects = () => {
 						Jestem kuzynem
 					</TabPanel>
 				</Box> */}
-			
-			<div className="tab-cont">
 
-			</div>
+				<div className='tab-cont'>
+					<div className='t-single'>Work</div>
+					<div className='t-line' />
+					<div className='t-single'>Large projects</div>
+					<div className='t-line' />
+					<div className='t-single'>Small projects</div>
+				</div>
 				{/* Carousel */}
 				<motion.div ref={carousel} className='carousel' whileTap={{ cursor: 'grabbing' }}>
 					<motion.div drag='x' dragConstraints={{ right: 0, left: -width }} className='inner-carousel'>

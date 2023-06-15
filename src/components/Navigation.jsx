@@ -7,8 +7,7 @@ import Link from 'next/link';
 import { CgDarkMode } from 'react-icons/cg';
 import { GrMenu, GrFormClose } from 'react-icons/gr';
 import mySignBlue from '../../public/assets/mySignBlue.png';
-// import AOS from 'aos';
-// import 'aos/dist/aos.com';
+
 
 export const Navigation = () => {
 	const [nav, setNav] = useState(false);
@@ -16,9 +15,7 @@ export const Navigation = () => {
 	const handleNav = () => {
 		setNav(!nav);
 	};
-	// useEffect(() => {
-	// 	AOS.init({ dration: 2000 });
-	// }, []);
+	
 
 	useEffect(() => {
 		const handleShow = () => {
