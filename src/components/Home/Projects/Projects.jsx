@@ -1,12 +1,15 @@
 'use client';
 import React, { useState, useEffect, useRef } from 'react';
 import './Projects.scss';
+// import Project from './ProjectsLarge';
+import Project from './ProjectsLarge';
 import { motion } from 'framer-motion';
 import images from './images';
 import Image from 'next/image';
+import Link from 'next/link';
 import PropTypes from 'prop-types';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
+// import Tabs from '@mui/material/Tabs';
+// import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 // Tabs by Mui
@@ -46,6 +49,7 @@ export const Projects = () => {
 	const [width, setWidth] = useState(0);
 	const carousel = useRef();
 	const [value, setValue] = useState(0);
+	const [projects, setProjects] = useState(1);
 
 	// Drag Carousel Constrains
 	useEffect(() => {
@@ -56,6 +60,9 @@ export const Projects = () => {
 	const handleChange = (event, newValue) => {
 		setValue(newValue);
 	};
+	const handleProjects = (page) => {
+		setProjects(page);
+	};
 
 	console.log(images);
 	return (
@@ -64,7 +71,7 @@ export const Projects = () => {
 				<div className='section-rectangle'>
 					<p className='section-title'>projects</p>
 				</div>
-				{/* Tabs */}
+				{/* MUI Tabs */}
 				{/* <Box sx={{ width: '100%' }} className='t-box'>
 					<Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
 						<Tabs value={value} onChange={handleChange} aria-label='basic tabs example'>
@@ -83,26 +90,60 @@ export const Projects = () => {
 						Jestem kuzynem
 					</TabPanel>
 				</Box> */}
-
+				{/* My Tabs */}
 				<div className='tab-cont'>
-					<div className='t-single'>Work</div>
+					<div onMouseEnter={() => handleProjects(1)} className='t-single'>
+						Work
+					</div>
 					<div className='t-line' />
-					<div className='t-single'>Large projects</div>
+					<div onMouseEnter={() => handleProjects(2)} className='t-single'>
+						Large projects
+					</div>
 					<div className='t-line' />
-					<div className='t-single'>Small projects</div>
+					<div onMouseEnter={() => handleProjects(3)} className='t-single'>
+						Small projects
+					</div>
 				</div>
 				{/* Carousel */}
-				<motion.div ref={carousel} className='carousel' whileTap={{ cursor: 'grabbing' }}>
-					<motion.div drag='x' dragConstraints={{ right: 0, left: -width }} className='inner-carousel'>
-						{images.map((image, i) => {
-							return (
-								<motion.div className='item' key={i}>
-									<Image src={image} alt='' className='image' />
-								</motion.div>
-							);
-						})}
+				{projects === 1 && (
+					<motion.div ref={carousel} className='carousel' whileTap={{ cursor: 'grabbing' }}>
+						<motion.div drag='x' dragConstraints={{ right: 0, left: -width }} className='inner-carousel'>
+							{Project.map((project, i) => {
+								return (
+									<motion.div className='item' key={i}>
+										{project}
+									</motion.div>
+								);
+							})}
+						</motion.div>
 					</motion.div>
-				</motion.div>
+				)}
+				{projects === 2 && (
+					<motion.div ref={carousel} className='carousel' whileTap={{ cursor: 'grabbing' }}>
+						<motion.div drag='x' dragConstraints={{ right: 0, left: -width }} className='inner-carousel'>
+							{images.map((image, i) => {
+								return (
+									<motion.div className='item' key={i}>
+										<Image src={image} alt='' className='image' />
+									</motion.div>
+								);
+							})}
+						</motion.div>
+					</motion.div>
+				)}
+				{projects === 3 && (
+					<motion.div ref={carousel} className='carousel' whileTap={{ cursor: 'grabbing' }}>
+						<motion.div drag='x' dragConstraints={{ right: 0, left: -width }} className='inner-carousel'>
+							{images.map((image, i) => {
+								return (
+									<motion.div className='item' key={i}>
+										<Image src={image} alt='' className='image' />
+									</motion.div>
+								);
+							})}
+						</motion.div>
+					</motion.div>
+				)}
 			</div>
 		</>
 	);
