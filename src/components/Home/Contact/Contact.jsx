@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import Lottie from 'lottie-react';
-import sendMessage from '../../../public/assets/sendMessage.json';
+import sendMessage from '../../../../public/assets/sendMessage.json';
 import './Contact.scss';
 export const Contact = () => {
 	return (

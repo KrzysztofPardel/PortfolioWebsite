@@ -1,12 +1,12 @@
 import React from 'react';
 import Header from '@/components/Home/Header/Header';
 import Navigation from '@/components/Navigation';
-import About from '@/components/Home/About';
-import Values from '@/components/Home/Values';
-import Skills from '@/components/Home/Skills';
-import Projects from '@/components/Home/Projects';
-import Contact from '@/components/Home/Contact';
-import Footer from '@/components/Home/Footer';
+import About from '@/components/Home/About/About';
+import Values from '@/components/Home/Values/Values';
+import Skills from '@/components/Home/Skills/Skills';
+import Projects from '@/components/Home/Projects/Projects';
+import Contact from '@/components/Home/Contact/Contact';
+import Footer from '@/components/Home/Footer/Footer';
 
 const Home = () => {
 	return (

@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-import stargazing from '../../../public/assets/stargazing.svg';
-import homeoffice from '../../../public/assets/homeoffice.svg';
-import fit from '../../../public/assets/fit.svg';
+import stargazing from '../../../../public/assets/stargazing.svg';
+import homeoffice from '../../../../public/assets/homeoffice.svg';
+import fit from '../../../../public/assets/fit.svg';
 import './About.scss';
 export const About = () => {
 	return (

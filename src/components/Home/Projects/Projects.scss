@@ -1,4 +1,4 @@
-@import '../../style/main.scss';
+@import '../../../style/main.scss';
 .container-projects {
 	background: #01080f;
 	max-width: 900px;
@@ -56,25 +56,22 @@
 		color: aliceblue;
 		border-bottom: 1px solid transparent;
 		margin-bottom: 0.5rem;
+		border-bottom: 1px solid transparent;
 		transition: border-bottom-width 0.3s, transform 0.3s;
 		cursor: pointer;
 		&:hover {
-			&::after {
-				content: '';
-				position: absolute;
-				left: 0;
-				bottom: -1px;
-				width: 100%;
-				height: 1px;
-				background-color: white;
-				transform: scaleX(0);
-				transform-origin: left;
-				transition: transform 0.3s;
-			}
-
-			&::after {
-				transform: scaleX(1);
-			}
+			color: burlywood;
+			border-bottom-width: 1px solid burlywood;
+			// border-bottom: 1px solid burlywood;
+			animation: fillBorder 0.5s forwards;
+		}
+	}
+	@keyframes fillBorder {
+		0% {
+			border-bottom-width: 0;
+		}
+		100% {
+			border-bottom-width: 1px;
 		}
 	}
 }
