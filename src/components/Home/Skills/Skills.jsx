@@ -20,7 +20,9 @@ import { MdSchool } from 'react-icons/md';
 import { MdGroups } from 'react-icons/md';
 import { BsListCheck } from 'react-icons/bs';
 import { GiDiscussion } from 'react-icons/gi';
-import { IoIosRocket, IoPeople, IoIosList } from 'react-icons/io';
+import { IoIosRocket } from 'react-icons/io';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Skills = () => {
 	const [description, setDescription] = useState(1);

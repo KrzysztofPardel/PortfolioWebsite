@@ -11,13 +11,25 @@ import 'aos/dist/aos.css';
 
 export const Navigation = () => {
 	const [nav, setNav] = useState(false);
+	const [mobile, setMobile] = useState(false);
 	const handleNav = () => {
 		setNav(!nav);
 	};
+	// Make Mobile Nav Fade Down
 	useEffect(() => {
 		AOS.init({ duration: 2000 });
 	}, []);
 
+	// Make Mobile Nav Visible
+	const changeMobile = () => {
+		// console.log(window.scrollY);
+		if (window.scrollY >= 900) {
+			setMobile(true);
+		} else {
+			setMobile(false);
+		}
+	};
+	window.addEventListener('scroll', changeMobile);
 	return (
 		<>
 			{/* Navigation */}
@@ -59,7 +71,7 @@ export const Navigation = () => {
 
 			{/* Navigation Mobile*/}
 			{/* Pojawiający się przycisk */}
-			<div className='mobile-button_cont'>
+			<div className={mobile ? 'mobile-button_cont visible' : 'mobile-button_cont'}>
 				<button onClick={handleNav} data-aos='fade-down' className={nav ? 'mobile-button off' : 'mobile-button on'}>
 					{nav ? 'hidden' : <GrMenu />}
 				</button>
