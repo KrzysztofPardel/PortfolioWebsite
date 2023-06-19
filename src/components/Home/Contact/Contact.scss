@@ -35,18 +35,30 @@
 		height: 3rem;
 		margin: 0.5rem;
 		padding: 0.5rem;
-		border: 1px solid black;
+		border: 1px solid $color-second-acc;
 		border-radius: 5px;
 		font-family: $font-alt;
 		font-size: 1rem;
 		&:hover {
-			background-color: #e5ebf7;
+			background-color: $color-first-acc;
 		}
 		&:focus {
-			background-color: #e5ebf7;
+			background-color: $color-first-acc;
 		}
 	}
 	.textarea {
 		height: 15rem;
+	}
+	.submit {
+		width: auto;
+		padding: 0.5rem 1rem;
+		margin: 0.5rem;
+		border: 1px solid $color-main;
+		border-radius: 5px;
+		font-family: $font-alt;
+		&:hover {
+			border: 1px solid $color-third-acc;
+			background-color: $color-third-acc;
+		}
 	}
 }

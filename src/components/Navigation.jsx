@@ -18,18 +18,37 @@ export const Navigation = () => {
 	// Make Mobile Nav Fade Down
 	useEffect(() => {
 		AOS.init({ duration: 2000 });
+
+		const changeMobile = () => {
+			if (window.scrollY >= 900) {
+				setMobile(true);
+			} else {
+				setMobile(false);
+			}
+		};
+
+		if (typeof window !== 'undefined') {
+			window.addEventListener('scroll', changeMobile);
+		}
+
+		return () => {
+			if (typeof window !== 'undefined') {
+				window.removeEventListener('scroll', changeMobile);
+			}
+		};
 	}, []);
 
 	// Make Mobile Nav Visible
-	const changeMobile = () => {
-		// console.log(window.scrollY);
-		if (window.scrollY >= 900) {
-			setMobile(true);
-		} else {
-			setMobile(false);
-		}
-	};
-	window.addEventListener('scroll', changeMobile);
+	// const changeMobile = () => {
+	// 	// console.log(window.scrollY);
+	// 	if (window.scrollY >= 900) {
+	// 		setMobile(true);
+	// 	} else {
+	// 		setMobile(false);
+	// 	}
+	// };
+	// window.addEventListener('scroll', changeMobile);
+
 	return (
 		<>
 			{/* Navigation */}
