@@ -32,7 +32,7 @@ const Skills = () => {
 		<>
 			<div className='container-skills'>
 				<div className='section-rectangle'>
-					<p className='section-title'>skills</p>
+					<p className='section-title'>Skills</p>
 				</div>
 				<div className='subcontainer'>
 					<h1 className='skills-kind_title'>Soft Skills</h1>

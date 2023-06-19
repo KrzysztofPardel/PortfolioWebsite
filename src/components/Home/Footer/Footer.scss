@@ -5,7 +5,7 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	background: #01080f;
+	background: $color-main;
 	max-width: screen;
 	height: 15vh;
 	margin: auto;
@@ -20,7 +20,7 @@
 	justify-content: space-around;
 	align-items: center;
 	.line {
-		color: white;
+		color: $color-fourth-acc;
 		height: 3rem;
 		border-right: 2px solid;
 	}
@@ -30,7 +30,7 @@
 		align-items: center;
 		font-size: 2rem;
 		text-align: center;
-		color: white;
+		color: $color-fourth-acc;
 		width: 3rem;
 		height: 1rem;
 		background: none;
@@ -38,11 +38,11 @@
 		cursor: pointer;
 		&:hover {
 			transition: border-bottom ease-in-out;
-			color: burlywood;
+			color: $color-third-acc;
 		}
 	}
 }
 .copyright {
-	color: white;
+	color: $color-fourth-acc;
 	font-size: 0.7rem;
 }

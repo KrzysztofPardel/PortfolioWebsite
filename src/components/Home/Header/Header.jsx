@@ -16,7 +16,7 @@ export const Header = () => {
 			<div id='header' className='container'>
 				<div className='intro'>
 					<h1 className='title'>
-						Hi!I&apos;m <span className='blue'>Krzysztof Pardel</span>.
+						Hi!I&apos;m <span className='name'>Krzysztof Pardel</span>.
 					</h1>
 					<h2 className='profession'>Frontend Web Developer</h2>
 					<LinkScroll to='navigation' spy smooth duration={1200} className='invitation'>

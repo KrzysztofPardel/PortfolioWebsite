@@ -5,7 +5,7 @@ export const Values = () => {
 		<>
 			<div id='values' className='container-values'>
 				<div className='section-rectangle'>
-					<p className='section-title'>values</p>
+					<p className='section-title'>Values</p>
 				</div>
 				<div className='values-con'>
 					<div className='v-box'>

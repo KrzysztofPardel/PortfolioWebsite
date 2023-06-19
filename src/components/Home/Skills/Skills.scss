@@ -1,7 +1,7 @@
 @import '../../../style/main.scss';
 
 .container-skills {
-	background: #01080f;
+	background: $color-main;
 	max-width: 900px;
 	height: auto;
 	margin: auto;
@@ -9,7 +9,8 @@
 	font-family: $font-base;
 }
 .skills-kind_title {
-	color: aliceblue;
+	color: $color-second-acc;
+	background-color: $color-first-acc;
 	font-size: 2rem;
 	margin: 4rem 0rem;
 }
@@ -25,17 +26,17 @@
 		align-items: center;
 		width: 5rem;
 		height: 5rem;
-		border: 1px dashed whitesmoke;
+		border: 1px dashed $color-first-acc;
 		border-radius: 50%;
 		.icon_ss {
-			color: white;
+			color: $color-first-acc;
 			font-size: 3rem;
 		}
 		&:hover {
-			color: black;
-			background-color: white;
+			color: $color-second-acc;
+			background-color: $color-first-acc;
 			.icon_ss {
-				color: black;
+				color: $color-second-acc;
 			}
 			transform: scale(1.2);
 			transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
@@ -44,12 +45,12 @@
 	}
 }
 .soft-skill_paragraph {
-	color: whitesmoke;
+	color: $color-third-acc;
 	margin: 1rem 6rem;
 }
 
 .skills {
-	color: aliceblue;
+	color: $color-first-acc;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -62,7 +63,7 @@
 .subcontainer {
 	margin-top: 1rem;
 	.subcontainer-title {
-		color: whitesmoke;
+		color: $color-first-acc;
 		margin: 2rem 0rem;
 	}
 }
@@ -72,7 +73,7 @@
 	align-items: center;
 	justify-content: center;
 	gap: 1rem;
-	border: 1px solid gainsboro;
+	border: 1px solid $color-first-acc;
 	padding: 1.5rem;
 	box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
 		rgba(255, 255, 255, 0.1) 0px -79px 40px 0px inset, rgba(255, 255, 255, 0.06) 0px 2px 1px,
@@ -92,7 +93,7 @@
 		width: auto;
 	}
 	.skillName {
-		color: whitesmoke;
+		color: $color-first-acc;
 		text-align: center;
 		margin-top: 1rem;
 	}

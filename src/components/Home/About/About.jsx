@@ -9,7 +9,7 @@ export const About = () => {
 		<>
 			<div id='about' className='container-about'>
 				<div className='section-rectangle'>
-					<p className='section-title'>about</p>
+					<p className='section-title'>About</p>
 				</div>
 
 				<div className='articles'>

@@ -69,7 +69,7 @@ export const Projects = () => {
 		<>
 			<div className='container-projects'>
 				<div className='section-rectangle'>
-					<p className='section-title'>projects</p>
+					<p className='section-title'>Projects</p>
 				</div>
 				{/* MUI Tabs */}
 				{/* <Box sx={{ width: '100%' }} className='t-box'>

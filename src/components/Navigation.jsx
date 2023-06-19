@@ -3,34 +3,25 @@ import './Navigation.scss';
 import React, { useState, useEffect, useRef } from 'react';
 import { Link as LinkScroll, animateScroll as scroll } from 'react-scroll';
 import Image from 'next/image';
-import Link from 'next/link';
 import { CgDarkMode } from 'react-icons/cg';
 import { GrMenu, GrFormClose } from 'react-icons/gr';
 import mySignBlue from '../../public/assets/mySignBlue.png';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export const Navigation = () => {
 	const [nav, setNav] = useState(false);
-	const [show, setShow] = useState(false);
 	const handleNav = () => {
 		setNav(!nav);
 	};
-	
-
 	useEffect(() => {
-		const handleShow = () => {
-			if (window.scrollY >= 20) {
-				setShow(true);
-			} else {
-				setShow(false);
-			}
-		};
-		return window.addEventListener('scroll', handleShow);
+		AOS.init({ duration: 2000 });
 	}, []);
+
 	return (
 		<>
 			{/* Navigation */}
-			{/* <div className={nav ? 'shadow' : ''}> */}
+
 			<nav id='navigation' className='container-nav'>
 				<div className='logo'>
 					<Image src={mySignBlue} alt='Kris signature' className='mySignature' />
@@ -68,9 +59,11 @@ export const Navigation = () => {
 
 			{/* Navigation Mobile*/}
 			{/* Pojawiający się przycisk */}
-			<button onClick={handleNav} data-aos='fade-down' className={nav ? 'mobile-button off' : 'mobile-button on'}>
-				{nav ? 'hidden' : <GrMenu />}
-			</button>
+			<div className='mobile-button_cont'>
+				<button onClick={handleNav} data-aos='fade-down' className={nav ? 'mobile-button off' : 'mobile-button on'}>
+					{nav ? 'hidden' : <GrMenu />}
+				</button>
+			</div>
 			<div className={nav ? 'container-nav_mobile' : 'hidden'}>
 				<button onClick={handleNav} className='mobile-button'>
 					{nav ? <GrFormClose className='icon_ss' /> : ''}

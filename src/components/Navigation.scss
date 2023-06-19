@@ -1,7 +1,7 @@
 @import '../style/main.scss';
 
 .container-nav {
-	background: #ffffff;
+	background: $color-fourth-acc;
 	max-width: screen;
 	height: 10vh;
 	display: flex;
@@ -34,10 +34,11 @@
 		justify-content: center;
 		align-items: center;
 		.mode-icon {
+			color: $color-second-acc;
 			height: 2rem;
 			width: 2rem;
 			&:hover {
-				color: burlywood;
+				color: $color-third-acc;
 			}
 		}
 	}
@@ -48,7 +49,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-
+		color: $color-second-acc;
 		.line {
 			height: 1.5rem;
 			border-right: 2px solid;
@@ -80,11 +81,12 @@
 	.link,
 	.link-mobile {
 		text-decoration: none;
-		color: rgb(52, 52, 223);
+		color: $color-second-acc;
+		// color: rgb(52, 52, 223);
 		border-bottom: 1px solid transparent;
 		transition: border-bottom 0.5s ease-in-out;
 		&:hover {
-			border-bottom: 1px solid black;
+			border-bottom: 1px solid $color-main;
 		}
 	}
 }
@@ -101,7 +103,7 @@
 	position: fixed;
 	left: 0;
 	top: 0;
-	background-color: black;
+	background-color: $color-second-acc;
 	opacity: 30%;
 	z-index: 0;
 }
@@ -111,7 +113,7 @@
 	top: 0;
 	width: 25%;
 	height: 100vh;
-	background: #ffffff;
+	background: $color-fourth-acc;
 	padding: 2rem;
 	animation-duration: 500ms ease-in;
 }
@@ -123,13 +125,20 @@
 	animation-duration: 500ms ease-in;
 }
 
+.mobile-button_cont {
+	visibility: hidden;
+}
+.visible {
+	visibility: visible;
+}
+
 .mobile-button {
 	height: 3rem;
 	width: 3rem;
 	position: absolute;
 	right: 0;
 	bottom: 0;
-	border: 0px solid rgb(255, 255, 255);
+	border: 0px solid $color-fourth-acc;
 	border-radius: 50%;
 	font-size: 1.5rem;
 	padding: 0.5rem;
@@ -138,10 +147,10 @@
 	text-align: center;
 	cursor: pointer;
 	z-index: 10;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	box-shadow: $color-main 0px 5px 15px;
 	&:hover {
-		background: white;
-		box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+		background: $color-fourth-acc;
+		box-shadow: rgba($color-main, 0.25) 0px 30px 60px -12px inset, rgba($color-main, 0.3) 0px 18px 36px -18px inset;
 	}
 }
 .on {

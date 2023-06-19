@@ -8,7 +8,7 @@ export const Contact = () => {
 		<>
 			<div id='contact' className='container-contact'>
 				<div className='section-rectangle '>
-					<p className='section-title'>contact</p>
+					<p className='section-title'>Contact</p>
 				</div>
 				<div className='container-contact_form'>
 					<div className='contact-animation'>

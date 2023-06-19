@@ -1,6 +1,6 @@
 @import '../../../style/main.scss';
 .container-values {
-	background: #01080f;
+	background: $color-main;
 	max-width: 900px;
 	height: auto;
 	margin: auto;
@@ -15,7 +15,7 @@
 	gap: 1.5rem;
 	.v-line {
 		height: 10rem;
-		border: 1px solid red;
+		border: 1px solid $color-third-acc;
 	}
 }
 
@@ -24,6 +24,7 @@
 		height: 4rem;
 		font-size: 2rem;
 		font-weight: 600;
+		// background: linear-gradient(to right, #cb356b, #bd3f32);
 		background: linear-gradient(to right, #cb356b, #bd3f32);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
