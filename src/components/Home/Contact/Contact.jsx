@@ -12,14 +12,19 @@ import 'aos/dist/aos.css';
 
 export const Contact = () => {
 	const form = useRef();
-	const [showConfirmation, setShowConfirmation] = useState(false);
+	const [showInformation, setShowInformation] = useState(false);
 
 	//handling confirmation information
+	const showConfirmation = () => {
+		setShowInformation(!showInformation);
+
+		setTimeout(function () {
+			setShowInformation(!showInformation);
+		}, 3000);
+	};
+
 	useEffect(() => {
 		AOS.init({ duration: 2000 });
-		const showConfirmation = () => {
-			
-		};
 	}, []);
 	// Handling helper texts and reset of the inputs
 	const {
@@ -38,6 +43,7 @@ export const Contact = () => {
 			.then((result) => {
 				console.log(result.text);
 				reset();
+				showConfirmation();
 			})
 			.catch((error) => {
 				console.log(error.text);
@@ -117,7 +123,7 @@ export const Contact = () => {
 							)}
 						/>
 						<input type='submit' className='submit' />
-						<p className='form-message_sent'>
+						<p className={showInformation ? 'form-message_sent' : 'form-message_sent invisible'}>
 							I received your message. I will reach out to you very soon!{' '}
 							<span className='form-message_sent_span'>Thank you.</span>
 						</p>

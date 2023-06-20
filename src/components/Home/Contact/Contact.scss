@@ -22,7 +22,6 @@
 	}
 }
 .contact-animation {
-	// visibility: hidden;
 	width: 100%;
 }
 .form {
@@ -72,6 +71,7 @@
 	position: absolute;
 	width: 15rem;
 	padding: 1.5rem;
+	visibility: visible;
 	margin: 2rem;
 	margin-left: 4rem;
 	background-color: $color-third-acc;
@@ -80,4 +80,8 @@
 	.form-message_sent_span {
 		color: $color-fourth-acc;
 	}
+}
+
+.invisible {
+	visibility: hidden;
 }
