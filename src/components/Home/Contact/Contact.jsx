@@ -9,23 +9,20 @@ import './Contact.scss';
 import { userSchema } from './Validations/NameValidation';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Image from 'next/image';
+import connect2 from '../../../../public/assets/connect2.jpg';
 
 export const Contact = () => {
 	const form = useRef();
 	const [showInformation, setShowInformation] = useState(false);
-
 	//handling confirmation information
 	const showConfirmation = () => {
 		setShowInformation(!showInformation);
-
-		setTimeout(function () {
-			setShowInformation(!showInformation);
-		}, 3000);
+		setTimeout(() => {
+			setShowInformation((prevShowInformation) => !prevShowInformation);
+		}, 5000);
 	};
 
-	useEffect(() => {
-		AOS.init({ duration: 2000 });
-	}, []);
 	// Handling helper texts and reset of the inputs
 	const {
 		handleSubmit,
@@ -50,35 +47,6 @@ export const Contact = () => {
 			});
 	};
 
-	// email function
-	// const sendEmail = (e) => {
-	// 	if (e) {
-	// 		e.preventDefault();
-	// 	}
-	// 	emailjs.sendForm('service_be58b1t', 'template_vqos45m', form.current, '7ZBJB5X4YZcVd9q9X').then(
-	// 		(result) => {
-	// 			console.log(result.text);
-
-	// 		},
-	// 		(error) => {
-	// 			console.log(error.text);
-	// 		}
-	// 	);
-	// };
-	// // calling errors in helper texts
-	// const {
-	// 	handleSubmit,
-	// 	control,
-	// 	formState: { errors, dirtyFields },
-	// } = useForm({
-	// 	resolver: yupResolver(userSchema),
-	// });
-	// const onSubmit = async (data, e) => {
-	// 	e.preventDefault();
-	// 	console.log(data);
-	// 	await sendEmail();
-	// };
-
 	return (
 		<>
 			<div id='contact' className='container-contact'>
@@ -86,7 +54,13 @@ export const Contact = () => {
 					<p className='section-title'>Contact</p>
 				</div>
 				<div className='container-contact_form'>
-					<div className='contact-animation'>{/* <Lottie animationData={sendMessage} /> */}</div>
+					<div className='contact_form_small_cont'>
+						<h2 className='contact_form_title'>
+							Let&apos;s connect and <span className='contact_form_title_span'>develop</span> something <span className='contact_form_title_span'>valueable</span>{' '}
+							together!
+						</h2>
+						<Image src={connect2} alt='lets connect image' className='contact_form_img' />
+					</div>
 					<div className='line' />
 					<form ref={form} onSubmit={handleSubmit(onSubmit)} className='form'>
 						<Controller
@@ -124,7 +98,7 @@ export const Contact = () => {
 						/>
 						<input type='submit' className='submit' />
 						<p className={showInformation ? 'form-message_sent' : 'form-message_sent invisible'}>
-							I received your message. I will reach out to you very soon!{' '}
+							I received your message. I will reach out to you very soon!
 							<span className='form-message_sent_span'>Thank you.</span>
 						</p>
 					</form>
