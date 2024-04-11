@@ -19,3 +19,12 @@
 	justify-content: center;
 	align-items: center;
 }
+
+.container {
+	background: $color-main;
+	max-width: 900px;
+	height: auto;
+	margin: auto;
+	padding: 2rem;
+	font-family: $font-base;
+}

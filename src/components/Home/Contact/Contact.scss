@@ -1,14 +1,5 @@
 @import '../../../style/main.scss';
 
-.container-contact {
-	background: $color-main;
-	max-width: 900px;
-	height: auto;
-	margin: auto;
-	padding: 2rem;
-	font-family: $font-base;
-}
-
 .container-contact_form {
 	display: flex;
 	justify-content: center;

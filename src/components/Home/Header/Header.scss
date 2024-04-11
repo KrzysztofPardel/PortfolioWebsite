@@ -7,38 +7,39 @@ body {
 	z-index: -100;
 }
 
-.container {
+.header-container {
 	background: $color-main;
 	max-width: screen;
 	height: 100vh;
 	margin: auto;
 	padding: 2rem;
-	font-family: 'Roboto Mono', monospace;
+	font-family: $font-base;
 }
-.intro {
+.header-intro {
 	height: 100vh;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	line-height: 3rem;
 
-	.title {
+	.intro-title {
 		font-size: 3rem;
 		color: $color-first-acc;
-		.name {
+		.intro-name {
 			color: $color-third-acc;
 		}
 	}
-	.profession {
-		color: $color-first-acc;
+	.header-profession {
+		color: $color-fourth-acc;
 		font-size: 2rem;
 	}
-	.invitation {
+	.profession-invitation {
 		background: none;
 		color: $color-first-acc;
 		border: none;
-		font-size: 1rem;
+		font-size: 1.2rem;
 		cursor: pointer;
 
 		&:hover {

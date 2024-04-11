@@ -5,9 +5,11 @@ import { Link as LinkScroll, animateScroll as scroll } from 'react-scroll';
 import Image from 'next/image';
 import { CgDarkMode } from 'react-icons/cg';
 import { GrMenu, GrFormClose } from 'react-icons/gr';
-import mySignBlue from '../../public/assets/mySignBlue.png';
+import { LuCode2 } from 'react-icons/lu';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
+const NAV_ITEMS = [{ name: 'work' }, { name: 'education' }, { name: 'about' }, { name: 'contact' }];
 
 export const Navigation = () => {
 	const [nav, setNav] = useState(false);
@@ -15,6 +17,7 @@ export const Navigation = () => {
 	const handleNav = () => {
 		setNav(!nav);
 	};
+
 	// Make Mobile Nav Fade Down
 	useEffect(() => {
 		AOS.init({ duration: 2000 });
@@ -53,82 +56,69 @@ export const Navigation = () => {
 		<>
 			{/* Navigation */}
 
-			<nav id='navigation' className='container-nav'>
-				<div className='logo'>
-					<Image src={mySignBlue} alt='Kris signature' className='mySignature' />
+			<nav id="navigation" className="container-nav">
+				<div className="logo">
+					<LuCode2 className="myLogo" />
 				</div>
-				<div className='links'>
-					<LinkScroll to='skills' spy smooth duration={1000} className='link'>
-						skills
-					</LinkScroll>
-					<LinkScroll to='projects' spy smooth duration={1000} className='link'>
-						projects
-					</LinkScroll>
-
-					<LinkScroll to='about' spy smooth duration={1000} className='link'>
-						about
-					</LinkScroll>
-					<LinkScroll to='values' spy smooth duration={1000} className='link'>
-						values
-					</LinkScroll>
-					<LinkScroll to='contact' spy smooth duration={1000} className='link'>
-						contact
-					</LinkScroll>
+				<div className="links">
+					{NAV_ITEMS.map(({ name }) => {
+						return (
+							<>
+								<LinkScroll to={name} spy smooth duration={1000} className="link">
+									{name}
+								</LinkScroll>
+							</>
+						);
+					})}
 				</div>
-				<div className='adjustments'>
-					<div className='mode'>
-						<CgDarkMode className='mode-icon' />
+				<div className="adjustments">
+					<div className="mode">
+						<CgDarkMode className="mode-icon" />
 					</div>
-					<div className='languages'>
-						<button className='language eng'>ENG</button>
-						<div className='line' />
-						<button className='language pol'>PL</button>
+					<div className="languages">
+						<button className="language eng">ENG</button>
+						<div className="line" />
+						<button className="language pol">PL</button>
 					</div>
 				</div>
 			</nav>
-			{/* </div> */}
 
 			{/* Navigation Mobile*/}
 			{/* Pojawiający się przycisk */}
 			<div className={mobile ? 'mobile-button_cont visible' : 'mobile-button_cont'}>
-				<button onClick={handleNav} data-aos='fade-down' className={nav ? 'mobile-button off' : 'mobile-button on'}>
+				<button onClick={handleNav} data-aos="fade-down" className={nav ? 'mobile-button off' : 'mobile-button on'}>
 					{nav ? 'hidden' : <GrMenu />}
 				</button>
 			</div>
 			<div className={nav ? 'container-nav_mobile' : 'hidden'}>
-				<button onClick={handleNav} className='mobile-button'>
-					{nav ? <GrFormClose className='icon_ss' /> : ''}
+				<button onClick={handleNav} className="mobile-button">
+					{nav ? <GrFormClose className="icon_ss" /> : ''}
 				</button>
-				<div className='logo'>
-					<Image src={mySignBlue} alt='Kris signature' className='mySignature center' />
+				<div className="logo">
+					<LuCode2 className="mySignature" />
 				</div>
-				<div className='links-mobile'>
-					<LinkScroll to='skills' spy smooth duration={1000} className='link-mobile'>
-						skills
-					</LinkScroll>
-					<LinkScroll to='projects' spy smooth duration={1000} className='link-mobile'>
-						projects
-					</LinkScroll>
-
-					<LinkScroll to='about' spy smooth duration={1000} className='link-mobile'>
-						about
-					</LinkScroll>
-					<LinkScroll to='values' spy smooth duration={1000} className='link-mobile'>
-						values
-					</LinkScroll>
-					<LinkScroll to='contact' spy smooth duration={1000} className='link-mobile'>
-						contact
-					</LinkScroll>
+				<div className="links-mobile">
+					<div className="links">
+						{NAV_ITEMS.map(({ name }) => {
+							return (
+								<>
+									<LinkScroll to={name} spy smooth duration={1000} className="link-mobile">
+										{name}
+									</LinkScroll>
+								</>
+							);
+						})}
+					</div>
 				</div>
-				<div className='adjustments reverse'>
-					<div className='mode'>
-						<CgDarkMode className='mode-icon' />
+				<div className="adjustments reverse">
+					{/* <div className="mode">
+						<CgDarkMode className="mode-icon" />
 					</div>
-					<div className='languages'>
-						<button className='language eng'>ENG</button>
-						<div className='line' />
-						<button className='language pol'>PL</button>
-					</div>
+					<div className="languages">
+						<button className="language eng">ENG</button>
+						<div className="line" />
+						<button className="language pol">PL</button>
+					</div> */}
 				</div>
 			</div>
 		</>

@@ -13,14 +13,14 @@ export const Header = () => {
 	};
 	return (
 		<>
-			<div id='header' className='container'>
-				<div className='intro'>
-					<h1 className='title'>
-						Hi!I&apos;m <span className='name'>Krzysztof Pardel</span>.
+			<div id="header" className="header-container">
+				<div className="header-intro">
+					<h1 className="intro-title">
+						Hi! I&apos;m <span className="intro-name">Krzysztof Pardel</span>.
 					</h1>
-					<h2 className='profession'>Frontend Web Developer</h2>
-					<LinkScroll to='navigation' spy smooth duration={1200} className='invitation'>
-						Please, come in.
+					<h2 className="header-profession">Frontend Developer </h2>
+					<LinkScroll to="navigation" spy smooth duration={1200} className="profession-invitation">
+						See who I am
 					</LinkScroll>
 				</div>
 			</div>

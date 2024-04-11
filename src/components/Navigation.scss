@@ -13,9 +13,12 @@
 }
 .logo {
 	text-align: center;
-	.mySignature {
-		height: 5rem;
-		width: 5.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.myLogo {
+		height: 4rem;
+		width: auto;
 		margin-left: 2rem;
 		margin-top: -0.5rem;
 	}
@@ -82,6 +85,7 @@
 	.link-mobile {
 		text-decoration: none;
 		color: $color-second-acc;
+		font-size: 1.2rem;
 		// color: rgb(52, 52, 223);
 		border-bottom: 1px solid transparent;
 		transition: border-bottom 0.5s ease-in-out;
