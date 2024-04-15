@@ -1,11 +1,6 @@
 @import '../../../style/main.scss';
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;1,700&family=Space+Mono:wght@400;700&display=swap');
 
-body {
-	background: linear-gradient(to right, $color-first-acc, $color-fourth-acc, $color-third-acc);
-	background-size: cover;
-	z-index: -100;
-}
+
 
 .header-container {
 	background: $color-main;
@@ -14,6 +9,8 @@ body {
 	margin: auto;
 	padding: 2rem;
 	font-family: $font-base;
+	opacity: 0.5;
+	z-index: 0;
 }
 .header-intro {
 	height: 100vh;

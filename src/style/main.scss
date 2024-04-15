@@ -2,6 +2,12 @@
 @import '../style/mixins.scss';
 @import '../style/variables.scss';
 
+body {
+	background: linear-gradient(to right, $color-first-acc, $color-fourth-acc, $color-third-acc);
+	background-size: cover;
+	// z-index: -100;
+}
+
 .section-rectangle {
 	display: flex;
 	justify-content: flex-start;
@@ -11,15 +17,19 @@
 	height: 3.5rem;
 	$font-alt: 'Dosis', sans-serif;
 	font-size: 2.5rem;
+
 	// background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(1, 8, 15, 1) 26%, burlywood 100%);
 }
 .section-title {
-	color: $color-second-acc;
+	color: $color-third-acc;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-
+.container-all {
+	opacity: 0.4;
+	z-index: -20;
+}
 .container {
 	background: $color-main;
 	max-width: 900px;
@@ -27,4 +37,6 @@
 	margin: auto;
 	padding: 2rem;
 	font-family: $font-base;
+	z-index: 50;
+	opacity: 0.8;
 }

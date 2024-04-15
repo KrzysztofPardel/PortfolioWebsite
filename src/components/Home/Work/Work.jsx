@@ -5,6 +5,7 @@ import Opinions from './Opinions';
 import Goals from './Goals';
 
 const Work = () => {
+	
 	return (
 		<div className="container">
 			<Experience />

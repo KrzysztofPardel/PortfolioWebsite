@@ -9,7 +9,8 @@ import Values from './Values';
 
 export const About = () => {
 	return (
-		<div className="container">
+		<div id="about" className="container">
+			<h1 className="section-header">About</h1>
 			<WhoIAm />
 			<Values />
 		</div>

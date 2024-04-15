@@ -1,0 +1,65 @@
+@mixin sm {
+	@media (min-width: 640px) {
+		@content;
+	}
+}
+// @include sm {}
+@mixin md {
+	@media (min-width: 768px) {
+		@content;
+	}
+}
+// @include md {}
+
+@mixin lg {
+	@media (min-width: 1024px) {
+		@content;
+	}
+}
+// @include tablet {}
+@mixin xl {
+	@media (min-width: 1280px) {
+		@content;
+	}
+}
+// @include xl {}
+
+@mixin xl2 {
+	@media (min-width: 1536px) {
+		@content;
+	}
+}
+// @include xl2 {}
+
+@mixin part-Container {
+	height: auto;
+	width: auto;
+	font-family: $font-base;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	color: $color-fourth-acc;
+	margin-bottom: 4rem;
+	@content;
+}
+
+@mixin section-Header {
+	font-size: 3rem;
+	text-align: center;
+	color: $color-main;
+	background-color: $color-fourth-acc;
+	margin-bottom: 4rem;
+	@content;
+}
+
+@mixin section-Subheader {
+	width: 100%;
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	text-align: start;
+	@content;
+}
+
+// @include button {
+// }
