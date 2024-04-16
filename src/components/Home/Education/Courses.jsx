@@ -32,10 +32,32 @@ const MINOR_COURSES = [
 		name: 'Authentic Leadership: Bring Your Whole Self to Work',
 		link: 'https://www.udemy.com/course/authentic-leadership-skills/?kw=authentic+leader&src=sac&couponCode=24T3FS41524',
 		description: 'Build Trust, Inspire Performance, and Create Strong Relationships with Your Team',
-
-		takeway1: '',
-		takeway2: '',
-		takeway3: '',
+		progress: 'in progress',
+		takeway1: 'Growth mindset- developing any ability is possible depending on someone’s dedication',
+		takeway2:
+			'Recognition is a positive feedback based on the results of work, while Appreciation is recognising people’s intrinsic value. We may not be able to recognise, but we can and we should always find ways to appreciate others.',
+		takeway3: 'Hight expectations + High nurture. Too often there is just present one of the two.',
+	},
+	{
+		name: 'Authentic Leadership: Bring Your Whole Self to Work',
+		link: 'https://www.udemy.com/course/authentic-leadership-skills/?kw=authentic+leader&src=sac&couponCode=24T3FS41524',
+		description: 'Build Trust, Inspire Performance, and Create Strong Relationships with Your Team',
+		progress: '',
+		takeway1: 'Growth mindset- developing any ability is possible depending on someone’s dedication',
+		takeway2:
+			'Recognition is a positive feedback based on the results of work, while Appreciation is recognising people’s intrinsic value. We may not be able to recognise, but we can and we should always find ways to appreciate others.',
+		takeway3: 'Hight expectations + High nurture. Too often there is just present one of the two.',
+	},
+	{
+		name: 'How to Learn: Effective Approaches for Self-Guided Learning',
+		link: 'https://www.udemy.com/course/how-to-learn-effective-approaches-for-self-guided-learning/#:~:text=Set%20goals%20in%20order%20to,a%20way%20to%20boost%20motivation',
+		description:
+			'Learning is an import investment in you and your future. If you look at it that way, how could you miss it?”- Padraig Nash, PhD in Learning Sciences',
+		progress: '',
+		takeway1: 'Setting a learning goal needs to be: SMART Specific, Measurable, Attainable, Relevant, Time-Based',
+		takeway2: 'Feedback- the most fundamental mechanism of learning.',
+		takeway3:
+			'Intrinsic vs. Extrinsic motivation for learning. Both can be good but you need to manage them well. Intrinsic ( I want to learn something new) Extrinsic ( I want to learn in order to get a promotion). Learn to be motivated with both.',
 	},
 ];
 
@@ -72,17 +94,17 @@ const Courses = () => {
 					return (
 						<div key={name} className="course-data_box">
 							<div className="data-box_top">
-								<h2 className="course-h">{name}</h2>
+								<h2 className="course-h2">{name}</h2>
 								<Link href={link} className="course-link">
 									read more
 								</Link>
 							</div>
 							<p className="course-description">{description}</p>
-							<div className="course-takeaways">
+							{/* <div className="course-takeaways">
 								<span className="course-takeaway">{takeway1}</span>
 								<span className="course-takeaway">{takeway2}</span>
 								<span className="course-takeaway">{takeway3}</span>
-							</div>
+							</div> */}
 						</div>
 					);
 				})}

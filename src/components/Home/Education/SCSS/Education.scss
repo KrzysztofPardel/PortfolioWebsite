@@ -3,14 +3,16 @@
 //Degrees
 .degrees-container,
 .certifications-container,
-.courses-container {
+.courses-container,
+.challenges-container {
 	@include part-Container;
 	flex-direction: column;
 }
 .degrees-h,
 .certifications-h,
 .courses-h,
-.courses-h2 {
+.courses-h2,
+.challenges-h {
 	@include section-Subheader;
 }
 .degree-box {
@@ -94,6 +96,9 @@
 }
 
 //Courses
+.courses-container {
+	margin-bottom: 2rem;
+}
 .courses-h {
 	text-align: end;
 }
@@ -105,6 +110,7 @@
 	padding: 0.75rem;
 	color: $color-first-acc;
 }
+
 .major-courses_box {
 	width: 100%;
 	display: flex;
@@ -123,6 +129,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
+	margin-bottom: 3rem;
 	.data-box_top {
 		width: 100%;
 		display: flex;
@@ -153,6 +160,92 @@
 		color: $color-fourth-acc;
 		opacity: 0.4;
 		.course-skill {
+			display: block;
 		}
 	}
+}
+
+.minor-courses_box {
+	.course-h2 {
+		width: 90%;
+		font-size: 1.2rem;
+		font-weight: 600;
+		// padding-bottom: 0.25rem;
+		// border-bottom: 1px solid $color-fourth-acc;
+	}
+}
+
+.course-description {
+	width: 75%;
+	text-align: center;
+	text-decoration: double;
+	line-height: 2rem;
+}
+
+//Challenges
+.challenges-container {
+	margin-bottom: 1rem;
+}
+.challenges-h2,
+.challenges-h3 {
+	width: 100%;
+	font-size: 1.5rem;
+	text-align: center;
+}
+.challenges-h2 {
+	color: $color-third-acc;
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+
+.challenges-mentor {
+	width: 100%;
+	height: 7rem;
+	.mentor-box {
+		margin-bottom: 1rem;
+		.mentor-link {
+			font-size: 1.2rem;
+			text-decoration: none;
+			color: $color-third-acc;
+			margin: 1rem;
+		}
+	}
+	.mentor-description {
+		line-height: 1.5rem;
+	}
+}
+
+.challenges-columns {
+	width: 100%;
+	height: 12rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.column-a,
+.column-b,
+.column-c {
+	height: 10rem;
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 1rem;
+	border-right: 1px solid;
+
+	.course-link {
+		font-family: 1.2rem;
+		text-decoration: none;
+		color: $color-first-acc;
+		border-bottom: 0.5px solid transparent;
+		&:hover {
+			color: $color-fourth-acc;
+			font-weight: 600;
+			border-bottom: 0.5px solid $color-fourth-acc;
+		}
+	}
+}
+.column-c {
+	border-right: 1px solid transparent;
 }
