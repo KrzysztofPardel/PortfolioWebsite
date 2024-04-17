@@ -15,6 +15,7 @@
 .challenges-h {
 	@include section-Subheader;
 }
+
 .degree-box {
 	.degree-title {
 		font-size: 1.2rem;
@@ -49,7 +50,6 @@
 }
 
 //Certifications
-
 .certification-box {
 	width: 100%;
 	display: flex;
@@ -170,8 +170,6 @@
 		width: 90%;
 		font-size: 1.2rem;
 		font-weight: 600;
-		// padding-bottom: 0.25rem;
-		// border-bottom: 1px solid $color-fourth-acc;
 	}
 }
 
@@ -246,6 +244,7 @@
 		}
 	}
 }
+
 .column-c {
 	border-right: 1px solid transparent;
 }

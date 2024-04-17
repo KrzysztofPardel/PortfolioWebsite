@@ -1,7 +1,11 @@
 import React from 'react';
 
 const Opinions = () => {
-	return <div>Opinions</div>;
+	return (
+		<div id="opinions" className="">
+			Opinions
+		</div>
+	);
 };
 
 export default Opinions;
