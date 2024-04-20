@@ -3,7 +3,8 @@
 @import '../style/variables.scss';
 
 body {
-	background: linear-gradient(to right, $color-first-acc, $color-fourth-acc, $color-third-acc);
+	// background: linear-gradient(to right, $color-first-acc, $color-fourth-acc, $color-third-acc);
+	background: rgb(226, 226, 226);
 	background-size: cover;
 	// z-index: -100;
 }
@@ -32,11 +33,11 @@ body {
 }
 .container {
 	background: $color-main;
-	max-width: 900px;
+	max-width: 1180px;
 	height: auto;
 	margin: auto;
 	padding: 2rem;
 	font-family: $font-base;
 	z-index: 50;
-	opacity: 0.8;
+	// opacity: 0.8;
 }

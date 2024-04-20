@@ -100,6 +100,9 @@
 	margin: 5rem;
 	width: auto;
 }
+.links-container-mobile {
+	flex-direction: column;
+}
 //Mobile menu
 .shadow {
 	width: screen;
@@ -120,6 +123,7 @@
 	background: $color-fourth-acc;
 	padding: 2rem;
 	animation-duration: 500ms ease-in;
+	z-index: 1;
 }
 .hidden {
 	position: fixed;

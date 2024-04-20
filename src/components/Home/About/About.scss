@@ -34,9 +34,10 @@
 .whoIAm-container {
 	@include part-Container;
 	align-items: flex-start;
+	flex-direction: row-reverse;
 	height: auto;
 	margin-bottom: 2rem;
-	gap: 2rem;
+	gap: 4rem;
 }
 .whoIAm-text {
 	height: 25rem;

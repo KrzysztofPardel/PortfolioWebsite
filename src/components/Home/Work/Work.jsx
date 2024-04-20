@@ -1,16 +1,16 @@
 import React from 'react';
 import Experience from './Experience';
 import Projects from './Projects';
-import Opinions from './Opinions';
 import Goals from './Goals';
-
+import './SCSS/Work.scss';
+import TechStack from './TechStack';
 const Work = () => {
 	return (
 		<div id="work" className="container">
 			<h1 className="section-header">Work</h1>
 			<Experience />
 			<Projects />
-			<Opinions />
+			<TechStack />
 			<Goals />
 		</div>
 	);

@@ -23,7 +23,7 @@ export const Navigation = () => {
 		AOS.init({ duration: 2000 });
 
 		const changeMobile = () => {
-			if (window.scrollY >= 900) {
+			if (window.scrollY >= 1100) {
 				setMobile(true);
 			} else {
 				setMobile(false);
@@ -63,11 +63,9 @@ export const Navigation = () => {
 				<div className="links">
 					{NAV_ITEMS.map(({ name }) => {
 						return (
-							<>
-								<LinkScroll to={name} spy smooth duration={1000} className="link">
-									{name}
-								</LinkScroll>
-							</>
+							<LinkScroll key={name} to={name} spy smooth duration={1000} className="link">
+								{name}
+							</LinkScroll>
 						);
 					})}
 				</div>
@@ -91,21 +89,19 @@ export const Navigation = () => {
 				</button>
 			</div>
 			<div className={nav ? 'container-nav_mobile' : 'hidden'}>
-				<button onClick={handleNav} className="mobile-button">
+				<button onClick={handleNav} className={`mobile-button ${nav ? 'on' : 'off'}`}>
 					{nav ? <GrFormClose className="icon_ss" /> : ''}
 				</button>
 				<div className="logo">
 					<LuCode2 className="mySignature" />
 				</div>
 				<div className="links-mobile">
-					<div className="links">
+					<div className="links links-container-mobile">
 						{NAV_ITEMS.map(({ name }) => {
 							return (
-								<>
-									<LinkScroll to={name} spy smooth duration={1000} className="link-mobile">
-										{name}
-									</LinkScroll>
-								</>
+								<LinkScroll key={name} to={name} spy smooth duration={1000} className="link-mobile">
+									{name}
+								</LinkScroll>
 							);
 						})}
 					</div>

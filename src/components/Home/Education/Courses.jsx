@@ -29,14 +29,13 @@ const MAJOR_COURSES = [
 
 const MINOR_COURSES = [
 	{
-		name: 'Authentic Leadership: Bring Your Whole Self to Work',
-		link: 'https://www.udemy.com/course/authentic-leadership-skills/?kw=authentic+leader&src=sac&couponCode=24T3FS41524',
-		description: 'Build Trust, Inspire Performance, and Create Strong Relationships with Your Team',
+		name: 'Next.js 14 & React - The Complete Guide',
+		link: 'https://www.udemy.com/course/nextjs-react-the-complete-guide/?couponCode=ST7MT41824',
+		description: 'Learn how to build fullstack React apps with NextJS 14 & the App Router',
 		progress: 'in progress',
-		takeway1: 'Growth mindset- developing any ability is possible depending on someone’s dedication',
-		takeway2:
-			'Recognition is a positive feedback based on the results of work, while Appreciation is recognising people’s intrinsic value. We may not be able to recognise, but we can and we should always find ways to appreciate others.',
-		takeway3: 'Hight expectations + High nurture. Too often there is just present one of the two.',
+		takeway1: '',
+		takeway2: '',
+		takeway3: '',
 	},
 	{
 		name: 'Authentic Leadership: Bring Your Whole Self to Work',
