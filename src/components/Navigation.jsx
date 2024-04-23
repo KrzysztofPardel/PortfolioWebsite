@@ -1,8 +1,7 @@
 'use client';
 import './Navigation.scss';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link as LinkScroll, animateScroll as scroll } from 'react-scroll';
-import Image from 'next/image';
 import { CgDarkMode } from 'react-icons/cg';
 import { GrMenu, GrFormClose } from 'react-icons/gr';
 import { LuCode2 } from 'react-icons/lu';

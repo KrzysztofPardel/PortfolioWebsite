@@ -11,7 +11,8 @@
 .experience-related,
 .projects-h,
 .techstack-h,
-.goals-h {
+.goals-h,
+.goals-h2 {
 	@include section-Subheader;
 }
 .experience-related {
@@ -112,6 +113,14 @@
 }
 
 //Projects
+.projects-container {
+	padding: 0rem -1rem;
+	background: rgb(226, 226, 226);
+	margin-bottom: 2rem;
+}
+.projects-h {
+	color: $color-main;
+}
 .projects-p {
 	font-size: 1.5rem;
 }
@@ -143,7 +152,7 @@
 	}
 }
 
-.techstack-accordionDetails {
+.techstack-a_Details {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
@@ -154,11 +163,15 @@
 	// width: 100%;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	flex-wrap: wrap;
 	border: 0.5px solid $color-second-acc;
 	padding: 0.5rem;
 
 	.tech-log {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		font-size: 1.2rem;
 		margin-right: 1rem;
 	}
@@ -169,55 +182,51 @@
 
 //Goals
 .goals-container {
-	margin-bottom: 2rem;
+	margin-bottom: 0rem;
 }
-
+.goals-h {
+	display: inline;
+}
+.goals-h2 {
+	font-size: 1.2rem;
+	text-align: center;
+}
 .goals-boxes {
-	width: 70%;
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	grid-template-rows: repeat(2, 1fr);
-	grid-column-gap: 0px;
-	grid-row-gap: 0px;
-
-	.box-item {
-		border: 1px solid $color-first-acc;
-		font-size: 1.5rem;
-		height: 10rem;
-		padding: 2rem;
-	}
-	.box-item:nth-child(1) {
-		grid-area: 1 / 1 / 3 / 4;
-		border-end-start-radius: 15px;
-		border-start-start-radius: 15px;
-	}
-	.box-item:nth-child(2) {
-		grid-area: 1 / 4 / 3 / 5;
-	}
-	.box-item:nth-child(3) {
-		grid-area: 1 / 5 / 3 / 6;
-		border-start-end-radius: 15px;
-		border-end-end-radius: 15px;
-	}
-}
-.box-item.hovered {
-	grid-column: span 3;
-}
-
-.goals-stepper {
-	color: $color-fourth-acc;
-	.goals-step {
-		color: $color-fourth-acc;
-	}
-	.goals-stepButton {
-		color: $color-fourth-acc;
-	}
-}
-
-.goals-buttons {
+	width: 100%;
 	display: flex;
-	justify-content: center;
-	gap: 2rem;
-	.goals-button {
+	align-items: center;
+	justify-content: space-around;
+}
+
+.goals-box {
+	height: 10rem;
+	width: 25%;
+	border: 1px solid white;
+	font-size: 1.5rem;
+	border-radius: 15px;
+	padding: 2rem;
+	&:hover {
+		box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.5);
+		background-color: $color-main;
+		opacity: 1;
+		transform: scale(1.015);
 	}
+
+	.goals-box_p {
+		font-size: 1rem;
+		line-height: 1.1rem;
+	}
+
+	.goals-box_timeline {
+		font-size: 1rem;
+		color: $color-third-acc;
+		margin-top: 1rem;
+	}
+}
+
+.goals-control {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	text-align: start;
 }

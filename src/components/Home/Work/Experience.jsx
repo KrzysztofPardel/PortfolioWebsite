@@ -1,4 +1,6 @@
 import React from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { MdImportantDevices } from 'react-icons/md';
 import { IoIosAddCircleOutline } from 'react-icons/io';
 import { BsFolderCheck } from 'react-icons/bs';
@@ -80,7 +82,7 @@ const Experience = () => {
 			<div className="experience-box">
 				{ITWORK_ITEMS.map(({ id, position, company, where, date, reference, intro, point1, point2, point3 }) => {
 					return (
-						<div key={id} className="work-box">
+						<div key={id} className="work-box" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
 							<div className="work-box_partOne">
 								<h2 className="work-position">{position}</h2>
 								<div className="whenWhere-container">
@@ -89,7 +91,7 @@ const Experience = () => {
 									</p>
 									<p className="work-when">{date}</p>
 								</div>
-								{/* <div className="work-reference">{reference}</div> */}
+								<div className="work-reference">{reference}</div>
 							</div>
 							<div className="work-box_partTwo">
 								<ul className="work-description">
@@ -118,7 +120,7 @@ const Experience = () => {
 			<div className="experience-box">
 				{WORK_ITEMS.map(({ id, position, company, where, date, reference, intro, point1, point2, point3 }) => {
 					return (
-						<div key={id} className="work-box">
+						<div key={id} className="work-box" data-aos="fade-down" data-aos-anchor-placement="top-bottom">
 							<div className="work-box_partOne">
 								<h2 className="work-position">{position}</h2>
 								<div className="whenWhere-container">

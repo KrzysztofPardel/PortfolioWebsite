@@ -1,15 +1,13 @@
 @import '../../../style/main.scss';
 
-
-
 .header-container {
-	background: $color-main;
+	background: $color-gradient-one;
 	max-width: screen;
 	height: 100vh;
 	margin: auto;
 	padding: 2rem;
 	font-family: $font-base;
-	opacity: 0.5;
+	opacity: 0.9;
 	z-index: 0;
 }
 .header-intro {
@@ -38,9 +36,23 @@
 		border: none;
 		font-size: 1.2rem;
 		cursor: pointer;
-
+		font-weight: 600;
 		&:hover {
 			transition: border-bottom ease-in-out;
+			color: $color-third-acc;
+		}
+	}
+}
+
+.header-links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	.header-link {
+		font-size: 2rem;
+		color: $color-first-acc;
+		&:hover {
 			color: $color-third-acc;
 		}
 	}

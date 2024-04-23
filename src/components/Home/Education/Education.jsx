@@ -3,7 +3,7 @@ import Degrees from './Degrees';
 import Certifications from './Certifications';
 import Courses from './Courses';
 import Challenges from './Challenges';
-import './SCSS/Education.scss';
+import './Education.scss';
 
 const Education = () => {
 	return (

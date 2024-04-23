@@ -18,8 +18,7 @@ body {
 	height: 3.5rem;
 	$font-alt: 'Dosis', sans-serif;
 	font-size: 2.5rem;
-
-	// background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(1, 8, 15, 1) 26%, burlywood 100%);
+	background-color: $color-gradient-one;
 }
 .section-title {
 	color: $color-third-acc;

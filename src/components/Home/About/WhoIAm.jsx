@@ -10,11 +10,12 @@ const WhoIAm = () => {
 			<div className="whoIAm-text">
 				<h2 className="text-h">Who I am</h2>
 				<p className="text-p">
-					I am a Front-End Junior Developer. I am past my first commercial experiences in programming. I work with
-					Next/React+ TypeScript. I am developing through mentoring with a mid, full-stack developer. I have been
-					through a course on Node.js although I haven’t had a change to use it commercially. My goal is to become a
-					full-stack developer. In October I am planning to begin a Master Degree in Applied Information Technology at
-					University of Lodz.
+					After six months of commercial experience as a front-end developer, I am looking for more challenges and
+					opportunities to excel in JavaScript, TypeScript, React, Next or Node. Excellent command of English confirmed
+					with a C2 CPE certificate. As regards my soft skills, I am committed to diligence, integrity, as well as
+					collaboration with others. Degree in architecture is my advantage when it comes to the sense of design and
+					pragmatism as well as the usage of graphic design softwares. To solidify my knowledge of IT I am begging MEng
+					in Applied IT this fall (part-time).
 				</p>
 				<div className="link-container">
 					<Link href="https://github.com/KrzysztofPardel" className="text-link">

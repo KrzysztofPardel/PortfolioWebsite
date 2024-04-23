@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { TbFileCertificate } from 'react-icons/tb';
+
 
 const MAJOR_COURSES = [
 	{
@@ -29,9 +29,9 @@ const MAJOR_COURSES = [
 
 const MINOR_COURSES = [
 	{
-		name: 'Next.js 14 & React - The Complete Guide',
+		name: 'Next.js 14 & React - The Complete Guide (in progress)',
 		link: 'https://www.udemy.com/course/nextjs-react-the-complete-guide/?couponCode=ST7MT41824',
-		description: 'Learn how to build fullstack React apps with NextJS 14 & the App Router',
+		description: 'Diving into building fullstack apps with NextJS 14 & the App Router',
 		progress: 'in progress',
 		takeway1: '',
 		takeway2: '',

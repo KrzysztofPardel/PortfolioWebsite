@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+// import { Link as LinkScroll } from 'react-scroll';
 import { TbFileCertificate } from 'react-icons/tb';
 
 const CERTIFICATIONS_ITEMS = [
@@ -34,6 +35,12 @@ const Certifications = () => {
 						</div>
 					);
 				})}
+				<p className="certifications-confirmation">
+					If you would like to see the confirmation, let me know through the Contact form below.
+				</p>
+				{/* <LinkScroll to="contact" spy smooth duration={1200} className="certifications-link">
+					Take me to Contact form
+				</LinkScroll> */}
 			</div>
 		</div>
 	);
