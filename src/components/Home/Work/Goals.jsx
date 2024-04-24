@@ -2,24 +2,7 @@
 import React from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
-const GOALS_DATA = [
-	{
-		id: 1,
-		p: 'Perfecting my skills in React with TypeScript by developing another project.',
-		data: 'April-June',
-	},
-	{
-		id: 2,
-		p: 'Expanding my knowledge of new technologies- Java and Python.',
-		data: 'July-September',
-	},
-	{
-		id: 3,
-		p: 'Begin studying Applied IT on the Masters level at the University of Lodz. (part-time)',
-		data: 'October',
-	},
-];
+import { GOALS_DATA } from './DataArrays';
 
 const Goals = () => {
 	return (

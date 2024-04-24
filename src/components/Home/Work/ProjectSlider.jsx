@@ -5,6 +5,7 @@ import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
 import './SCSS/Slider.scss';
 import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from 'react-icons/md';
+import { PROJECT_ITEMS } from './DataArrays';
 
 const carousel = (slider) => {
 	const z = 300;
@@ -21,65 +22,6 @@ const carousel = (slider) => {
 	});
 	slider.on('detailsChanged', rotate);
 };
-const PROJECT_ITEMS = [
-	{
-		id: 1,
-		title: 'Give',
-		link: 'https://give-pi.vercel.app/',
-		code: 'https://github.com/KrzysztofPardel/Give',
-		more: '',
-		description:
-			'Donate items or organize a collection with just few clicks.Be the connection between those who HAVE and those who NEED.',
-		tech1: 'React',
-		tech2: 'TypeScript',
-		tech3: 'Redux Toolkit',
-		tech4: 'Firebase',
-		tech5: 'SCSS',
-		tech6: 'Vite',
-	},
-	{
-		id: 2,
-		title: 'CRM',
-		link: '',
-		code: '',
-		more: '',
-		description: 'As part of my internship, I took was developing the fornt-end layer for a CRM for SoftwareHouse360.',
-		tech1: 'React',
-		tech2: 'TypeScript',
-		tech3: 'SCSS',
-		tech4: 'Vite',
-		tech5: 'SCRUM methodology',
-		tech6: '',
-	},
-	{
-		id: 3,
-		title: 'Portfolio Website',
-		link: '',
-		code: 'https://github.com/KrzysztofPardel/PortfolioWebsite',
-		more: '',
-		description: 'Personal website showcasing my experience, skills and personality',
-		tech1: 'Next',
-		tech2: 'JavaScript',
-		tech3: 'SCSS',
-		tech4: 'Vercel',
-		tech5: '',
-		tech6: '',
-	},
-	{
-		id: 4,
-		title: 'New Project!',
-		link: '',
-		code: '',
-		more: '',
-		description: 'Under development. Stay tuned!',
-		tech1: '',
-		tech2: '',
-		tech3: '',
-		tech4: '',
-		tech5: '',
-		tech6: '',
-	},
-];
 
 const ProjectSlider = () => {
 	const [currentSlide, setCurrentSlide] = useState(0);

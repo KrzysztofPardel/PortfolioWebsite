@@ -2,19 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 // import { Link as LinkScroll } from 'react-scroll';
 import { TbFileCertificate } from 'react-icons/tb';
-
-const CERTIFICATIONS_ITEMS = [
-	{
-		name: 'C2 Proficiency',
-		date: '01.2019',
-		linkHREF: 'https://www.cambridgeenglish.org/exams-and-tests/proficiency/',
-	},
-	{
-		name: 'C1 Advanced',
-		date: '07.2016',
-		linkHREF: 'https://www.cambridgeenglish.org/exams-and-tests/advanced/',
-	},
-];
+import { CERTIFICATIONS_ITEMS } from './DataArrays';
 
 const Certifications = () => {
 	return (

@@ -5,7 +5,7 @@ const Degrees = () => {
 		<div id="degrees" className="degrees-container">
 			<h1 className="degrees-h">My degree</h1>
 			<div className="degree-box">
-				<h3 className="degree-title">Applied Information Technology</h3>
+				<h3 className="degree-title">Applied Information Technology (future plan)</h3>
 				<div className="whereWhen-box">
 					<p className="degree-where">University of Lodz, WFiIS</p>
 					<p className="degree-when">approx. 10.2024-07.2026</p>

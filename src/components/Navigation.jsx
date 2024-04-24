@@ -91,9 +91,7 @@ export const Navigation = () => {
 				<button onClick={handleNav} className={`mobile-button ${nav ? 'on' : 'off'}`}>
 					{nav ? <GrFormClose className="icon_ss" /> : ''}
 				</button>
-				<div className="logo">
-					<LuCode2 className="mySignature" />
-				</div>
+
 				<div className="links-mobile">
 					<div className="links links-container-mobile">
 						{NAV_ITEMS.map(({ name }) => {
@@ -105,16 +103,19 @@ export const Navigation = () => {
 						})}
 					</div>
 				</div>
-				<div className="adjustments reverse">
-					{/* <div className="mode">
+				<div className="logo">
+					<LuCode2 className="myLogo center" />
+				</div>
+				{/* <div className="adjustments reverse">
+					<div className="mode">
 						<CgDarkMode className="mode-icon" />
 					</div>
 					<div className="languages">
 						<button className="language eng">ENG</button>
 						<div className="line" />
 						<button className="language pol">PL</button>
-					</div> */}
-				</div>
+					</div>
+				</div> */}
 			</div>
 		</>
 	);
