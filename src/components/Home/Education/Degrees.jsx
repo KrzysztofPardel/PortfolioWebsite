@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Degrees = () => {
 	return (
 		<div id="degrees" className="degrees-container">

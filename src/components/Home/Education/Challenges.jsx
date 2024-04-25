@@ -6,7 +6,7 @@ const Challenges = () => {
 	return (
 		<div id="challenges" className="challenges-container">
 			<h1 className="challenges-h">Sources of Challenges</h1>
-			<h2 className="challenges-h2">We all need challenges to grow, don't we?</h2>
+			<h2 className="challenges-h2">We all need challenges to grow, don&apos;t we?</h2>
 			<h3 className="challenges-h3">Do you want to know what are my sources of challenges?</h3>
 			<div className="challenges-mentor">
 				<p className="mentor-box">
