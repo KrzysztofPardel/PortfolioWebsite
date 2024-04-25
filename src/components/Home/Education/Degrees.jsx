@@ -22,10 +22,10 @@ const Degrees = () => {
 					<p className="degree-when">09.2016-07.2020</p>
 				</div>
 				<p className="degree-description">
-					Studying architecture equipped to have a designer’s perception of the world. The ability to use color, shape
-					and form to design a space which is not only habitable but also enjoyable was a challenge that constantly
-					developed me throughout my years of studying. Although I am no longer an architecture student the hard-working
-					spirit and the designer's outlook on life have become my second nature.
+					Studying architecture equipped to have a designer&apos;s perception of the world. The ability to use color,
+					shape and form to design a space which is not only habitable but also enjoyable was a challenge that
+					constantly developed me throughout my years of studying. Although I am no longer an architecture student the
+					hard-working spirit and the designer's outlook on life have become my second nature.
 				</p>
 				<div className="degree-skills">
 					<span className="degree-skill">AutoCAD</span>

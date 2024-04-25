@@ -43,7 +43,7 @@ const Challenges = () => {
 					{COLUMN_A.map(({ id, source, link }) => {
 						return (
 							<Link
-								id={id}
+								key={id}
 								href={link}
 								className="course-link"
 								data-aos="fade-down"
@@ -59,7 +59,7 @@ const Challenges = () => {
 					{COLUMN_B.map(({ id, source, link }) => {
 						return (
 							<Link
-								id={id}
+								key={id}
 								href={link}
 								className="course-link"
 								data-aos="fade-down"
@@ -75,7 +75,7 @@ const Challenges = () => {
 					{COLUMN_C.map(({ id, source, link }) => {
 						return (
 							<Link
-								id={id}
+								key={id}
 								href={link}
 								className="course-link"
 								data-aos="fade-down"
