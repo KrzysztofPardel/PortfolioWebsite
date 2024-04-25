@@ -32,7 +32,7 @@ const Challenges = () => {
 				</p>
 
 				<p className="mentor-description">
-					Adam has been relentlessly pushing my understandng of the fron-end technologies for the past 8 months. His
+					Adam has been relentlessly pushing my understandng of the front-end technologies for the past 8 months. His
 					insight, knowledge and kind approach make him a fantastic teacher. Aside from being a faithful support
 					throughtout various projects I can count on his opinion and advice as the next steps of my development.
 				</p>
@@ -43,6 +43,7 @@ const Challenges = () => {
 					{COLUMN_A.map(({ id, source, link }) => {
 						return (
 							<Link
+								id={id}
 								key={id}
 								href={link}
 								className="course-link"
@@ -59,6 +60,7 @@ const Challenges = () => {
 					{COLUMN_B.map(({ id, source, link }) => {
 						return (
 							<Link
+								id={id}
 								key={id}
 								href={link}
 								className="course-link"
@@ -75,6 +77,7 @@ const Challenges = () => {
 					{COLUMN_C.map(({ id, source, link }) => {
 						return (
 							<Link
+								id={id}
 								key={id}
 								href={link}
 								className="course-link"
