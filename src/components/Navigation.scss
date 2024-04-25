@@ -5,7 +5,8 @@
 	max-width: screen;
 	height: 10vh;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
+	gap: 25%;
 	margin: auto;
 	padding: 0.5rem;
 	font-family: $font-base;

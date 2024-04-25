@@ -8,11 +8,14 @@ const Courses = () => {
 			<h1 className="courses-h">Courses</h1>
 			<h2 className="courses-h2">Major</h2>
 			<div className="major-courses_box">
-				{MAJOR_COURSES.map(({ name, date, link, description, skill1, skill2, skill3, skill4 }) => {
+				{MAJOR_COURSES.map(({ logo, name, date, link, description, skill1, skill2, skill3, skill4 }) => {
 					return (
 						<div key={name} className="course-data_box">
 							<div className="data-box_top">
-								<h2 className="course-h">{name}</h2>
+								<h2 className="course-h">
+									<span className="course-logo">{logo}</span>
+									{name}
+								</h2>
 								<p className="course-date">{date}</p>
 								<Link href={link} className="course-link">
 									read more

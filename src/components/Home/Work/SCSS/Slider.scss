@@ -121,6 +121,10 @@
 	align-items: flex-end;
 	gap: 2rem;
 	margin-top: 3rem;
+	color: $color-main;
+
+	.carousel-p {
+	}
 	.carousel-btn {
 		display: flex;
 		cursor: pointer;

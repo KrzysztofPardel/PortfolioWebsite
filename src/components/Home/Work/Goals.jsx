@@ -19,7 +19,7 @@ const Goals = () => {
 							data-aos-offset="400"
 							data-aos-easing="ease-in-sine"
 						>
-							#{id}
+							<p className="goals-box_nr">#{id}</p>
 							<p className="goals-box_p">{p}</p>
 							<p className="goals-box_timeline">{data}</p>
 						</div>

@@ -1,6 +1,9 @@
 //Certifications
+import { SiNodedotjs, SiJavascript } from 'react-icons/si';
+
 export const MAJOR_COURSES = [
 	{
+		logo: <SiNodedotjs />,
 		name: 'Node.js',
 		date: '07.2023-09.2023',
 		link: 'https://coderslab.pl/pl/node-js-developer',
@@ -12,6 +15,7 @@ export const MAJOR_COURSES = [
 		skill4: 'Postman',
 	},
 	{
+		logo: <SiJavascript />,
 		name: 'Java Script Developer',
 		date: '01.2023-03.2023',
 		link: 'https://coderslab.pl/pl/javascript-developer-react',

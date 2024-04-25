@@ -10,11 +10,23 @@ const Challenges = () => {
 			<h3 className="challenges-h3">Do you want to know what are my sources of challenges?</h3>
 			<div className="challenges-mentor">
 				<p className="mentor-box">
-					<Link href="https://www.linkedin.com/in/adamjochemczyk/" className="mentor-link">
+					<Link
+						href="https://www.linkedin.com/in/adamjochemczyk/"
+						className="mentor-link"
+						data-aos="fade-down"
+						data-aos-easing="linear"
+						data-aos-duration="1500"
+					>
 						Adam Jochemczyk
 					</Link>
 					from
-					<Link href="https://wizardsofcode.pl" className="mentor-link">
+					<Link
+						href="https://wizardsofcode.pl"
+						className="mentor-link"
+						data-aos="fade-down"
+						data-aos-easing="linear"
+						data-aos-duration="1500"
+					>
 						Wizards of Code
 					</Link>
 				</p>
@@ -30,7 +42,14 @@ const Challenges = () => {
 				<div className="column-a">
 					{COLUMN_A.map(({ id, source, link }) => {
 						return (
-							<Link id={id} href={link} className="course-link">
+							<Link
+								id={id}
+								href={link}
+								className="course-link"
+								data-aos="fade-down"
+								data-aos-easing="linear"
+								data-aos-duration="1500"
+							>
 								{source}
 							</Link>
 						);
@@ -39,7 +58,14 @@ const Challenges = () => {
 				<div className="column-b">
 					{COLUMN_B.map(({ id, source, link }) => {
 						return (
-							<Link id={id} href={link} className="course-link">
+							<Link
+								id={id}
+								href={link}
+								className="course-link"
+								data-aos="fade-down"
+								data-aos-easing="linear"
+								data-aos-duration="1500"
+							>
 								{source}
 							</Link>
 						);
@@ -48,7 +74,14 @@ const Challenges = () => {
 				<div className="column-c">
 					{COLUMN_C.map(({ id, source, link }) => {
 						return (
-							<Link id={id} href={link} className="course-link">
+							<Link
+								id={id}
+								href={link}
+								className="course-link"
+								data-aos="fade-down"
+								data-aos-easing="linear"
+								data-aos-duration="1500"
+							>
 								{source}
 							</Link>
 						);

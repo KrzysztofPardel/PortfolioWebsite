@@ -36,7 +36,7 @@ const TechStack = () => {
 				>
 					Graphics
 				</AccordionSummary>
-				<AccordionDetails className="techstack-a_Details">
+				<AccordionDetails className="techstack-accordionDetails">
 					{GRAPHICS_ITEMS.map(({ logo, technology }) => {
 						return (
 							<div key={technology} className="techstack-box">

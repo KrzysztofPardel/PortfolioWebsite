@@ -1,4 +1,4 @@
-'u'
+'u';
 import React from 'react';
 
 const ARTICLES_DATA = [
@@ -21,7 +21,7 @@ const Values = () => {
 		<div id="values" className="about-container">
 			{ARTICLES_DATA.map(({ h, p }) => {
 				return (
-					<div className="article-container">
+					<div key={h} className="article-container">
 						<h2 className="article-h">{h}</h2>
 						<p className="article-p">{p}</p>
 					</div>

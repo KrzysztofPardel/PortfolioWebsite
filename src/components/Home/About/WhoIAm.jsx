@@ -27,8 +27,8 @@ const WhoIAm = () => {
 				</div>
 			</div>
 			<div className="whoIAm-visual">
-				<Image src={myImage} className="visual-image" />
-				<Image src={mySignWhite} className="visual-signature" />
+				<Image alt="Kris profile" src={myImage} className="visual-image" />
+				<Image alt="Kris signature" src={mySignWhite} className="visual-signature" />
 				{/* <p className="visual-signature">Krzysztof Pardel</p> */}
 			</div>
 		</div>

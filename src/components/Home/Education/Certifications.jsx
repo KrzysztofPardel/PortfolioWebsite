@@ -13,7 +13,7 @@ const Certifications = () => {
 					return (
 						<div key={name} className="certification-data_box">
 							<h2 className="certification-h">
-								<TbFileCertificate className="" />
+								<TbFileCertificate className="certification-icon" />
 								{name}
 							</h2>
 							<p className="certification-date">{date}</p>

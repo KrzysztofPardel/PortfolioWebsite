@@ -40,17 +40,6 @@ export const Navigation = () => {
 		};
 	}, []);
 
-	// Make Mobile Nav Visible
-	// const changeMobile = () => {
-	// 	// console.log(window.scrollY);
-	// 	if (window.scrollY >= 900) {
-	// 		setMobile(true);
-	// 	} else {
-	// 		setMobile(false);
-	// 	}
-	// };
-	// window.addEventListener('scroll', changeMobile);
-
 	return (
 		<>
 			{/* Navigation */}
@@ -68,7 +57,7 @@ export const Navigation = () => {
 						);
 					})}
 				</div>
-				<div className="adjustments">
+				{/* <div className="adjustments">
 					<div className="mode">
 						<CgDarkMode className="mode-icon" />
 					</div>
@@ -77,7 +66,7 @@ export const Navigation = () => {
 						<div className="line" />
 						<button className="language pol">PL</button>
 					</div>
-				</div>
+				</div> */}
 			</nav>
 
 			{/* Navigation Mobile*/}
