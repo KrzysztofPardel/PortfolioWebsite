@@ -82,7 +82,8 @@ export const GOALS_DATA = [
 		data: 'October',
 	},
 ];
-//Projects -Project SLIDER
+
+//Projects - Project SLIDER
 export const PROJECT_ITEMS = [
 	{
 		id: 1,
@@ -90,8 +91,7 @@ export const PROJECT_ITEMS = [
 		link: 'https://give-pi.vercel.app/',
 		code: 'https://github.com/KrzysztofPardel/Give',
 		more: '',
-		description:
-			'Donate items or organize a collection with just few clicks.Be the connection between those who HAVE and those who NEED.',
+		description: 'Be the connection between those who HAVE and those who NEED.',
 		tech1: 'React',
 		tech2: 'TypeScript',
 		tech3: 'Redux Toolkit',
@@ -175,6 +175,7 @@ import {
 	SiApple,
 	SiEslint,
 } from 'react-icons/si';
+
 export const FRONT_ITEMS = [
 	{
 		logo: <SiJavascript />,

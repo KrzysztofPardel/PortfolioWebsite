@@ -34,7 +34,7 @@ const Challenges = () => {
 				<p className="mentor-description">
 					Adam has been relentlessly pushing my understandng of the front-end technologies for the past 8 months. His
 					insight, knowledge and kind approach make him a fantastic teacher. Aside from being a faithful support
-					throughtout various projects I can count on his opinion and advice as the next steps of my development.
+					throughtout various projects I can count on his opinion and advice in the next steps of my development.
 				</p>
 			</div>
 			<h3 className="challenges-h3">I also benefit enormously from:</h3>

@@ -25,23 +25,30 @@ const carousel = (slider) => {
 
 const ProjectSlider = () => {
 	const [currentSlide, setCurrentSlide] = useState(0);
-
+	const [loaded, setLoaded] = useState(false);
 	const [sliderRef] = useKeenSlider(
 		{
 			loop: true,
 			selector: '.carousel__cell',
 			renderMode: 'custom',
 			mode: 'free-snap',
+			initial: 0,
+			slideChanged(slider) {
+				setCurrentSlide(slider.track.details.rel);
+			},
+			created() {
+				setLoaded(true);
+			},
 		},
 		[carousel]
 	);
 
-	const handlePrevSlide = () => {
-		setCurrentSlide(currentSlide + 1);
+	const handlePrevSlide = (e) => {
+		e.stopPropagation() || instanceRef.current?.prev();
 	};
 
-	const handleNextSlide = () => {
-		setCurrentSlide(currentSlide - 1);
+	const handleNextSlide = (e) => {
+		e.stopPropagation() || instanceRef.current?.prev();
 	};
 
 	return (
