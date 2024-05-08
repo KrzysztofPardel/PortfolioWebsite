@@ -14,7 +14,6 @@ const Give = () => {
 			<Purpose />
 			<Solution />
 			<Takeways />
-		
 		</div>
 	);
 };

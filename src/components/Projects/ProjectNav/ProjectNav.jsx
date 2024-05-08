@@ -6,22 +6,22 @@ const PROJECTNAV_ITEMS = [
 	{
 		id: 1,
 		name: 'Give',
-		link: 'projects/give',
+		link: 'give',
 	},
 	{
 		id: 2,
 		name: 'CRM',
-		link: 'projects/crm',
+		link: 'crm',
 	},
 	{
 		id: 3,
 		name: 'Portfolio',
-		link: 'projects/portfolio',
+		link: 'portfolio',
 	},
 	{
 		id: 4,
 		name: 'E-learning project',
-		link: 'projects/elearning',
+		link: 'elearning',
 	},
 ];
 
