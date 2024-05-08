@@ -1,9 +1,11 @@
 import React from 'react';
 import What from './What';
 import Purpose from './Purpose';
-import Takeways from './Takeways';
+import Takeways from './Takeaways';
 import Solution from './Solution';
 import './Give.scss';
+import Footer from '@/components/Home/Footer/Footer';
+import ProjectFooter from '../ProjectFooter/ProjectFooter';
 
 const Give = () => {
 	return (
@@ -12,6 +14,7 @@ const Give = () => {
 			<Purpose />
 			<Solution />
 			<Takeways />
+		
 		</div>
 	);
 };

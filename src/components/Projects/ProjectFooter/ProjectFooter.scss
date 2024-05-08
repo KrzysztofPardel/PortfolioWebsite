@@ -1,0 +1,48 @@
+@import '../../../style/main.scss';
+
+.container-projectFooter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: transparent;
+	max-width: screen;
+	height: 15vh;
+	gap: 1rem;
+	font-family: $font-base;
+}
+
+.projectFooter-icon_container {
+	height: auto;
+	width: 5rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	.projectFooter-line {
+		color: $color-main;
+		height: 3rem;
+		border-right: 2px solid;
+	}
+	.projectFooter-arrow {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 2rem;
+		text-align: center;
+		color: $color-main;
+		width: 3rem;
+		height: 1rem;
+		background: none;
+		border: transparent;
+		cursor: pointer;
+		&:hover {
+			transition: border-bottom ease-in-out;
+			color: $color-first-acc;
+		}
+	}
+}
+.projectFooter-copyright {
+	color: $color-main;
+	font-size: 0.7rem;
+}

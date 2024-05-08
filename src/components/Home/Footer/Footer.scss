@@ -8,7 +8,6 @@
 	background: $color-main;
 	max-width: screen;
 	height: 15vh;
-	margin: auto;
 	padding: 2rem;
 	gap: 1rem;
 	font-family: $font-base;
@@ -19,6 +18,7 @@
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+
 	.line {
 		color: $color-fourth-acc;
 		height: 3rem;

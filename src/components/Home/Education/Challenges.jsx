@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { COLUMN_A, COLUMN_B, COLUMN_C } from './DataArrays';
 
+
 const Challenges = () => {
 	return (
 		<div id="challenges" className="challenges-container">
@@ -37,7 +38,7 @@ const Challenges = () => {
 					throughtout various projects I can count on his opinion and advice in the next steps of my development.
 				</p>
 			</div>
-			<h3 className="challenges-h3">I also benefit enormously from:</h3>
+			<h3 className="challenges-h3">I also benefit from:</h3>
 			<div className="challenges-columns">
 				<div className="column-a">
 					{COLUMN_A.map(({ id, source, link }) => {

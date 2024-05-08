@@ -11,6 +11,7 @@ yarn dev
 # or
 pnpm dev
 ```
+![Alt text](image.png)
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 

@@ -1,10 +1,13 @@
 'use client';
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { SiGithub } from 'react-icons/si';
 import { LuExternalLink } from 'react-icons/lu';
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
+import { IMAGES_ITEMS } from './DataArrays';
+import { SKILL_ITEMS } from './DataArrays';
 
 export function ThumbnailPlugin(mainRef) {
 	return (slider) => {
@@ -63,21 +66,15 @@ const What = () => {
 		<div className="what-wrapper">
 			<div className="what-container_first">
 				<div ref={sliderRef} className="keen-slider">
-					<div className="keen-slider__slide number-slide1">1</div>
-					<div className="keen-slider__slide number-slide2">2</div>
-					<div className="keen-slider__slide number-slide3">3</div>
-					<div className="keen-slider__slide number-slide4">4</div>
-					<div className="keen-slider__slide number-slide5">5</div>
-					<div className="keen-slider__slide number-slide6">6</div>
+					{IMAGES_ITEMS.map(({ id, src, alt }) => {
+						return <Image id={id} src={src} alt={alt} className="keen-slider__slide number-slide" />;
+					})}
 				</div>
 
 				<div ref={thumbnailRef} className="keen-slider thumbnail">
-					<div className="keen-slider__slide number-slide1">1</div>
-					<div className="keen-slider__slide number-slide2">2</div>
-					<div className="keen-slider__slide number-slide3">3</div>
-					<div className="keen-slider__slide number-slide4">4</div>
-					<div className="keen-slider__slide number-slide5">5</div>
-					<div className="keen-slider__slide number-slide6">6</div>
+					{IMAGES_ITEMS.map(({ id, src, alt }) => {
+						return <Image id={id} src={src} alt={alt} className="keen-slider__slide number-slide" />;
+					})}
 				</div>
 			</div>
 			<div className="what-container_second">
@@ -92,12 +89,13 @@ const What = () => {
 					See Github
 				</Link>
 				<div className="second-techstack_box">
-					<p className="techstack-box_skill">React</p>
-					<p className="techstack-box_skill">TypeScript</p>
-					<p className="techstack-box_skill">Redux Toolkit</p>
-					<p className="techstack-box_skill">Firebase</p>
-					<p className="techstack-box_skill">SCSS</p>
-					<p className="techstack-box_skill">Vite</p>
+					{SKILL_ITEMS.map(({ skill }) => {
+						return (
+							<p key={skill} className="techstack-box_skill">
+								{skill}
+							</p>
+						);
+					})}
 				</div>
 			</div>
 		</div>
