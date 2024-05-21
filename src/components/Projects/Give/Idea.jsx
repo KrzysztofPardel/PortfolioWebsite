@@ -17,13 +17,13 @@ const Idea = () => {
 			<div
 				className="purpose-background first-give "
 				data-aos="fade-right"
-				data-aos-offset="300"
+				data-aos-offset="150"
 				data-aos-easing="ease-in-sine"
 			/>
 			<div
 				className="purpose-background second-give"
 				data-aos="fade-left"
-				data-aos-offset="300"
+				data-aos-offset="150"
 				data-aos-easing="ease-in-sine"
 			/>
 		</div>
