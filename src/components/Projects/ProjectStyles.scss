@@ -21,7 +21,13 @@
 	.second-summary {
 		font-size: 1.2rem;
 		margin-bottom: 2rem;
+		line-height: 1.5;
 	}
+	.second-note {
+		line-height: 1.2;
+		color: rgb(115, 115, 115);
+	}
+
 	.second-link {
 		width: 15rem;
 		display: flex;

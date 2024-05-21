@@ -11,6 +11,6 @@ _This project existis so that people could understand better why they might be i
 
 ## Tech Features
 
-- Built in Next.js and styled in SCSS
+- Built in Next.js, styled in SCSS
 - Responsive
 - Uses KeenSlider, AOS and React Icons libraries

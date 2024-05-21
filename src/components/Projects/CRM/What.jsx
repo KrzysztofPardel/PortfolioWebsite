@@ -1,10 +1,10 @@
 'use client';
-import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { CiLocationArrow1 } from 'react-icons/ci';
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
+import './../ProjectStyles.scss';
 import { IMAGES_ITEMS, SKILL_ITEMS } from './DataArrays';
 
 export function ThumbnailPlugin(mainRef) {
