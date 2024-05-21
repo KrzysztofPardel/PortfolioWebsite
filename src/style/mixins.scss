@@ -60,3 +60,18 @@
 	text-align: start;
 	@content;
 }
+
+//used in projects/crm
+@mixin article-styles(
+	$grid-column,
+	$grid-row,
+	$border-color: rgb(0, 39, 107),
+	$bg-color: rgba(0, 39, 107, 0.75),
+	$color: $color-fourth-acc
+) {
+	grid-column: $grid-column;
+	grid-row: $grid-row;
+	border: 2px solid $border-color;
+	background-color: $bg-color;
+	color: $color;
+}

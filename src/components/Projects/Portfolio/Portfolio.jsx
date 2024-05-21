@@ -6,12 +6,12 @@ import Solution from './Solution';
 
 const Portfolio = () => {
 	return (
-		<>
+		<section className="project-container">
 			<What />
 			<Purpose />
 			<Solution />
 			<Takeways />
-		</>
+		</section>
 	);
 };
 

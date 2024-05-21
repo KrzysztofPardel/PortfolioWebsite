@@ -1,7 +1,7 @@
 import React from 'react';
 import { PURPOSE_TEXT } from './DataArrays';
 
-const Purpose = () => {
+const Idea = () => {
 	return (
 		<div className="purpose-wrapper">
 			<div className="purpose-text_container">
@@ -15,19 +15,19 @@ const Purpose = () => {
 				})}
 			</div>
 			<div
-				className="purpose-background one"
+				className="purpose-background first-crm"
 				data-aos="fade-right"
-				data-aos-offset="300"
+				data-aos-offset="150"
 				data-aos-easing="ease-in-sine"
 			/>
 			<div
-				className="purpose-background second"
+				className="purpose-background second-crm"
 				data-aos="fade-left"
-				data-aos-offset="300"
+				data-aos-offset="150"
 				data-aos-easing="ease-in-sine"
 			/>
 		</div>
 	);
 };
 
-export default Purpose;
+export default Idea;

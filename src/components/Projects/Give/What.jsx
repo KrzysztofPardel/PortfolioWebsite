@@ -3,11 +3,10 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { SiGithub } from 'react-icons/si';
-import { LuExternalLink } from 'react-icons/lu';
+import { CiLocationArrow1 } from 'react-icons/ci';
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
-import { IMAGES_ITEMS } from './DataArrays';
-import { SKILL_ITEMS } from './DataArrays';
+import { IMAGES_ITEMS, SKILL_ITEMS } from './DataArrays';
 
 export function ThumbnailPlugin(mainRef) {
 	return (slider) => {
@@ -67,13 +66,13 @@ const What = () => {
 			<div className="what-container_first">
 				<div ref={sliderRef} className="keen-slider">
 					{IMAGES_ITEMS.map(({ id, src, alt }) => {
-						return <Image id={id} src={src} alt={alt} className="keen-slider__slide number-slide" />;
+						return <Image key={id} id={id} src={src} alt={alt} className="keen-slider__slide number-slide" />;
 					})}
 				</div>
 
 				<div ref={thumbnailRef} className="keen-slider thumbnail">
 					{IMAGES_ITEMS.map(({ id, src, alt }) => {
-						return <Image id={id} src={src} alt={alt} className="keen-slider__slide number-slide" />;
+						return <Image key={id} id={id} src={src} alt={alt} className="keen-slider__slide number-slide" />;
 					})}
 				</div>
 			</div>
@@ -81,7 +80,7 @@ const What = () => {
 				<h1 className="second-header">Give</h1>
 				<p className="second-summary">Be the connection between those who HAVE and those who NEED.</p>
 				<Link href="https://give-pi.vercel.app/" className="second-link">
-					<LuExternalLink className="link-icon" />
+					<CiLocationArrow1 className="link-icon" />
 					See Live
 				</Link>
 				<Link href="https://github.com/KrzysztofPardel/Give" className="second-link">

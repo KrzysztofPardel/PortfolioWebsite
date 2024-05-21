@@ -15,11 +15,6 @@ const PROJECTNAV_ITEMS = [
 	},
 	{
 		id: 3,
-		name: 'Portfolio',
-		link: 'portfolio',
-	},
-	{
-		id: 4,
 		name: 'E-learning project',
 		link: 'elearning',
 	},

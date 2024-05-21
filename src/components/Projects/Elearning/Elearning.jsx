@@ -6,12 +6,12 @@ import Solution from './Solution';
 
 const Elearning = () => {
 	return (
-		<>
+		<section className="project-container">
 			<What />
 			<Purpose />
 			<Solution />
 			<Takeways />
-		</>
+		</section>
 	);
 };
 

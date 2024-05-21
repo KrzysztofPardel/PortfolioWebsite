@@ -1,20 +1,17 @@
-import React from 'react';
 import What from './What';
-import Purpose from './Purpose';
+import Purpose from './Idea';
 import Takeways from './Takeaways';
 import Solution from './Solution';
-import './Give.scss';
-import Footer from '@/components/Home/Footer/Footer';
-import ProjectFooter from '../ProjectFooter/ProjectFooter';
+import './../ProjectStyles.scss';
 
 const Give = () => {
 	return (
-		<div className="project-container">
+		<section className="project-container">
 			<What />
 			<Purpose />
 			<Solution />
 			<Takeways />
-		</div>
+		</section>
 	);
 };
 

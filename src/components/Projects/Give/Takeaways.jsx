@@ -12,7 +12,7 @@ const Takeaways = () => {
 						<div key={id} className="takeaways-box">
 							<MdOutlineKeyboardDoubleArrowRight className="takeaways-item_icon" />
 							<p className="takeway-item">{p_text}</p>
-							<p className="takeway-item comment">{p_comment}</p>
+							<p className="takeway-comment">{p_comment}</p>
 						</div>
 					);
 				})}
