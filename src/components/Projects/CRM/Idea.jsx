@@ -3,25 +3,25 @@ import { PURPOSE_TEXT } from './DataArrays';
 
 const Idea = () => {
 	return (
-		<div className="purpose-wrapper">
-			<div className="purpose-text_container">
-				<h1 className="purpose-header">Idea behing the project</h1>
+		<div className="idea-wrapper">
+			<div className="idea-text_container">
+				<h1 className="idea-header">Idea behing the project</h1>
 				{PURPOSE_TEXT.map(({ id, text }) => {
 					return (
-						<p key={id} className="purpose-p">
+						<p key={id} className="idea-p">
 							{text}
 						</p>
 					);
 				})}
 			</div>
 			<div
-				className="purpose-background first-crm"
+				className="idea-background first-crm"
 				data-aos="fade-right"
 				data-aos-offset="150"
 				data-aos-easing="ease-in-sine"
 			/>
 			<div
-				className="purpose-background second-crm"
+				className="idea-background second-crm"
 				data-aos="fade-left"
 				data-aos-offset="150"
 				data-aos-easing="ease-in-sine"

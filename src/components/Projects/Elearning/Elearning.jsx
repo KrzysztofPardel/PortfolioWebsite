@@ -1,6 +1,6 @@
 import React from 'react';
 import What from './What';
-import Purpose from './Purpose';
+import Purpose from './Idea';
 import Takeways from './Takeways';
 import Solution from './Solution';
 
@@ -9,8 +9,6 @@ const Elearning = () => {
 		<section className="project-container">
 			<What />
 			<Purpose />
-			<Solution />
-			<Takeways />
 		</section>
 	);
 };

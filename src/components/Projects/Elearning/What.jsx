@@ -5,7 +5,7 @@ import 'keen-slider/keen-slider.min.css';
 import { SKILL_ITEMS, IMAGES_ITEMS } from './DataArray';
 import './../ProjectStyles.scss';
 import ThumbnailPlugin from './../Give/What';
-
+import hourglass3 from '../../../../public/assets/hourglass3.jpg';
 const What = () => {
 	const [sliderRef, instanceRef] = useKeenSlider({
 		initial: 0,
@@ -28,7 +28,7 @@ const What = () => {
 	return (
 		<div className="what-wrapper">
 			<div className="what-container_first">
-				<div ref={sliderRef} className="keen-slider">
+				{/* <div ref={sliderRef} className="keen-slider">
 					{IMAGES_ITEMS.map(({ id, src, alt }) => {
 						return <Image key={id} id={id} src={src} alt={alt} className="keen-slider__slide number-slide" />;
 					})}
@@ -38,7 +38,8 @@ const What = () => {
 					{IMAGES_ITEMS.map(({ id, src, alt }) => {
 						return <Image key={id} id={id} src={src} alt={alt} className="keen-slider__slide number-slide" />;
 					})}
-				</div>
+				</div> */}
+				<Image src={hourglass3} alt="hourglass" className="what-image_temporary" />
 			</div>
 			<div className="what-container_second">
 				<h1 className="second-header">LearnNow</h1>
@@ -58,7 +59,7 @@ const What = () => {
 					})}
 				</div>
 				<p className="second-note">
-					The development of the project began in May 2024 and may tak up to few months. However, updates will be added
+					The development of the project began in May 2024 and may take some time. However, updates will be added
 					regularly.
 				</p>
 			</div>
