@@ -30,13 +30,11 @@ const Solution = () => {
 				<ul className="solution-feature_list">
 					{FEATURE_ITEMS.map(({ id, text }) => {
 						return (
-							<div className="solution-list_item" data-aos="flip-up" data-aos-anchor-placement="top-bottom">
+							<div key={id} className="solution-list_item" data-aos="flip-up" data-aos-anchor-placement="top-bottom">
 								<p className="solution-feature_icon">
 									<CiCircleChevRight />
 								</p>
-								<li key={id} className="solution-feature">
-									{text}
-								</li>
+								<li className="solution-feature">{text}</li>
 							</div>
 						);
 					})}
