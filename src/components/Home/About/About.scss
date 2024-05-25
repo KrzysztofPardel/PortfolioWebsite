@@ -64,9 +64,10 @@
 		text-decoration: none;
 		color: $color-third-acc;
 		font-weight: 500;
+
 		&:hover {
-			background-color: $color-fourth-acc;
-			color: $color-main;
+			background-color: $color-main;
+			color: $color-fourth-acc;
 		}
 	}
 }

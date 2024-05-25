@@ -5,12 +5,12 @@ import ProjectFooter from '@/components/Projects/ProjectFooter/ProjectFooter';
 
 const Layout = ({ children }) => {
 	return (
-		<>
+		<main>
 			<Navigation />
 			<PojectNav />
 			{children}
 			<ProjectFooter />
-		</>
+		</main>
 	);
 };
 

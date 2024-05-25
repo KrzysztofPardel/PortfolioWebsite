@@ -8,6 +8,9 @@ export const SKILL_ITEMS = [
 	{
 		skill: 'Supabase',
 	},
+	{
+		skill: 'SCSS',
+	},
 ];
 
 export const IMAGES_ITEMS = [{}];

@@ -1,6 +1,8 @@
 'use client';
 import './Navigation.scss';
 import React, { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
+import Link from 'next/link';
 import { Link as LinkScroll, animateScroll as scroll } from 'react-scroll';
 import { CgDarkMode } from 'react-icons/cg';
 import { GrMenu, GrFormClose } from 'react-icons/gr';
@@ -13,9 +15,18 @@ const NAV_ITEMS = [{ name: 'work' }, { name: 'education' }, { name: 'about' }, {
 export const Navigation = () => {
 	const [nav, setNav] = useState(false);
 	const [mobile, setMobile] = useState(false);
+
 	const handleNav = () => {
 		setNav(!nav);
 	};
+	//Zakomentowane w czasie zajęć
+	// const handleLinkClick = (name) => {
+	// 	if (router.pathname === '/') {
+	// 		scroll.scrollTo(name);
+	// 	} else {
+	// 		router.push(`/#${name}`);
+	// 	}
+	// };
 
 	// Make Mobile Nav Fade Down
 	useEffect(() => {
@@ -51,9 +62,15 @@ export const Navigation = () => {
 				<div className="links">
 					{NAV_ITEMS.map(({ name }) => {
 						return (
-							<LinkScroll key={name} to={name} spy smooth duration={1000} className="link">
+							<Link
+								key={name}
+								href={`/#${name}`}
+								// onClick={() => handleLinkClick(name)}
+								passHref
+								className="link"
+							>
 								{name}
-							</LinkScroll>
+							</Link>
 						);
 					})}
 				</div>

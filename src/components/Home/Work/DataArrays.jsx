@@ -86,7 +86,7 @@ export const GOALS_DATA = [
 //Projects - Project SLIDER
 export const PROJECT_ITEMS = [
 	{
-		id: 1,
+		id: 0,
 		title: 'Give',
 		link: 'https://give-pi.vercel.app/',
 		code: 'https://github.com/KrzysztofPardel/Give',
@@ -100,7 +100,7 @@ export const PROJECT_ITEMS = [
 		tech6: 'Vite',
 	},
 	{
-		id: 2,
+		id: 1,
 		title: 'CRM',
 		link: '',
 		code: '',
@@ -114,7 +114,7 @@ export const PROJECT_ITEMS = [
 		tech6: '',
 	},
 	{
-		id: 3,
+		id: 2,
 		title: 'Portfolio Website',
 		link: '',
 		code: 'https://github.com/KrzysztofPardel/PortfolioWebsite',
@@ -128,7 +128,7 @@ export const PROJECT_ITEMS = [
 		tech6: '',
 	},
 	{
-		id: 4,
+		id: 3,
 		title: 'New Project!',
 		link: '',
 		code: '',

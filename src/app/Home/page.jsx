@@ -9,7 +9,7 @@ import Work from '@/components/Home/Work/Work';
 
 const Home = () => {
 	return (
-		<>
+		<main>
 			<Header />
 			<Navigation />
 			<Work />
@@ -17,7 +17,7 @@ const Home = () => {
 			<About />
 			<Contact />
 			<Footer />
-		</>
+		</main>
 	);
 };
 

@@ -6,6 +6,7 @@ import { SKILL_ITEMS, IMAGES_ITEMS } from './DataArray';
 import './../ProjectStyles.scss';
 import ThumbnailPlugin from './../Give/What';
 import hourglass3 from '../../../../public/assets/hourglass3.jpg';
+
 const What = () => {
 	const [sliderRef, instanceRef] = useKeenSlider({
 		initial: 0,

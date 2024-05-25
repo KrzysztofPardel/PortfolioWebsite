@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import myImage from '../../../../public/assets/myImage.png';
-import mySignWhite from '../../../../public/assets/mySignWhite.png';
+// import mySignWhite from '../../../../public/assets/mySignWhite.png';
 
 const WhoIAm = () => {
 	return (
@@ -28,7 +28,7 @@ const WhoIAm = () => {
 			</div>
 			<div className="whoIAm-visual">
 				<Image alt="Kris profile" src={myImage} className="visual-image" />
-				<Image alt="Kris signature" src={mySignWhite} className="visual-signature" />
+				{/* <Image alt="Kris signature" src={mySignWhite} className="visual-signature" /> */}
 				{/* <p className="visual-signature">Krzysztof Pardel</p> */}
 			</div>
 		</div>
