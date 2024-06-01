@@ -29,8 +29,17 @@ export const Navigation = () => {
 		setNav(!nav);
 	}, [nav]);
 
-	const handleLanguage = () => {};
-	const handleMode = () => {};
+	const handleLanguage = () => {
+		
+	};
+
+
+	const handleMode = () => {
+
+	};
+
+
+
 	// Make Mobile Nav Fade Down
 	useEffect(() => {
 		AOS.init({ duration: 2000 });

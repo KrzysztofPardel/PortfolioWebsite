@@ -1,6 +1,7 @@
 @import '../../../style/main.scss';
+// @import '../../../style/variables.scss';
 
-.container-footer {
+.containerFooter {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -12,7 +13,8 @@
 	gap: 1rem;
 	font-family: $font-base;
 }
-.icon-container {
+
+.iconContainer {
 	height: auto;
 	width: 5rem;
 	display: flex;
@@ -42,6 +44,7 @@
 		}
 	}
 }
+
 .copyright {
 	color: $color-fourth-acc;
 	font-size: 0.7rem;

@@ -1,11 +1,5 @@
-@import '../style/reset.scss';
 @import '../style/mixins.scss';
 @import '../style/variables.scss';
-
-body {
-	background: rgb(226, 226, 226);
-	background-size: cover;
-}
 
 .section-rectangle {
 	display: flex;
