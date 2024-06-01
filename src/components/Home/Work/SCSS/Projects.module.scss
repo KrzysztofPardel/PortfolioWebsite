@@ -1,0 +1,20 @@
+@import '../../../../style/main.scss';
+@import './Work.module.scss';
+
+.projects-container {
+	@include part-Container;
+	flex-direction: column;
+}
+
+.projects-h {
+	@include section-Subheader;
+	color: $color-fourth-acc;
+}
+
+.projects-slider {
+	width: 100%;
+}
+
+.projects-p {
+	font-size: 1.5rem;
+}

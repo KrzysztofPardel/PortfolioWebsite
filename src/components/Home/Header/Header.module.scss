@@ -1,6 +1,6 @@
 @import '../../../style/main.scss';
 
-.header-container {
+.headerContainer {
 	background: $color-gradient-one;
 	max-width: screen;
 	height: 100vh;
@@ -10,7 +10,8 @@
 	opacity: 0.9;
 	z-index: 0;
 }
-.header-intro {
+
+.headerIntro {
 	height: 100vh;
 	width: 100%;
 	display: flex;
@@ -19,18 +20,18 @@
 	justify-content: center;
 	line-height: 3rem;
 
-	.intro-title {
+	.introTitle {
 		font-size: 3rem;
 		color: $color-first-acc;
-		.intro-name {
+		.introName {
 			color: $color-third-acc;
 		}
 	}
-	.header-profession {
+	.headerProfession {
 		color: $color-fourth-acc;
 		font-size: 2rem;
 	}
-	.profession-invitation {
+	.professionInvitation {
 		background: none;
 		color: $color-first-acc;
 		border: none;
@@ -44,12 +45,12 @@
 	}
 }
 
-.header-links {
+.headerLinks {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 1rem;
-	.header-link {
+	.headerLink {
 		font-size: 2rem;
 		color: $color-first-acc;
 		&:hover {

@@ -5,7 +5,6 @@ import Image from 'next/image';
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
 import './SCSS/Slider.scss';
-import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import { PROJECT_ITEMS } from './DataArrays';
 
 const ProjectSlider = ({ totalSlides }) => {

@@ -1,6 +1,6 @@
 @import '../style/main.scss';
 
-.container-nav {
+.containerNav {
 	background: $color-fourth-acc;
 	max-width: screen;
 	height: 10vh;
@@ -18,12 +18,14 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
 	.myLogo {
 		height: 4rem;
 		width: auto;
 		margin-left: 2rem;
 		margin-top: -0.5rem;
 	}
+
 	.center {
 		margin-left: 0rem;
 	}
@@ -35,14 +37,17 @@
 	align-items: center;
 	gap: 2rem;
 	height: auto;
+
 	.mode {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		.mode-icon {
+
+		.modeIcon {
 			color: $color-second-acc;
 			height: 1.5rem;
 			width: 1.5rem;
+
 			&:hover {
 				color: $color-third-acc;
 			}
@@ -56,23 +61,26 @@
 		justify-content: center;
 		align-items: center;
 		color: $color-second-acc;
+
 		.line {
 			height: 1.5rem;
 			border-right: 2px solid;
 		}
+
 		.language {
 			width: 3rem;
 			height: 1rem;
 			background: none;
 			border: transparent;
 			font-family: $font-alt;
-			
+
 			&:active {
 				scale: 1.1;
 			}
 		}
 	}
 }
+
 .reverse {
 	display: flex;
 	justify-content: center;
@@ -81,7 +89,7 @@
 }
 
 .links,
-.links-mobile {
+.linksMobile {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -89,31 +97,32 @@
 	cursor: pointer;
 
 	.link,
-	.link-mobile {
+	.linkMobile {
 		text-decoration: none;
 		color: $color-second-acc;
 		font-size: 1.2rem;
 		border-bottom: 1px solid transparent;
 		transition: border-bottom 0.5s ease-in-out;
+
 		&:hover {
 			border-bottom: 1px solid $color-main;
 		}
 	}
 }
-.links-mobile {
+
+.linksMobile {
 	height: 30%;
 	flex-direction: column;
 	margin: 5rem;
 	width: auto;
 }
 
-.links-container-mobile {
+.linksContainerMobile {
 	width: 100%;
 	flex-direction: column;
 	gap: 2rem;
 }
 
-//Mobile menu
 .shadow {
 	width: screen;
 	height: screen;
@@ -124,7 +133,8 @@
 	opacity: 30%;
 	z-index: 0;
 }
-.container-nav_mobile {
+
+.containerNavMobile {
 	position: fixed;
 	right: 0;
 	top: 0;
@@ -135,6 +145,7 @@
 	transition: right 1s ease-in-out;
 	z-index: 1;
 }
+
 .hidden {
 	position: fixed;
 	right: -100%;
@@ -143,15 +154,16 @@
 	transition: right 1s ease-in-out, opacity 1s ease-in-out;
 }
 
-.mobile-button_cont {
+.mobileButtonCont {
 	visibility: hidden;
 }
+
 .visible {
 	visibility: visible;
 }
 
-.mobile-button,
-.mobile-button_inside {
+.mobileButton,
+.mobileButtonInside {
 	height: 3rem;
 	width: 3rem;
 	background: $color-fourth-acc;
@@ -167,11 +179,13 @@
 	cursor: pointer;
 	z-index: 10;
 	box-shadow: $color-main 0px 0px 10px;
+
 	&:hover {
 		background: $color-fourth-acc;
 		box-shadow: rgba($color-main, 0.25) 0px 30px 60px -12px inset, rgba($color-main, 0.3) 0px 18px 36px -18px inset;
 	}
-	.icon_ss {
+
+	.iconSs {
 		width: 100%;
 		height: 100%;
 		display: flex;
@@ -179,11 +193,13 @@
 		align-items: center;
 	}
 }
-.mobile-button_inside {
+
+.mobileButtonInside {
 	position: static;
 	margin-right: 0%;
 	margin-bottom: 0%;
 }
+
 .on {
 	position: fixed;
 	display: flex;

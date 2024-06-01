@@ -1,0 +1,71 @@
+@import '../../../../style/main.scss';
+@import './Work.module.scss';
+
+.techstack-container {
+	@include part-Container;
+	flex-direction: column;
+}
+
+.techstack-h {
+	@include section-Subheader;
+}
+
+.techstack-a_summary {
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+.summary-front {
+	&:hover {
+		background: linear-gradient(128deg, $color-third-acc, $color-main 100%);
+	}
+}
+
+.summary-graphics {
+	&:hover {
+		background: linear-gradient(128deg, $color-second-acc, $color-main 100%);
+		color: $color-first-acc;
+	}
+}
+
+.summary-back {
+	&:hover {
+		background: linear-gradient(128deg, $color-second-acc, $color-main 100%);
+		color: $color-first-acc;
+	}
+}
+
+.summary-other {
+	&:hover {
+		background: linear-gradient(128deg, $color-second-acc, $color-main 100%);
+		color: $color-first-acc;
+	}
+}
+
+.techstack-accordionDetails {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.techstack-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	border: 0.5px solid $color-second-acc;
+	padding: 0.5rem;
+}
+
+.tech-log {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	margin-right: 1rem;
+}
+
+.tech-technology {
+	font-size: 1rem;
+}

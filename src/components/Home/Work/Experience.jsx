@@ -5,41 +5,42 @@ import { MdImportantDevices } from 'react-icons/md';
 import { IoIosAddCircleOutline } from 'react-icons/io';
 import { BsFolderCheck } from 'react-icons/bs';
 import { WORK_ITEMS, ITWORK_ITEMS } from './DataArrays';
+import styles from './SCSS/Experience.module.scss'; // Import module styles
 
 const Experience = () => {
 	return (
-		<div id="experience" className="experience-container">
-			<h1 className="experience-h">Experience</h1>
-			<p className="experience-related">
-				<MdImportantDevices className="related-icon" />
+		<div id="experience" className={styles['experience-container']}>
+			<h1 className={styles['experience-h']}>Experience</h1>
+			<p className={styles['experience-related']}>
+				<MdImportantDevices className={styles['related-icon']} />
 				IT Related
 			</p>
-			<div className="experience-box">
+			<div className={styles['experience-box']}>
 				{ITWORK_ITEMS.map(({ id, position, company, where, date, reference, intro, point1, point2, point3 }) => {
 					return (
-						<div key={id} className="work-box" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-							<div className="work-box_partOne">
-								<h2 className="work-position">{position}</h2>
-								<div className="whenWhere-container">
-									<p className="work-where">
+						<div key={id} className={styles['work-box']} data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+							<div className={styles['work-box_partOne']}>
+								<h2 className={styles['work-position']}>{position}</h2>
+								<div className={styles['whenWhere-container']}>
+									<p className={styles['work-where']}>
 										{company}, {where}
 									</p>
-									<p className="work-when">{date}</p>
+									<p className={styles['work-when']}>{date}</p>
 								</div>
-								<div className="work-reference">{reference}</div>
+								<div className={styles['work-reference']}>{reference}</div>
 							</div>
-							<div className="work-box_partTwo">
-								<ul className="work-description">
-									<p className="work-intro">{intro}</p>
-									<li className="work-description_li">
-										<IoIosAddCircleOutline className="work-description_icon" /> {point1}
+							<div className={styles['work-box_partTwo']}>
+								<ul className={styles['work-description']}>
+									<p className={styles['work-intro']}>{intro}</p>
+									<li className={styles['work-description_li']}>
+										<IoIosAddCircleOutline className={styles['work-description_icon']} /> {point1}
 									</li>
-									<li className="work-description_li">
-										<IoIosAddCircleOutline className="work-description_icon" />
+									<li className={styles['work-description_li']}>
+										<IoIosAddCircleOutline className={styles['work-description_icon']} />
 										{point2}
 									</li>
-									<li className="work-description_li">
-										<IoIosAddCircleOutline className="work-description_icon" />
+									<li className={styles['work-description_li']}>
+										<IoIosAddCircleOutline className={styles['work-description_icon']} />
 										{point3}
 									</li>
 								</ul>
@@ -48,39 +49,39 @@ const Experience = () => {
 					);
 				})}
 			</div>
-			<p className="experience-related">
-				<BsFolderCheck className="related-icon" />
+			<p className={styles['experience-related']}>
+				<BsFolderCheck className={styles['related-icon']} />
 				IT Unrelated
 			</p>
-			<div className="experience-box">
+			<div className={styles['experience-box']}>
 				{WORK_ITEMS.map(({ id, position, company, where, date, reference, intro, point1, point2, point3 }) => {
 					return (
-						<div key={id} className="work-box" data-aos="fade-down" data-aos-anchor-placement="top-bottom">
-							<div className="work-box_partOne">
-								<h2 className="work-position">{position}</h2>
-								<div className="whenWhere-container">
-									<p className="work-where">
+						<div key={id} className={styles['work-box']} data-aos="fade-down" data-aos-anchor-placement="top-bottom">
+							<div className={styles['work-box_partOne']}>
+								<h2 className={styles['work-position']}>{position}</h2>
+								<div className={styles['whenWhere-container']}>
+									<p className={styles['work-where']}>
 										{company}, {where}
 									</p>
-									<p className="work-when">{date}</p>
+									<p className={styles['work-when']}>{date}</p>
 								</div>
 							</div>
-							<div className="work-box_partTwo">
-								<ul className="work-description">
-									<p className="work-intro">{intro}</p>
-									<li className="work-description_li">
-										<IoIosAddCircleOutline className="work-description_icon" /> {point1}
+							<div className={styles['work-box_partTwo']}>
+								<ul className={styles['work-description']}>
+									<p className={styles['work-intro']}>{intro}</p>
+									<li className={styles['work-description_li']}>
+										<IoIosAddCircleOutline className={styles['work-description_icon']} /> {point1}
 									</li>
-									<li className="work-description_li">
-										<IoIosAddCircleOutline className="work-description_icon" />
+									<li className={styles['work-description_li']}>
+										<IoIosAddCircleOutline className={styles['work-description_icon']} />
 										{point2}
 									</li>
-									<li className="work-description_li">
-										<IoIosAddCircleOutline className="work-description_icon" />
+									<li className={styles['work-description_li']}>
+										<IoIosAddCircleOutline className={styles['work-description_icon']} />
 										{point3}
 									</li>
 								</ul>
-								<div className="">{reference}</div>
+								<div className={styles['work-reference']}>{reference}</div>
 							</div>
 						</div>
 					);

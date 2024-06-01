@@ -1,35 +1,28 @@
 'use client';
-import React, { useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
-import { Link as LinkScroll, animateScroll as scroll } from 'react-scroll';
-import './Header.scss';
+import { Link as LinkScroll } from 'react-scroll';
+import styles from './Header.module.scss';
 import { SiGithub, SiLinkedin } from 'react-icons/si';
 
 export const Header = () => {
-	const [toggleWrap, setToggleWrap] = useState('false');
-	const [logo, setLogo] = useState('false');
-
-	const handleToggle = () => {
-		setToggleWrap(!toggleWrap);
-		setTimeout({}, 200);
-	};
 	return (
 		<>
-			<div id="header" className="header-container">
-				<div className="header-intro">
-					<h1 className="intro-title">
-						Hi! I&apos;m <span className="intro-name">Krzysztof Pardel</span>.
+			<div id="header" className={styles.headerContainer}>
+				<div className={styles.headerIntro}>
+					<h1 className={styles.introTitle}>
+						Hi! I&apos;m <span className={styles.introName}>Krzysztof Pardel</span>.
 					</h1>
-					<h2 className="header-profession">Frontend Developer </h2>
-					<div className="header-links">
-						<Link href="https://github.com/KrzysztofPardel" className="header-link">
+					<h2 className={styles.headerProfession}>Frontend Developer </h2>
+					<div className={styles.headerLinks}>
+						<Link href="https://github.com/KrzysztofPardel" className={styles.headerLink}>
 							<SiGithub />
 						</Link>
-						<Link href="https://www.linkedin.com/in/krzysztof-pardel/" className="header-link">
+						<Link href="https://www.linkedin.com/in/krzysztof-pardel/" className={styles.headerLink}>
 							<SiLinkedin />
 						</Link>
 					</div>
-					<LinkScroll to="navigation" spy smooth duration={1200} className="profession-invitation">
+					<LinkScroll to="navigation" spy smooth duration={1200} className={styles.professionInvitation}>
 						See more
 					</LinkScroll>
 				</div>
@@ -37,4 +30,5 @@ export const Header = () => {
 		</>
 	);
 };
+
 export default Header;

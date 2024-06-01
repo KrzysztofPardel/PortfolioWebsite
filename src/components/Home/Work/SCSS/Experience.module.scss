@@ -1,0 +1,104 @@
+@import '../../../../style/main.scss';
+@import './Work.module.scss';
+
+.experience-related {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	font-size: 1.5rem;
+}
+
+.related-icon {
+	font-size: 1.5rem;
+	margin-right: 1rem;
+	color: $color-third-acc; /* Define local color variable */
+}
+
+.experience-box {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.work-box {
+	width: 100%;
+	display: flex;
+	gap: 2rem;
+	margin-bottom: 2rem;
+	border: 1px solid $color-fourth-acc;
+	border-radius: 25px;
+	padding: 2rem;
+}
+
+.work-box_partOne {
+	width: 100%;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	border-right: 1px solid $color-fourth-acc;
+
+	.work-position {
+		font-size: 1.2rem;
+		font-weight: 700;
+		border-left: 1px solid $color-fourth-acc;
+		padding-left: 1rem;
+	}
+
+	.whenWhere-container {
+		width: 100%;
+		display: flex;
+		gap: 1rem;
+		font-size: 1rem;
+
+		.work-where {
+			color: $color-third-acc;
+		}
+
+		.work-when {
+			color: $color-first-acc;
+		}
+	}
+}
+
+.work-box_partTwo {
+	width: 100%;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+
+	.work-description {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 0.5rem;
+
+		.work-intro {
+			font-size: 1.2rem;
+			border-bottom: 1px solid $color-fourth-acc;
+			padding-bottom: 0.05rem;
+		}
+
+		.work-description_li {
+			width: 100%;
+			display: grid;
+			grid-template-columns: 16px 1fr;
+			align-items: center;
+			line-height: 1.5rem;
+			text-align: start;
+			gap: 1rem;
+		}
+
+		.work-description_icon {
+			height: 1rem;
+			width: 1rem;
+			font-size: 2rem;
+			color: $color-third-acc;
+		}
+	}
+}
