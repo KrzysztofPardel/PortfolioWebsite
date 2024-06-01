@@ -1,0 +1,8 @@
+@import '../../../style/main.scss';
+
+.sectionHeader {
+	@include section-Header;
+}
+.aboutContainer {
+	@include part-Container;
+}

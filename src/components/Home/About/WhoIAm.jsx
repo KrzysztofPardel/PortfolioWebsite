@@ -2,36 +2,36 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import myImage from '../../../../public/assets/myImage.png';
-// import mySignWhite from '../../../../public/assets/mySignWhite.png';
+import styles from './WhoIAm.module.scss';
 
 const WhoIAm = () => {
 	return (
-		<div className="whoIAm-container">
-			<div className="whoIAm-text">
-				<h2 className="text-h">Who I am</h2>
-				<p className="text-p">
+		<div className={styles.whoIAmContainer}>
+			<div className={styles.whoIAmText}>
+				<h2 className={styles.textH}>Who I Am</h2>
+				<p className={styles.textP}>
 					Young front-end developer determined to excel in JavaScript, TypeScript, React, Next or Node. Excellent
 					command of English confirmed with a C2 CPE certificate. As regards my soft skills, I am committed to
 					ownership, diligence, integrity, as well as collaboration with others. Degree in architecture is my advantage
-					when it comes to the sense of design and pragmatism as well as the usage of graphic design softwares.To
-					solidify my knowledge of IT I am begging MEng in Applied IT this fall (part-time).
+					when it comes to the sense of design and pragmatism as well as the usage of graphic design softwares. To
+					solidify my knowledge of IT I am beginning MEng in Applied IT this fall (part-time).
 				</p>
-				<div className="link-container">
-					<Link href="https://github.com/KrzysztofPardel" className="text-link">
+				<div className={styles.linkContainer}>
+					<Link href="https://github.com/KrzysztofPardel" className={styles.textLink}>
 						GitHub
 					</Link>
-					<Link href="https://www.linkedin.com/in/krzysztof-pardel/" className="text-link">
+					<Link href="https://www.linkedin.com/in/krzysztof-pardel/" className={styles.textLink}>
 						LinkedIn
 					</Link>
 				</div>
 			</div>
-			<div className="whoIAm-visual">
-				<Image alt="Kris profile" src={myImage} className="visual-image" />
-				<div className="visual-background_figure one" />
-				<div className="visual-background_figure two" />
-				<div className="visual-background_figure three" />
-				{/* <Image alt="Kris signature" src={mySignWhite} className="visual-signature" /> */}
-				{/* <p className="visual-signature">Krzysztof Pardel</p> */}
+			<div className={styles.whoIAmVisual}>
+				<Image alt="Kris profile" src={myImage} className={styles.visualImage} />
+				<div className={`${styles.visualBackgroundFigure} ${styles.one}`} />
+				<div className={`${styles.visualBackgroundFigure} ${styles.two}`} />
+				<div className={`${styles.visualBackgroundFigure} ${styles.three}`} />
+				{/* <Image alt="Kris signature" src={mySignWhite} className={styles.visualSignature} /> */}
+				{/* <p className={styles.visualSignature}>Krzysztof Pardel</p> */}
 			</div>
 		</div>
 	);
