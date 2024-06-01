@@ -33,6 +33,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	gap: 2rem;
 	height: auto;
 	.mode {
 		display: flex;
@@ -40,8 +41,8 @@
 		align-items: center;
 		.mode-icon {
 			color: $color-second-acc;
-			height: 2rem;
-			width: 2rem;
+			height: 1.5rem;
+			width: 1.5rem;
 			&:hover {
 				color: $color-third-acc;
 			}
@@ -65,6 +66,10 @@
 			background: none;
 			border: transparent;
 			font-family: $font-alt;
+			
+			&:active {
+				scale: 1.1;
+			}
 		}
 	}
 }
@@ -107,6 +112,7 @@
 	flex-direction: column;
 	gap: 2rem;
 }
+
 //Mobile menu
 .shadow {
 	width: screen;
@@ -126,7 +132,7 @@
 	height: 100vh;
 	background: $color-fourth-acc;
 	padding: 2rem;
-	animation-duration: 500ms ease-in;
+	transition: right 1s ease-in-out;
 	z-index: 1;
 }
 .hidden {
@@ -134,7 +140,7 @@
 	right: -100%;
 	top: 0;
 	padding: 2rem;
-	animation-duration: 500ms ease-in;
+	transition: right 1s ease-in-out, opacity 1s ease-in-out;
 }
 
 .mobile-button_cont {
@@ -144,7 +150,8 @@
 	visibility: visible;
 }
 
-.mobile-button {
+.mobile-button,
+.mobile-button_inside {
 	height: 3rem;
 	width: 3rem;
 	background: $color-fourth-acc;
@@ -172,15 +179,19 @@
 		align-items: center;
 	}
 }
+.mobile-button_inside {
+	position: static;
+	margin-right: 0%;
+	margin-bottom: 0%;
+}
 .on {
 	position: fixed;
-	// top: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-right: 8.25%;
-	// margin-top: 5%;
 }
+
 .off {
 	position: fixed;
 	top: 0;

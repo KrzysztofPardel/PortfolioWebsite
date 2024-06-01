@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
 import './SCSS/Slider.scss';
@@ -8,33 +9,6 @@ import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from 'react-i
 import { PROJECT_ITEMS } from './DataArrays';
 
 const ProjectSlider = ({ totalSlides }) => {
-	// const [currentSlide, setCurrentSlide] = useState(0);
-	// const [loaded, setLoaded] = useState(false);
-	// const [sliderRef] = useKeenSlider(
-	// 	{
-	// 		loop: true,
-	// 		selector: '.carousel__cell',
-	// 		renderMode: 'custom',
-	// 		mode: 'free-snap',
-	// 		initial: 0,
-	// 		slideChanged(slider) {
-	// 			setCurrentSlide(slider.track.details.rel);
-	// 		},
-	// 		created() {
-	// 			setLoaded(true);
-	// 		},
-	// 	},
-	// 	[carousel]
-	// );
-
-	// const handlePrevSlide = (e) => {
-	// 	e.stopPropagation() || instanceRef.current?.prev();
-	// };
-
-	// const handleNextSlide = (e) => {
-	// 	e.stopPropagation() || instanceRef.current?.prev();
-	// };
-
 	const [currentSlide, setCurrentSlide] = useState(0);
 	const [loaded, setLoaded] = useState(false);
 	const [slideWidth, setSlideWidth] = useState('10rem');
@@ -64,44 +38,34 @@ const ProjectSlider = ({ totalSlides }) => {
 	});
 
 	return (
-		<div className="wrapper">
+		<div className="projects-wrapper">
 			{/* Projects */}
-			<div className="scene">
+			<div className="projects-scene">
 				<div className="container-keen_slider">
 					<div ref={sliderRef} className="keen-slider">
-						{PROJECT_ITEMS.map(
-							({ id, title, link, code, more, description, tech1, tech2, tech3, tech4, tech5, tech6 }) => {
-								return (
-									<div
-										key={id}
-										className={`keen-slider__slide number-slide ${
-											currentSlide === id ? ' keen-slider__slide--center ' : ''
-										}`}
-										style={{ width: currentSlide === id ? '20rem' : slideWidth }}
-									>
-										<h2 className="">{title}</h2>
-										<p className="">{description}</p>
+						{PROJECT_ITEMS.map(({ id, title, description, more, src }) => {
+							const isCenterSlide = id === currentSlide;
+							return (
+								<div
+									key={id}
+									className={`keen-slider__slide number-slide ${isCenterSlide ? ' keen-slider__slide--center ' : ''}`}
+									style={{ width: isCenterSlide ? '35rem' : slideWidth }}
+								>
+									<div className="slide-text_box">
+										<h2 className="slide-title">{title}</h2>
+										<p className="slide-description">
+											{description}{' '}
+											<Link href={more} className="slide-link">
+												Read more
+											</Link>
+										</p>
 									</div>
-								);
-							}
-						)}
+									<Image src={src} alt="" className="slide-image" />
+								</div>
+							);
+						})}
 					</div>
 				</div>
-				{/* <div className="container-keen_slider">
-					<div ref={sliderRef} className="keen-slider">
-						{[...Array(totalSlides).keys()].map((index) => (
-							<div
-								key={index + 1}
-								className={`keen-slider__slide number-slide ${
-									currentSlide === index ? ' keen-slider__slide--center ' : ''
-								}`}
-								style={{ width: slideWidth }}
-							>
-								{index + 1}
-							</div>
-						))}
-					</div>
-				</div> */}
 				{/* Nav */}
 				{loaded && instanceRef.current && (
 					<div className="dots">
@@ -110,9 +74,9 @@ const ProjectSlider = ({ totalSlides }) => {
 								<button
 									key={idx}
 									onClick={() => {
-										instanceRef.current?.moveToIdx(idx);
+										instanceRef.current?.moveToIdx(idx - 1);
 									}}
-									className={'dot' + (currentSlide === idx + 1 ? ' active' : '')}
+									className={'dot' + (currentSlide === idx ? ' active' : '')}
 								></button>
 							);
 						})}

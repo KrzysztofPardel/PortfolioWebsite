@@ -4,7 +4,7 @@ import React from 'react';
 const ARTICLES_DATA = [
 	{
 		h: 'Trust',
-		p: 'Being a trustworthy team member is my priority when I am in a work place. I derive great pleasure from living up to presented expectations and to be a dependable coworker. I believe that a team members who trust each other can reach far higher goals and present a better product and enjoy their work more, especially in difficult times.',
+		p: 'Being a trustworthy team member is my priority when I am in a work place. I derive great pleasure from living up to presented expectations and to be a dependable coworker. I believe that a strong team is only possible with a common trust and reliability, which results in achieved goals, better outcomes and of course, greater satisfaction and joy from work.',
 	},
 	{
 		h: 'Kindness',

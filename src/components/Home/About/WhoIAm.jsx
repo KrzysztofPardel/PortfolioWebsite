@@ -10,12 +10,11 @@ const WhoIAm = () => {
 			<div className="whoIAm-text">
 				<h2 className="text-h">Who I am</h2>
 				<p className="text-p">
-					After six months of commercial experience as a front-end developer, I am looking for more challenges and
-					opportunities to excel in JavaScript, TypeScript, React, Next or Node. Excellent command of English confirmed
-					with a C2 CPE certificate. As regards my soft skills, I am committed to diligence, integrity, as well as
-					collaboration with others. Degree in architecture is my advantage when it comes to the sense of design and
-					pragmatism as well as the usage of graphic design softwares. To solidify my knowledge of IT I am begging MEng
-					in Applied IT this fall (part-time).
+					Young front-end developer determined to excel in JavaScript, TypeScript, React, Next or Node. Excellent
+					command of English confirmed with a C2 CPE certificate. As regards my soft skills, I am committed to
+					ownership, diligence, integrity, as well as collaboration with others. Degree in architecture is my advantage
+					when it comes to the sense of design and pragmatism as well as the usage of graphic design softwares.To
+					solidify my knowledge of IT I am begging MEng in Applied IT this fall (part-time).
 				</p>
 				<div className="link-container">
 					<Link href="https://github.com/KrzysztofPardel" className="text-link">
@@ -28,6 +27,9 @@ const WhoIAm = () => {
 			</div>
 			<div className="whoIAm-visual">
 				<Image alt="Kris profile" src={myImage} className="visual-image" />
+				<div className="visual-background_figure one" />
+				<div className="visual-background_figure two" />
+				<div className="visual-background_figure three" />
 				{/* <Image alt="Kris signature" src={mySignWhite} className="visual-signature" /> */}
 				{/* <p className="visual-signature">Krzysztof Pardel</p> */}
 			</div>

@@ -10,7 +10,6 @@ const Solution = () => {
 	return (
 		<section className="solution-wrapper">
 			<h1 className="solution-header">Solution</h1>
-
 			<div className="solution-articles">
 				{ARTICLE_ITEMS.map(({ id, icon, p_text }) => {
 					return (
@@ -24,7 +23,6 @@ const Solution = () => {
 					);
 				})}
 			</div>
-
 			<div className="solution-features">
 				<h2 className="solution-features_header">Technical features</h2>
 				<ul className="solution-feature_list">

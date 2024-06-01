@@ -1,33 +1,36 @@
 'use client';
 import './Navigation.scss';
-import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/router';
+import React, { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import { Link as LinkScroll, animateScroll as scroll } from 'react-scroll';
 import { CgDarkMode } from 'react-icons/cg';
+import { IoSunnyOutline } from 'react-icons/io5';
+import { BsMoon, BsSun } from 'react-icons/bs';
 import { GrMenu, GrFormClose } from 'react-icons/gr';
 import { LuCode2 } from 'react-icons/lu';
+import Switch from '@mui/material/Switch';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const NAV_ITEMS = [{ name: 'work' }, { name: 'education' }, { name: 'about' }, { name: 'contact' }];
+// const label = { inputProps: { 'aria-label': 'Switch demo' } };
+
+const NAV_ITEMS = [
+	{ name: 'work', to: '/#work' },
+	{ name: 'education', to: '/#education' },
+	{ name: 'about', to: '/#about' },
+	{ name: 'contact', to: '/#contact' },
+];
 
 export const Navigation = () => {
 	const [nav, setNav] = useState(false);
 	const [mobile, setMobile] = useState(false);
 
-	const handleNav = () => {
+	const handleNav = useCallback(() => {
 		setNav(!nav);
-	};
-	//Zakomentowane w czasie zajęć
-	// const handleLinkClick = (name) => {
-	// 	if (router.pathname === '/') {
-	// 		scroll.scrollTo(name);
-	// 	} else {
-	// 		router.push(`/#${name}`);
-	// 	}
-	// };
+	}, [nav]);
 
+	const handleLanguage = () => {};
+	const handleMode = () => {};
 	// Make Mobile Nav Fade Down
 	useEffect(() => {
 		AOS.init({ duration: 2000 });
@@ -54,74 +57,73 @@ export const Navigation = () => {
 	return (
 		<>
 			{/* Navigation */}
-
 			<nav id="navigation" className="container-nav">
 				<div className="logo">
 					<LuCode2 className="myLogo" />
 				</div>
 				<div className="links">
-					{NAV_ITEMS.map(({ name }) => {
+					{NAV_ITEMS.map(({ name, to }) => {
 						return (
-							<Link
-								key={name}
-								href={`/#${name}`}
-								// onClick={() => handleLinkClick(name)}
-								passHref
-								className="link"
-							>
+							<Link key={name} className="link" href={to} scroll={true} duration={1000}>
 								{name}
 							</Link>
 						);
 					})}
 				</div>
-				{/* <div className="adjustments">
+				<div className="adjustments">
 					<div className="mode">
-						<CgDarkMode className="mode-icon" />
+						<BsSun className="mode-icon" />
+						<Switch onChange={handleMode} />
+						<BsMoon className="mode-icon" />
 					</div>
 					<div className="languages">
-						<button className="language eng">ENG</button>
-						<div className="line" />
-						<button className="language pol">PL</button>
+						<button className="language">ENG</button>
+						<Switch onChange={handleLanguage} />
+						<button className="language">PL</button>
 					</div>
-				</div> */}
+				</div>
 			</nav>
 
 			{/* Navigation Mobile*/}
 			{/* Pojawiający się przycisk */}
+
 			<div className={mobile ? 'mobile-button_cont visible' : 'mobile-button_cont'}>
 				<button onClick={handleNav} data-aos="fade-down" className={nav ? 'mobile-button off' : 'mobile-button on'}>
 					{nav ? 'hidden' : <GrMenu />}
 				</button>
 			</div>
-			<div className={nav ? 'container-nav_mobile' : 'hidden'}>
-				<button onClick={handleNav} className={`mobile-button ${nav ? 'on' : 'off'}`}>
-					{nav ? <GrFormClose className="icon_ss" /> : ''}
-				</button>
 
+			<div className={nav ? 'container-nav_mobile' : 'container-nav_mobile hidden'}>
+				<div className="logo">
+					<LuCode2 className="myLogo center" />
+				</div>
 				<div className="links-mobile">
 					<div className="links links-container-mobile">
-						{NAV_ITEMS.map(({ name }) => {
+						{NAV_ITEMS.map(({ name, to }) => {
 							return (
-								<LinkScroll key={name} to={name} spy smooth duration={1000} className="link-mobile">
+								<Link key={name} onClick={handleNav} href={to} scroll={true} duration={1000} className="link-mobile">
 									{name}
-								</LinkScroll>
+								</Link>
 							);
 						})}
 					</div>
 				</div>
-				<div className="logo">
-					<LuCode2 className="myLogo center" />
-				</div>
-				{/* <div className="adjustments reverse">
+
+				<div className="adjustments reverse">
 					<div className="mode">
-						<CgDarkMode className="mode-icon" />
+						<BsSun className="mode-icon" />
+						<Switch onChange={handleMode} />
+						<BsMoon className="mode-icon" />
 					</div>
 					<div className="languages">
 						<button className="language eng">ENG</button>
-						<div className="line" />
+						<Switch onChange={handleLanguage} />
 						<button className="language pol">PL</button>
 					</div>
-				</div> */}
+					<button onClick={handleNav} className="mobile-button_inside">
+						<GrFormClose className="icon_ss" />
+					</button>
+				</div>
 			</div>
 		</>
 	);

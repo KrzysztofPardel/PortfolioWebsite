@@ -84,67 +84,42 @@ export const GOALS_DATA = [
 ];
 
 //Projects - Project SLIDER
+import GiveHome from '../../../../public/assets/GiveHome.png';
+import Calendar from '../../../../public/assets/Calendar.png';
+import hourglass3 from '../../../../public/assets/hourglass3.jpg';
+
 export const PROJECT_ITEMS = [
 	{
 		id: 0,
 		title: 'Give',
-		link: 'https://give-pi.vercel.app/',
-		code: 'https://github.com/KrzysztofPardel/Give',
-		more: '',
 		description: 'Be the connection between those who HAVE and those who NEED.',
-		tech1: 'React',
-		tech2: 'TypeScript',
-		tech3: 'Redux Toolkit',
-		tech4: 'Firebase',
-		tech5: 'SCSS',
-		tech6: 'Vite',
+		more: 'projects/give',
+		src: GiveHome,
 	},
 	{
 		id: 1,
 		title: 'CRM',
-		link: '',
-		code: '',
-		more: '',
 		description: 'As part of my internship, I took was developing the fornt-end layer for a CRM for SoftwareHouse360.',
-		tech1: 'React',
-		tech2: 'TypeScript',
-		tech3: 'SCSS',
-		tech4: 'Vite',
-		tech5: 'SCRUM methodology',
-		tech6: '',
+		more: 'projects/crm',
+		src: Calendar,
 	},
 	{
 		id: 2,
 		title: 'Portfolio Website',
-		link: '',
-		code: 'https://github.com/KrzysztofPardel/PortfolioWebsite',
-		more: '',
 		description: 'Personal website showcasing my experience, skills and personality',
-		tech1: 'Next',
-		tech2: 'JavaScript',
-		tech3: 'SCSS',
-		tech4: 'Vercel',
-		tech5: '',
-		tech6: '',
+		more: 'projects/portfolio',
+		src: Calendar,
 	},
 	{
 		id: 3,
 		title: 'New Project!',
-		link: '',
-		code: '',
-		more: '',
 		description: 'Under development. Stay tuned!',
-		tech1: '',
-		tech2: '',
-		tech3: '',
-		tech4: '',
-		tech5: '',
-		tech6: '',
+		more: 'projects/elearning',
+		src: hourglass3,
 	},
 ];
 //TechStack
 import { TbApi } from 'react-icons/tb';
-
 import { FaGitAlt } from 'react-icons/fa';
 import { DiScrum } from 'react-icons/di';
 import {
@@ -252,6 +227,7 @@ export const BACK_ITEMS = [
 		technology: 'Supabase',
 	},
 ];
+
 export const GRAPHICS_ITEMS = [
 	{
 		logo: <SiFigma />,
@@ -270,6 +246,7 @@ export const GRAPHICS_ITEMS = [
 		technology: 'Affinity Publisher',
 	},
 ];
+
 export const OTHER_ITEMS = [
 	{
 		logo: <SiMicrosoft />,

@@ -75,10 +75,69 @@
 	position: relative;
 	display: flex;
 	align-items: flex-start;
+
 	.visual-image {
 		height: 20rem;
 		width: auto;
+		z-index: 1;
 	}
+	&:hover {
+		.one {
+			top: 8rem;
+			right: 6rem;
+			transition: top 0.5s ease-in-out, right 0.5s ease-in-out;
+			opacity: 0.8;
+		}
+		.two {
+			top: 8rem;
+			right: -5rem;
+			transition: top 0.5s ease-in-out, right 0.5s ease-in-out;
+			opacity: 0.8;
+		}
+		.three {
+			top: -1rem;
+			right: 3rem;
+			transition: top 0.5s ease-in-out, right 0.5s ease-in-out;
+			opacity: 0.8;
+		}
+	}
+	.visual-background_figure {
+		position: absolute;
+		width: 10rem;
+		height: 10rem;
+		border: 2px solid $color-third-acc;
+		background: $color-third-acc;
+		z-index: 0;
+		opacity: 0.3;
+		border-radius: 50%;
+	}
+	.one {
+		border: 2px solid $color-fourth-acc;
+		background: $color-fourth-acc;
+		top: 5rem;
+		right: 3rem;
+	}
+	.two {
+		background: $color-first-acc;
+		top: 5rem;
+		right: -3rem;
+		border: 2px solid $color-first-acc;
+	}
+	.three {
+		top: -2rem;
+		right: 3rem;
+	}
+
+	// .whoIAm-visual:hover .visual-background_figure one {
+	// 	top: 5rem;
+	// 	right: 4rem;
+	// }
+
+	// .whoIAm-visual:hover .visual-background_figure:not(.one) {
+	// 	top: 2rem; /* Adjust as needed for the desired effect */
+	// 	right: 2rem; /* Adjust as needed for the desired effect */
+	// }
+
 	.visual-signature {
 		position: absolute;
 		bottom: 0;

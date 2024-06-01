@@ -13,7 +13,6 @@
 	font-weight: 500;
 	height: 200px;
 	max-height: 100vh;
-	padding: 1rem;
 
 	&:hover {
 		opacity: 1;
@@ -101,8 +100,6 @@
 	margin-top: 3rem;
 	color: $color-main;
 
-	.carousel-p {
-	}
 	.carousel-btn {
 		display: flex;
 		cursor: pointer;
@@ -123,24 +120,24 @@
 }
 
 //Slider Change
-.wrapper {
+.projects-container {
+	margin-bottom: 0rem;
+}
+.projects-wrapper {
 	display: flex;
 	justify-content: center;
 	margin: 3rem 0rem;
 }
 
-.scene {
+.projects-scene {
 	width: 100%;
-	height: 250px;
-	perspective: 1000px;
-	position: relative;
 }
 
 .scene .carousel.keen-slider {
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	overflow: visible;
+	overflow: hidden; //before visible
 	transform: translateZ(-288px);
 	transform-style: preserve-3d;
 }
@@ -174,14 +171,34 @@
 	display: flex;
 	align-items: flex-start;
 	justify-content: flex-start;
-	font-size: 2rem;
+	font-size: 1.2rem;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
-	background: #46dc9e;
+	background: $color-fourth-acc;
 	background: linear-gradient(128deg, 00c372, 00c372);
+}
+.number-slide1 {
+	background: rgb(0, 79, 136);
+	background: linear-gradient(180deg, rgb(37, 128, 255) 0%, #fff36c 100%);
+}
+
+.number-slide2 {
+	background: rgb(255, 75, 64);
+	background: linear-gradient(180deg, rgb(5, 59, 255) 0%, rgb(224, 222, 222) 100%);
+}
+
+.number-slide3 {
+	background: rgb(182, 255, 64);
+	background: linear-gradient(180deg, #272343 0%, #ffd369 100%);
+}
+
+.number-slide4 {
+	background: rgb(64, 255, 242);
+	background: linear-gradient(128deg, rgba(64, 255, 242, 1) 0%, rgba(63, 188, 255, 1) 100%);
 }
 
 //bottom navigation
+
 .dots {
 	display: flex;
 	padding: 10px 0;
@@ -210,7 +227,7 @@
 //slides
 .keen-slider__slide .keen-slider__slide--center {
 	transition: width 0.3s ease;
-	width: 35rem;
+	width: 45rem;
 }
 .keen-slider__slide:not(.keen-slider__slide--center) {
 	opacity: 30%;
@@ -221,10 +238,37 @@
 .invisible {
 	visibility: hidden;
 }
+
 .visible {
 	visibility: visible;
 }
 
 .transparent {
 	opacity: 30%;
+}
+.slide-text_box {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	padding: 0.5rem;
+	.slide-title {
+		font-size: 1.5rem;
+		color: $color-second-acc;
+	}
+	.slide-description {
+		font-size: 1rem;
+	}
+	.slide-link {
+		font-size: 1rem;
+		color: $color-first-acc;
+		text-decoration: none;
+		&:hover {
+			background-color: $color-second-acc;
+		}
+	}
+}
+.slide-image {
+	width: 100%;
+	height: 100%;
+	opacity: 0.75;
 }
