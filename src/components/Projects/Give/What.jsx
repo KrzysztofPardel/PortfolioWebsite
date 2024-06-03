@@ -2,22 +2,26 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { SiGithub } from 'react-icons/si';
-import { CiLocationArrow1 } from 'react-icons/ci';
+// Slider
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
+// Data
 import { IMAGES_ITEMS, SKILL_ITEMS } from './DataArrays';
+// Styles
+import styles from './SCSS/What.module.scss';
+import { SiGithub } from 'react-icons/si';
+import { CiLocationArrow1 } from 'react-icons/ci';
 
 export function ThumbnailPlugin(mainRef) {
 	return (slider) => {
 		function removeActive() {
 			slider.slides.forEach((slide) => {
-				slide.classList.remove('active');
+				slide.classList.remove(styles.active);
 			});
 		}
 
 		function addActive(idx) {
-			slider.slides[idx].classList.add('active');
+			slider.slides[idx].classList.add(styles.active);
 		}
 
 		function addClickEvents() {
@@ -62,39 +66,37 @@ const What = () => {
 		[ThumbnailPlugin(instanceRef)]
 	);
 	return (
-		<div className="what-wrapper">
-			<div className="what-container_first">
+		<div className={styles['what-wrapper']}>
+			<div className={styles['what-container_first']}>
 				<div ref={sliderRef} className="keen-slider">
-					{IMAGES_ITEMS.map(({ id, src, alt }) => {
-						return <Image key={id} id={id} src={src} alt={alt} className="keen-slider__slide number-slide" />;
-					})}
+					{IMAGES_ITEMS.map(({ id, src, alt }) => (
+						<Image key={id} id={id} src={src} alt={alt} className="keen-slider__slide number-slide" />
+					))}
 				</div>
 
 				<div ref={thumbnailRef} className="keen-slider thumbnail">
-					{IMAGES_ITEMS.map(({ id, src, alt }) => {
-						return <Image key={id} id={id} src={src} alt={alt} className="keen-slider__slide number-slide" />;
-					})}
+					{IMAGES_ITEMS.map(({ id, src, alt }) => (
+						<Image key={id} id={id} src={src} alt={alt} className="keen-slider__slide number-slide" />
+					))}
 				</div>
 			</div>
-			<div className="what-container_second">
-				<h1 className="second-header">Give</h1>
-				<p className="second-summary">Be the connection between those who HAVE and those who NEED.</p>
-				<Link href="https://give-pi.vercel.app/" className="second-link">
-					<CiLocationArrow1 className="link-icon" />
+			<div className={styles['what-container_second']}>
+				<h1 className={styles['second-header']}>Give</h1>
+				<p className={styles['second-summary']}>Be the connection between those who HAVE and those who NEED.</p>
+				<Link href="https://give-pi.vercel.app/" className={styles['second-link']}>
+					<CiLocationArrow1 className={styles['link-icon']} />
 					See Live
 				</Link>
-				<Link href="https://github.com/KrzysztofPardel/Give" className="second-link">
-					<SiGithub className="link-icon" />
+				<Link href="https://github.com/KrzysztofPardel/Give" className={styles['second-link']}>
+					<SiGithub className={styles['link-icon']} />
 					See Github
 				</Link>
-				<div className="second-techstack_box">
-					{SKILL_ITEMS.map(({ skill }) => {
-						return (
-							<p key={skill} className="techstack-box_skill">
-								{skill}
-							</p>
-						);
-					})}
+				<div className={styles['second-techstack_box']}>
+					{SKILL_ITEMS.map(({ skill }) => (
+						<p key={skill} className={styles['techstack-box_skill']}>
+							{skill}
+						</p>
+					))}
 				</div>
 			</div>
 		</div>

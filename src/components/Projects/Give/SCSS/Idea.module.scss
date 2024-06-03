@@ -1,0 +1,65 @@
+@import '../../../../style/main.scss';
+
+.idea-wrapper {
+	position: relative;
+	margin-top: 4rem;
+	height: auto;
+}
+
+.idea-text_container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	.idea-header {
+		font-size: 2rem;
+		margin-bottom: 2rem;
+	}
+	.idea-p {
+		width: 85%;
+		font-size: 1rem;
+		margin-bottom: 1rem;
+		line-height: 1.5;
+		z-index: 15;
+	}
+}
+
+.idea-background {
+	position: absolute;
+	width: 40rem;
+	height: 20rem;
+}
+.first,
+.first-give,
+.first-crm {
+	border-radius: 15px 0 0 0;
+	top: -5%;
+	right: 40%;
+	background-color: #fff;
+	opacity: 0.1;
+	z-index: -10;
+}
+.second,
+.second-give,
+.second-crm {
+	border-radius: 0 0 15px 0;
+	top: 10%;
+	right: 5%;
+	z-index: -5;
+	background-color: #fff;
+	opacity: 0.1;
+}
+.first-give,
+.second-give {
+	background: #fad648;
+}
+.first-crm {
+	border-top: 2px solid rgb(0, 39, 107);
+	border-left: 2px solid rgb(0, 39, 107);
+	opacity: 1;
+}
+.second-crm {
+	border-right: 2px solid rgb(0, 39, 107);
+	border-bottom: 2px solid rgb(0, 39, 107);
+	opacity: 1;
+}

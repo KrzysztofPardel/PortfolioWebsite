@@ -61,8 +61,8 @@ const What = () => {
 		[ThumbnailPlugin(instanceRef)]
 	);
 	return (
-		<div className="what-wrapper">
-			<div className="what-container_first">
+		<main className="what-wrapper">
+			<section className="what-container_first">
 				<div ref={sliderRef} className="keen-slider">
 					{IMAGES_ITEMS.map(({ id, src, alt }) => {
 						return <Image key={id} id={id} src={src} alt={alt} className="keen-slider__slide number-slide" />;
@@ -74,8 +74,8 @@ const What = () => {
 						return <Image key={id} id={id} src={src} alt={alt} className="keen-slider__slide number-slide" />;
 					})}
 				</div>
-			</div>
-			<div className="what-container_second">
+			</section>
+			<section className="what-container_second">
 				<h1 className="second-header">CRM</h1>
 				<p className="second-summary">
 					Connect your clients with solutions adequte to their needs and provide a satisfactory use of products over
@@ -98,8 +98,8 @@ const What = () => {
 						);
 					})}
 				</div>
-			</div>
-		</div>
+			</section>
+		</main>
 	);
 };
 

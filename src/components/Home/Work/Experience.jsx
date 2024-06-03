@@ -9,13 +9,13 @@ import styles from './SCSS/Experience.module.scss'; // Import module styles
 
 const Experience = () => {
 	return (
-		<div id="experience" className={styles['experience-container']}>
+		<main id="experience" className={styles['experience-container']}>
 			<h1 className={styles['experience-h']}>Experience</h1>
 			<p className={styles['experience-related']}>
 				<MdImportantDevices className={styles['related-icon']} />
 				IT Related
 			</p>
-			<div className={styles['experience-box']}>
+			<section className={styles['experience-box']}>
 				{ITWORK_ITEMS.map(({ id, position, company, where, date, reference, intro, point1, point2, point3 }) => {
 					return (
 						<div key={id} className={styles['work-box']} data-aos="fade-up" data-aos-anchor-placement="top-bottom">
@@ -48,12 +48,12 @@ const Experience = () => {
 						</div>
 					);
 				})}
-			</div>
+			</section>
 			<p className={styles['experience-related']}>
 				<BsFolderCheck className={styles['related-icon']} />
 				IT Unrelated
 			</p>
-			<div className={styles['experience-box']}>
+			<section className={styles['experience-box']}>
 				{WORK_ITEMS.map(({ id, position, company, where, date, reference, intro, point1, point2, point3 }) => {
 					return (
 						<div key={id} className={styles['work-box']} data-aos="fade-down" data-aos-anchor-placement="top-bottom">
@@ -86,8 +86,8 @@ const Experience = () => {
 						</div>
 					);
 				})}
-			</div>
-		</div>
+			</section>
+		</main>
 	);
 };
 

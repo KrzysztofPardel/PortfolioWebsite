@@ -1,36 +1,33 @@
 import React from 'react';
 import Link from 'next/link';
-// import { Link as LinkScroll } from 'react-scroll';
 import { TbFileCertificate } from 'react-icons/tb';
 import { CERTIFICATIONS_ITEMS } from './DataArrays';
+import styles from './SCSS/Certifications.module.scss';
 
 const Certifications = () => {
 	return (
-		<div id="certifications" className="certifications-container">
-			<h1 className="certifications-h">Certifications</h1>
-			<div className="certification-box">
+		<main id="certifications" className={styles.certificationsContainer}>
+			<h1 className={styles.certificationsH}>Certifications</h1>
+			<section className={styles.certificationBox}>
 				{CERTIFICATIONS_ITEMS.map(({ name, date, linkHREF }) => {
 					return (
-						<div key={name} className="certification-data_box">
-							<h2 className="certification-h">
-								<TbFileCertificate className="certification-icon" />
+						<div key={name} className={styles.certificationDataBox}>
+							<h2 className={styles.certificationH}>
+								<TbFileCertificate className={styles.certificationIcon} />
 								{name}
 							</h2>
-							<p className="certification-date">{date}</p>
-							<Link href={linkHREF} className="certification-link">
+							<p className={styles.certificationDate}>{date}</p>
+							<Link href={linkHREF} className={styles.certificationLink}>
 								read more
 							</Link>
 						</div>
 					);
 				})}
-				<p className="certifications-confirmation">
+				<p className={styles.certificationsConfirmation}>
 					If you would like to see the confirmation, let me know through the Contact form below.
 				</p>
-				{/* <LinkScroll to="contact" spy smooth duration={1200} className="certifications-link">
-					Take me to Contact form
-				</LinkScroll> */}
-			</div>
-		</div>
+			</section>
+		</main>
 	);
 };
 

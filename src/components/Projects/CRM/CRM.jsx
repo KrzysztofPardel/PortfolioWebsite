@@ -7,12 +7,12 @@ import './../ProjectStyles.scss';
 
 const CRMSystem = () => {
 	return (
-		<section className="project-container">
+		<main className="project-container">
 			<What />
 			<Purpose />
 			<Solution />
 			<Takeways />
-		</section>
+		</main>
 	);
 };
 

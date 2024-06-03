@@ -1,0 +1,77 @@
+@import '../../../../style/main.scss';
+
+.challengesContainer {
+	@include part-Container;
+	flex-direction: column;
+	margin-bottom: 1rem;
+}
+
+.challengesH,
+.challengesH2,
+.challengesH3 {
+	@include section-Subheader;
+}
+
+.challengesH2 {
+	color: $color-third-acc;
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+
+.challengesMentor {
+	width: 100%;
+	height: 7rem;
+
+	.mentorBox {
+		margin-bottom: 1rem;
+
+		.mentorLink {
+			font-size: 1.2rem;
+			text-decoration: none;
+			color: $color-third-acc;
+			margin: 1rem;
+		}
+	}
+
+	.mentorDescription {
+		line-height: 1.5rem;
+	}
+}
+
+.challengesColumns {
+	width: 100%;
+	height: 12rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.columnA,
+.columnB,
+.columnC {
+	height: 10rem;
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 1rem;
+	border-right: 1px solid;
+
+	.courseLink {
+		font-size: 1.2rem;
+		text-decoration: none;
+		color: $color-first-acc;
+		border-bottom: 0.5px solid transparent;
+
+		&:hover {
+			color: $color-fourth-acc;
+			font-weight: 600;
+			border-bottom: 0.5px solid $color-fourth-acc;
+		}
+	}
+}
+
+.columnC {
+	border-right: 1px solid transparent;
+}

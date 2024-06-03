@@ -10,7 +10,7 @@ const TechStack = () => {
 	const [openAcc, setOpenAcc] = useState(true);
 
 	return (
-		<div id="techstack" className={styles['techstack-container']}>
+		<main id="techstack" className={styles['techstack-container']}>
 			<h1 className={styles['techstack-h']}>Tech Stack</h1>
 			<Accordion style={{ width: '100%' }} expanded={openAcc}>
 				<AccordionSummary
@@ -89,7 +89,7 @@ const TechStack = () => {
 					})}
 				</AccordionDetails>
 			</Accordion>
-		</div>
+		</main>
 	);
 };
 

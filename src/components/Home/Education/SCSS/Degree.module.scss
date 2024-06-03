@@ -1,0 +1,50 @@
+@import '../../../../style/main.scss';
+
+// Degrees
+.degreesContainer {
+	@include part-Container;
+	flex-direction: column;
+}
+
+.degreesH {
+	@include section-Subheader;
+}
+
+.degreeBox {
+	.degreeTitle {
+		font-size: 1.2rem;
+		font-weight: 600;
+		margin-bottom: 1.5rem;
+		color: $color-third-acc;
+		border-left: 1px solid $color-fourth-acc;
+		padding-left: 1rem;
+	}
+
+	.whereWhenBox {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 1.5rem;
+		border-bottom: 1px solid $color-fourth-acc;
+		padding: 0.5rem 0;
+	}
+
+	.degreeDescription {
+		line-height: 2rem;
+		margin-bottom: 1.5rem;
+		border-left: 1px solid $color-fourth-acc;
+		padding: 1rem;
+	}
+
+	.degreeSkills {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		opacity: 0.5;
+
+		.degreeSkill {
+			display: block;
+		}
+	}
+}

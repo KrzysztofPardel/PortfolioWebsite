@@ -6,8 +6,8 @@ import styles from './WhoIAm.module.scss';
 
 const WhoIAm = () => {
 	return (
-		<div className={styles.whoIAmContainer}>
-			<div className={styles.whoIAmText}>
+		<main className={styles.whoIAmContainer}>
+			<section className={styles.whoIAmText}>
 				<h2 className={styles.textH}>Who I Am</h2>
 				<p className={styles.textP}>
 					Young front-end developer determined to excel in JavaScript, TypeScript, React, Next or Node. Excellent
@@ -24,16 +24,16 @@ const WhoIAm = () => {
 						LinkedIn
 					</Link>
 				</div>
-			</div>
-			<div className={styles.whoIAmVisual}>
+			</section>
+			<section className={styles.whoIAmVisual}>
 				<Image alt="Kris profile" src={myImage} className={styles.visualImage} />
 				<div className={`${styles.visualBackgroundFigure} ${styles.one}`} />
 				<div className={`${styles.visualBackgroundFigure} ${styles.two}`} />
 				<div className={`${styles.visualBackgroundFigure} ${styles.three}`} />
 				{/* <Image alt="Kris signature" src={mySignWhite} className={styles.visualSignature} /> */}
 				{/* <p className={styles.visualSignature}>Krzysztof Pardel</p> */}
-			</div>
-		</div>
+			</section>
+		</main>
 	);
 };
 

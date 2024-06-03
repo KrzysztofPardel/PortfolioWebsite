@@ -18,7 +18,7 @@ const ARTICLES_DATA = [
 
 const Values = () => {
 	return (
-		<div id="values" className={styles.aboutContainer}>
+		<main id="values" className={styles.aboutContainer}>
 			{ARTICLES_DATA.map(({ h, p }) => {
 				return (
 					<div key={h} className={styles.articleContainer}>
@@ -27,7 +27,7 @@ const Values = () => {
 					</div>
 				);
 			})}
-		</div>
+		</main>
 	);
 };
 

@@ -1,0 +1,108 @@
+@import '../../../../style/main.scss';
+
+.coursesContainer {
+	@include part-Container;
+	flex-direction: column;
+	margin-bottom: 2rem;
+}
+
+.coursesH {
+	@include section-Subheader;
+}
+
+.coursesH2 {
+	font-size: 1.5rem;
+	text-align: end;
+	border: 1px solid $color-second-acc;
+	border-radius: 10px;
+	padding: 0.75rem;
+	color: $color-first-acc;
+}
+
+.majorCoursesBox {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+	border: 2px solid transparent;
+	border-radius: 10px;
+	padding: 1rem;
+	transition: border 0.3s ease-in-out;
+
+	&:hover {
+		border: 2px solid $color-third-acc;
+		background-color: $color-main;
+	}
+}
+
+.courseDataBox {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin-bottom: 3rem;
+
+	.dataBoxTop {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.courseH {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 0.5rem;
+			font-size: 1.5rem;
+			font-weight: 600;
+			color: $color-third-acc;
+		}
+
+		.courseLogo {
+			color: $color-fourth-acc;
+		}
+
+		.courseDate {
+			font-size: 1rem;
+		}
+
+		.courseLink {
+			text-decoration: none;
+			border-bottom: 1px solid $color-first-acc;
+			padding-bottom: 0.25rem;
+			color: $color-first-acc;
+			opacity: 0.75;
+		}
+	}
+
+	.courseDescription {
+		width: 100%;
+	}
+
+	.courseSkills {
+		display: flex;
+		justify-content: space-around;
+		color: $color-fourth-acc;
+		opacity: 0.4;
+
+		.courseSkill {
+			display: block;
+		}
+	}
+}
+
+.minorCoursesBox {
+	.courseH2 {
+		width: 90%;
+		font-size: 1.2rem;
+		font-weight: 400;
+		color: $color-third-acc;
+	}
+}
+
+.courseDescription {
+	width: 75%;
+	text-align: center;
+	text-decoration: double;
+	line-height: 2rem;
+}

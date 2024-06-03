@@ -89,26 +89,28 @@ import { TfiStatsUp } from 'react-icons/tfi';
 import { CiViewTimeline } from 'react-icons/ci';
 import { MdFormatListBulletedAdd } from 'react-icons/md';
 import { IoPeopleSharp } from 'react-icons/io5';
+import styles from './SCSS/Solution.module.scss';
+
 export const ARTICLE_ITEMS = [
 	{
 		id: 1,
-		icon: <IoPeopleSharp className="article-icon" />,
+		icon: <IoPeopleSharp className={styles['article-icon']} />,
 		p_text: 'Create an app which connects people willing to meet the need in this area.',
 	},
 	{
 		id: 2,
-		icon: <MdFormatListBulletedAdd className="article-icon" />,
+		icon: <MdFormatListBulletedAdd className={styles['article-icon']} />,
 		p_text: 'Provide a way for users to donate or to create collection events.',
 	},
 	{
 		id: 3,
-		icon: <TfiStatsUp className="article-icon" />,
+		icon: <TfiStatsUp className={styles['article-icon']} />,
 		p_text: 'Allow users to track their porgress in helping so they feel empowered to make a bigger difference.',
 	},
 	{
 		id: 4,
-		icon: <CiViewTimeline className="article-icon" />,
-		p_text: 'Let users enjoy the process of giving thanks to intuitive UI.',
+		icon: <CiViewTimeline className={styles['article-icon']} />,
+		p_text: 'Let the intuitive UI allow your users to enjoy the process of giving.',
 	},
 ];
 

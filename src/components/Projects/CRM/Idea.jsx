@@ -3,8 +3,8 @@ import { PURPOSE_TEXT } from './DataArrays';
 
 const Idea = () => {
 	return (
-		<div className="idea-wrapper">
-			<div className="idea-text_container">
+		<main className="idea-wrapper">
+			<section className="idea-text_container">
 				<h1 className="idea-header">Idea behing the project</h1>
 				{PURPOSE_TEXT.map(({ id, text }) => {
 					return (
@@ -13,7 +13,7 @@ const Idea = () => {
 						</p>
 					);
 				})}
-			</div>
+			</section>
 			<div
 				className="idea-background first-crm"
 				data-aos="fade-right"
@@ -26,7 +26,7 @@ const Idea = () => {
 				data-aos-offset="150"
 				data-aos-easing="ease-in-sine"
 			/>
-		</div>
+		</main>
 	);
 };
 

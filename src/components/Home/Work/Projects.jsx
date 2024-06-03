@@ -5,12 +5,12 @@ import styles from './SCSS/Projects.module.scss'; // Import module styles
 
 const Projects = () => {
 	return (
-		<div id="projects" className={styles['projects-container']}>
+		<main id="projects" className={styles['projects-container']}>
 			<h1 className={styles['projects-h']}>Projects</h1>
-			<div className={styles['projects-slider']}>
+			<section className={styles['projects-slider']}>
 				<ProjectSlider totalSlides={PROJECT_ITEMS.length} />
-			</div>
-		</div>
+			</section>
+		</main>
 	);
 };
 

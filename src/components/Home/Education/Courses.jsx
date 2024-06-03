@@ -1,59 +1,55 @@
 import React from 'react';
 import Link from 'next/link';
 import { MAJOR_COURSES, MINOR_COURSES } from './DataArrays';
+import styles from './SCSS/Courses.module.scss';
 
 const Courses = () => {
 	return (
-		<div id="courses" className="courses-container">
-			<h1 className="courses-h">Courses</h1>
-			<h2 className="courses-h2">Major</h2>
-			<div className="major-courses_box">
+		<main id="courses" className={styles.coursesContainer}>
+			<h1 className={styles.coursesH}>Courses</h1>
+			<h2 className={styles.coursesH2}>Major</h2>
+			<section className={styles.majorCoursesBox}>
 				{MAJOR_COURSES.map(({ logo, name, date, link, description, skill1, skill2, skill3, skill4 }) => {
 					return (
-						<div key={name} className="course-data_box">
-							<div className="data-box_top">
-								<h2 className="course-h">
-									<span className="course-logo">{logo}</span>
+						<div key={name} className={styles.courseDataBox}>
+							<div className={styles.dataBoxTop}>
+								<h2 className={styles.courseH}>
+									<span className={styles.courseLogo}>{logo}</span>
 									{name}
 								</h2>
-								<p className="course-date">{date}</p>
-								<Link href={link} className="course-link">
+								<p className={styles.courseDate}>{date}</p>
+								<Link href={link} className={styles.courseLink}>
 									read more
 								</Link>
 							</div>
-							<p className="course-description">{description}</p>
-							<div className="course-skills">
-								<span className="course-skill">{skill1}</span>
-								<span className="course-skill">{skill2}</span>
-								<span className="course-skill">{skill3}</span>
-								<span className="course-skill">{skill4}</span>
+							<p className={styles.courseDescription}>{description}</p>
+							<div className={styles.courseSkills}>
+								<span className={styles.courseSkill}>{skill1}</span>
+								<span className={styles.courseSkill}>{skill2}</span>
+								<span className={styles.courseSkill}>{skill3}</span>
+								<span className={styles.courseSkill}>{skill4}</span>
 							</div>
 						</div>
 					);
 				})}
-			</div>
-			<h2 className="courses-h2">Minor</h2>
-			<div className="minor-courses_box">
+			</section>
+			<h2 className={styles.coursesH2}>Minor</h2>
+			<section className={styles.minorCoursesBox}>
 				{MINOR_COURSES.map(({ name, link, description, takeway1, takeway2, takeway3 }) => {
 					return (
-						<div key={name} className="course-data_box">
-							<div className="data-box_top">
-								<h2 className="course-h2">{name}</h2>
-								<Link href={link} className="course-link">
+						<div key={name} className={styles.courseDataBox}>
+							<div className={styles.dataBoxTop}>
+								<h2 className={styles.courseH2}>{name}</h2>
+								<Link href={link} className={styles.courseLink}>
 									read more
 								</Link>
 							</div>
-							<p className="course-description">{description}</p>
-							{/* <div className="course-takeaways">
-								<span className="course-takeaway">{takeway1}</span>
-								<span className="course-takeaway">{takeway2}</span>
-								<span className="course-takeaway">{takeway3}</span>
-							</div> */}
+							<p className={styles.courseDescription}>{description}</p>
 						</div>
 					);
 				})}
-			</div>
-		</div>
+			</section>
+		</main>
 	);
 };
 

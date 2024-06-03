@@ -3,14 +3,14 @@ import React from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { GOALS_DATA } from './DataArrays';
-import styles from './SCSS/Goals.module.scss'; 
+import styles from './SCSS/Goals.module.scss';
 
 const Goals = () => {
 	return (
-		<div id="goals" className={styles['goals-container']}>
+		<main id="goals" className={styles['goals-container']}>
 			<h1 className={styles['goals-h']}>Goals</h1>
 			<h2 className={styles['goals-h2']}>Simple, but clear.</h2>
-			<div className={styles['goals-boxes']}>
+			<section className={styles['goals-boxes']}>
 				{GOALS_DATA.map(({ id, p, data }) => {
 					return (
 						<div
@@ -26,8 +26,8 @@ const Goals = () => {
 						</div>
 					);
 				})}
-			</div>
-		</div>
+			</section>
+		</main>
 	);
 };
 

@@ -37,7 +37,7 @@ const ProjectSlider = ({ totalSlides }) => {
 	});
 
 	return (
-		<div className="projects-wrapper">
+		<main className="projects-wrapper">
 			{/* Projects */}
 			<div className="projects-scene">
 				<div className="container-keen_slider">
@@ -82,7 +82,7 @@ const ProjectSlider = ({ totalSlides }) => {
 					</div>
 				)}
 			</div>
-		</div>
+		</main>
 	);
 };
 
