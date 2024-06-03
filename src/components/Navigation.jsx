@@ -1,15 +1,19 @@
 'use client';
-import React, { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
+//Hooks
+import React, { useState, useEffect, useCallback } from 'react';
+//Styles
+import styles from './Navigation.module.scss';
 import { CgDarkMode } from 'react-icons/cg';
 import { IoSunnyOutline } from 'react-icons/io5';
 import { BsMoon, BsSun } from 'react-icons/bs';
 import { GrMenu, GrFormClose } from 'react-icons/gr';
 import { LuCode2 } from 'react-icons/lu';
+//MUI
 import Switch from '@mui/material/Switch';
+//AOS
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import styles from './Navigation.module.scss'; // Import SCSS module
 
 const NAV_ITEMS = [
 	{ name: 'work', to: '/#work' },

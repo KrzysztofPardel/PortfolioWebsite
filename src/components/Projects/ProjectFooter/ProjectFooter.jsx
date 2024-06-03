@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import { Link as LinkScroll, animateScroll as scroll } from 'react-scroll';
+//Styles
 import { HiOutlinePaperAirplane } from 'react-icons/hi';
 import './ProjectFooter.scss';
 

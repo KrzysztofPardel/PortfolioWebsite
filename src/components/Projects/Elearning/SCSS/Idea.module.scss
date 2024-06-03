@@ -1,0 +1,25 @@
+@import '../../../../style/main.scss';
+
+.idea-wrapper {
+	position: relative;
+	margin-top: 4rem;
+	height: auto;
+}
+
+.idea-text_container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	.idea-header {
+		font-size: 2rem;
+		margin-bottom: 2rem;
+	}
+	.idea-p {
+		width: 85%;
+		font-size: 1rem;
+		margin-bottom: 1rem;
+		line-height: 1.5;
+		z-index: 15;
+	}
+}

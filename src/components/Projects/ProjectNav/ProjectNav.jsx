@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+//Styles
 import './ProjectNav.scss';
 
 const PROJECTNAV_ITEMS = [

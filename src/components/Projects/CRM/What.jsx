@@ -1,45 +1,15 @@
 'use client';
 import Link from 'next/link';
 import Image from 'next/image';
+//Styles
+import './../ProjectStyles.scss';
 import { CiLocationArrow1 } from 'react-icons/ci';
+//Data
+import { IMAGES_ITEMS, SKILL_ITEMS } from './DataArrays';
+//Slider
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
-import './../ProjectStyles.scss';
-import { IMAGES_ITEMS, SKILL_ITEMS } from './DataArrays';
-
-export function ThumbnailPlugin(mainRef) {
-	return (slider) => {
-		function removeActive() {
-			slider.slides.forEach((slide) => {
-				slide.classList.remove('active');
-			});
-		}
-
-		function addActive(idx) {
-			slider.slides[idx].classList.add('active');
-		}
-
-		function addClickEvents() {
-			slider.slides.forEach((slide, idx) => {
-				slide.addEventListener('click', () => {
-					if (mainRef.current) mainRef.current.moveToIdx(idx);
-				});
-			});
-		}
-
-		slider.on('created', () => {
-			if (!mainRef.current) return;
-			addActive(slider.track.details.rel);
-			addClickEvents();
-			mainRef.current.on('animationStarted', (main) => {
-				removeActive();
-				const next = main.animator.targetIdx || 0;
-				addActive(main.track.absToRel(next));
-				slider.moveToIdx(Math.min(slider.track.details.maxIdx, next));
-			});
-		});
-	};
-}
+import ThumbnailPlugin from './../Give/What';
 
 const What = () => {
 	const [sliderRef, instanceRef] = useKeenSlider({
@@ -81,10 +51,6 @@ const What = () => {
 					Connect your clients with solutions adequte to their needs and provide a satisfactory use of products over
 					time.
 				</p>
-				{/* <Link href="" className="second-link">
-					<CiLocationArrow1 className="link-icon" />
-					See the mockup version
-				</Link> */}
 				<Link href="https://360softwarehouse.pl/" className="second-link">
 					<CiLocationArrow1 className="link-icon" />
 					360SoftwareHouse

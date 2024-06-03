@@ -1,0 +1,112 @@
+// solution.module.scss
+
+.solution-wrapper {
+	background-color: $color-second-acc;
+	border-radius: 15px;
+	margin-top: 6rem;
+	padding: 1rem;
+}
+
+.solution-wrapper_crm {
+	border: 2px solid $color-second-acc;
+	background-color: $color-fourth-acc;
+
+	border-radius: 15px;
+	margin-top: 6rem;
+	padding: 1rem;
+}
+
+.solution-header {
+	font-size: 2rem;
+	margin-bottom: 2rem;
+	color: #fad648;
+}
+
+.crm-header {
+	color: $color-second-acc;
+}
+
+.solution-note {
+	margin: 2rem;
+	font-size: 1rem;
+	color: hsl(0, 0%, 50%);
+}
+.solution-articles {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 1rem;
+
+	.solution-article {
+		width: 15%;
+		height: 18rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+		opacity: 1;
+		border-radius: 10px;
+		padding: 1rem;
+
+		.article-icon {
+			font-size: 8rem;
+			color: $color-first-acc;
+		}
+		.article-text {
+			color: $color-first-acc;
+			line-height: 1.5;
+			font-size: 1rem;
+			text-align: center;
+		}
+	}
+
+	.article-arrow {
+		font-size: 2rem;
+		display: flex;
+		align-items: center;
+		border: 1px solid $color-first-acc;
+		border-radius: 50%;
+		color: #fad648;
+		opacity: 0.5;
+	}
+	.article-arrow:last-child {
+		display: none;
+	}
+}
+
+.solution-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	gap: 1rem 1rem;
+	margin: 2rem;
+
+	.grid-article {
+		padding: 1rem;
+		color: $color-main;
+		border: 2px solid;
+	}
+	.grid-article_header {
+		font-weight: 600;
+		color: $color-third-acc;
+	}
+
+	.grid-article_paragraph {
+		line-height: 1.5rem;
+	}
+
+	.article-1 {
+		@include article-styles(1 / span 3, 1 / span 1, $color-fourth-acc);
+	}
+
+	.article-2 {
+		@include article-styles(4 / span 1, 1 / span 3, $color-fourth-acc);
+	}
+
+	.article-3 {
+		@include article-styles(1 / span 1, 2 / span 2, $color-fourth-acc);
+	}
+	.article-4 {
+		@include article-styles(2 / span 2, 2 / span 2, rgb(0, 39, 107), rgba($color-fourth-acc, 0.25), $
