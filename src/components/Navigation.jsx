@@ -80,22 +80,16 @@ export const Navigation = () => {
 					))}
 				</div>
 				<div className={styles.adjustments}>
-					{' '}
-					{/* Use styles from SCSS module */}
-					<div className={styles.mode}>
-						{' '}
-						{/* Use styles from SCSS module */}
-						<BsSun className={styles.modeIcon} /> {/* Use styles from SCSS module */}
+					{/* <div className={styles.mode}>
+						<BsSun className={styles.modeIcon} />
 						<Switch onChange={handleMode} />
-						<BsMoon className={styles.modeIcon} /> {/* Use styles from SCSS module */}
+						<BsMoon className={styles.modeIcon} />
 					</div>
 					<div className={styles.languages}>
-						{' '}
-						{/* Use styles from SCSS module */}
-						<button className={styles.language}>ENG</button> {/* Use styles from SCSS module */}
+						<button className={styles.language}>ENG</button>
 						<Switch onChange={handleLanguage} />
-						<button className={styles.language}>PL</button> {/* Use styles from SCSS module */}
-					</div>
+						<button className={styles.language}>PL</button>
+					</div> */}
 				</div>
 			</nav>
 
@@ -130,7 +124,7 @@ export const Navigation = () => {
 					</div>
 				</div>
 				<div className={`${styles.adjustments} ${styles.reverse}`}>
-					<div className={styles.mode}>
+					{/* <div className={styles.mode}>
 						<BsSun className={styles.modeIcon} />
 						<Switch onChange={handleMode} />
 						<BsMoon className={styles.modeIcon} />
@@ -139,7 +133,7 @@ export const Navigation = () => {
 						<button className={`${styles.language} eng`}>ENG</button>
 						<Switch onChange={handleLanguage} />
 						<button className={`${styles.language} pol`}>PL</button>
-					</div>
+					</div> */}
 					<button onClick={handleNav} className={styles.mobileButtonInside}>
 						<GrFormClose className={styles.iconSs} />
 					</button>

@@ -1,0 +1,93 @@
+@import '../../../../style/main.scss';
+
+//What
+.what-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	gap: 2rem;
+}
+
+.what-container_first {
+	width: 50%;
+	.what-image_temporary {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.what-container_second {
+	width: 50%;
+	.second-header {
+		@include section-Subheader;
+		font-size: 4rem;
+	}
+	.second-summary {
+		font-size: 1.2rem;
+		margin-bottom: 2rem;
+		line-height: 1.5;
+	}
+	.second-note {
+		text-decoration: underline;
+		line-height: 1.2;
+		color: rgb(115, 115, 115);
+	}
+
+	.second-link {
+		width: 15rem;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		text-decoration: none;
+		color: $color-second-acc;
+		font-weight: 300;
+		&:hover {
+			font-weight: 600;
+			box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.15);
+			border-radius: 15px;
+		}
+	}
+	.link-icon {
+		font-size: 2rem;
+		margin: 1rem;
+		color: $color-second-acc;
+	}
+}
+.second-techstack_box {
+	width: 100%;
+	height: 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 1rem 0rem 1rem 1rem;
+	.techstack-box_skill {
+	}
+}
+
+//Slider
+.number-slide {
+	background: grey;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 50px;
+	color: #fff;
+	font-weight: 500;
+	height: 300px;
+	max-height: 100vh;
+}
+
+.thumbnail .keen-slider__slide {
+	font-size: 30px;
+	margin-top: 10px;
+	height: 100px;
+}
+
+.thumbnail .keen-slider__slide {
+	cursor: pointer;
+}
+
+.thumbnail .keen-slider__slide.active {
+	border: 2px dashed black;
+}

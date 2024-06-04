@@ -1,6 +1,6 @@
 @import '../../../style/main.scss';
 
-.porjectNav-container {
+.projectNav-container {
 	width: 100%;
 	height: 3rem;
 	display: flex;
@@ -8,7 +8,8 @@
 	align-items: center;
 	gap: 10%;
 	border-bottom: 0.5px solid;
-    
+	background-color: aliceblue;
+
 	.projectnav-link {
 		cursor: pointer;
 		font-family: $font-base;

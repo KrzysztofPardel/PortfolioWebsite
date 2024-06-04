@@ -1,4 +1,4 @@
-// solution.module.scss
+@import '../../../../style/main.scss';
 
 .solution-wrapper {
 	background-color: $color-second-acc;
@@ -10,7 +10,6 @@
 .solution-wrapper_crm {
 	border: 2px solid $color-second-acc;
 	background-color: $color-fourth-acc;
-
 	border-radius: 15px;
 	margin-top: 6rem;
 	padding: 1rem;
@@ -31,6 +30,7 @@
 	font-size: 1rem;
 	color: hsl(0, 0%, 50%);
 }
+
 .solution-articles {
 	width: 100%;
 	display: flex;
@@ -54,6 +54,7 @@
 			font-size: 8rem;
 			color: $color-first-acc;
 		}
+
 		.article-text {
 			color: $color-first-acc;
 			line-height: 1.5;
@@ -71,6 +72,7 @@
 		color: #fad648;
 		opacity: 0.5;
 	}
+
 	.article-arrow:last-child {
 		display: none;
 	}
@@ -87,14 +89,15 @@
 		padding: 1rem;
 		color: $color-main;
 		border: 2px solid;
-	}
-	.grid-article_header {
-		font-weight: 600;
-		color: $color-third-acc;
-	}
 
-	.grid-article_paragraph {
-		line-height: 1.5rem;
+		.grid-article_header {
+			font-weight: 600;
+			color: #fad648;
+		}
+
+		.grid-article_paragraph {
+			line-height: 1.5rem;
+		}
 	}
 
 	.article-1 {
@@ -108,5 +111,47 @@
 	.article-3 {
 		@include article-styles(1 / span 1, 2 / span 2, $color-fourth-acc);
 	}
+
 	.article-4 {
-		@include article-styles(2 / span 2, 2 / span 2, rgb(0, 39, 107), rgba($color-fourth-acc, 0.25), $
+		@include article-styles(2 / span 2, 2 / span 2, rgb(0, 39, 107), rgba($color-fourth-acc, 0.25), $color-second-acc);
+	}
+}
+
+.solution-features {
+	padding: 0rem 4rem 4rem 4rem;
+
+	.solution-features_header {
+		font-size: 1.5rem;
+		color: $color-fourth-acc;
+		margin-bottom: 2rem;
+	}
+
+	.solution-feature_list {
+		display: flex;
+		flex-direction: column;
+		justify-items: flex-start;
+		align-items: flex-start;
+		gap: 1rem;
+
+		.solution-list_item {
+			display: flex;
+			height: 4rem;
+			align-items: center;
+			gap: 1rem;
+			color: $color-fourth-acc;
+			opacity: 0.6;
+			font-size: 1.1rem;
+
+			.solution-feature_icon {
+				height: 2rem;
+				width: 2rem;
+				font-size: 2rem;
+				color: $color-third-acc;
+			}
+
+			.solution-feature {
+				line-height: 1.2;
+			}
+		}
+	}
+}

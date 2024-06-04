@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 //Styles
-import './ProjectNav.scss';
+import styles from './ProjectNav.module.scss';
 
 const PROJECTNAV_ITEMS = [
 	{
@@ -23,10 +23,10 @@ const PROJECTNAV_ITEMS = [
 
 const PojectNav = () => {
 	return (
-		<nav id="projectnav" className="porjectNav-container">
+		<nav id="projectnav" className={styles['projectNav-container']}>
 			{PROJECTNAV_ITEMS.map(({ id, name, link }) => {
 				return (
-					<Link key={id} href={link} className="projectnav-link">
+					<Link key={id} href={link} className={styles['projectnav-link']}>
 						{name}
 					</Link>
 				);

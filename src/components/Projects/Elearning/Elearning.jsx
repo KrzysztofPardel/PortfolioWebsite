@@ -1,7 +1,7 @@
 import React from 'react';
 import What from './What';
 import Purpose from './Idea';
-import Takeways from './Takeways';
+import Takeways from './Takeaways';
 import Solution from './Solution';
 
 const Elearning = () => {
