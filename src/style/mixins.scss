@@ -30,7 +30,16 @@
 	}
 }
 // @include xl2 {}
-
+@mixin container {
+	background: hsl(248, 31%, 20%, 0.9);
+	max-width: 1180px;
+	height: auto;
+	margin: auto;
+	padding: 2rem;
+	font-family: $font-base;
+	z-index: 50;
+	@content;
+}
 @mixin part-Container {
 	height: auto;
 	width: auto;

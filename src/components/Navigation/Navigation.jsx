@@ -14,6 +14,7 @@ import Switch from '@mui/material/Switch';
 //AOS
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { redirect } from 'next/dist/server/api-utils';
 
 const NAV_ITEMS = [
 	{ name: 'work', to: '/#work' },
@@ -63,18 +64,18 @@ export const Navigation = () => {
 	return (
 		<>
 			<nav id="navigation" className={styles.containerNav}>
-				{' '}
-				{/* Use styles from SCSS module */}
-				<div className={styles.logo}>
-					{' '}
-					{/* Use styles from SCSS module */}
-					<LuCode2 className={styles.myLogo} /> {/* Use styles from SCSS module */}
-				</div>
+				<Link className={styles.logo} href="/">
+					<LuCode2 className={styles.myLogo} />
+				</Link>
 				<div className={styles.links}>
-					{' '}
-					{/* Use styles from SCSS module */}
 					{NAV_ITEMS.map(({ name, to }) => (
-						<Link key={name} className={styles.link} href={to} scroll={true} duration={1000}>
+						<Link
+							key={name}
+							className={styles.link}
+							href={to}
+							scroll={true}
+							// duration={1000}
+						>
 							{name}
 						</Link>
 					))}
@@ -115,7 +116,7 @@ export const Navigation = () => {
 								onClick={handleNav}
 								href={to}
 								scroll={true}
-								duration={1000}
+								// duration={1000}
 								className={styles.linkMobile}
 							>
 								{name}

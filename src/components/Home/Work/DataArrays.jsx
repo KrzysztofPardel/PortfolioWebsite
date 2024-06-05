@@ -105,18 +105,18 @@ export const PROJECT_ITEMS = [
 	},
 	{
 		id: 2,
-		title: 'Portfolio Website',
-		description: 'Personal website showcasing my experience, skills and personality',
-		more: 'projects/portfolio',
-		src: Calendar,
-	},
-	{
-		id: 3,
 		title: 'New Project!',
 		description: 'Under development. Stay tuned!',
 		more: 'projects/elearning',
 		src: hourglass3,
 	},
+	// {
+	// 	id: 3,
+	// 	title: 'Portfolio Website',
+	// 	description: 'Personal website showcasing my experience, skills and personality',
+	// 	more: 'projects/portfolio',
+	// 	src: Calendar,
+	// },
 ];
 //TechStack
 import { TbApi } from 'react-icons/tb';

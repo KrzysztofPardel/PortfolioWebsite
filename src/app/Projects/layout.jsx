@@ -1,5 +1,5 @@
 import React from 'react';
-import Navigation from '@/components/Navigation';
+import Navigation from '@/components/Navigation/Navigation';
 import PojectNav from '@/components/Projects/ProjectNav/ProjectNav';
 import ProjectFooter from '@/components/Projects/ProjectFooter/ProjectFooter';
 

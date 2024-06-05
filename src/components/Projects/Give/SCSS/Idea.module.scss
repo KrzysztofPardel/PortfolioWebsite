@@ -28,6 +28,7 @@
 	position: absolute;
 	width: 40rem;
 	height: 20rem;
+	opacity: 0.9;
 }
 .first,
 .first-give,
@@ -36,18 +37,17 @@
 	top: -5%;
 	right: 40%;
 	background-color: #fff;
-	opacity: 0.1;
+	// opacity: 0.1;
 	z-index: -10;
 }
 .second,
 .second-give,
 .second-crm {
 	border-radius: 0 0 15px 0;
-	top: 10%;
+	top: 15%;
 	right: 5%;
 	z-index: -5;
 	background-color: #fff;
-	opacity: 0.1;
 }
 .first-give,
 .second-give {

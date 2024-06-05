@@ -47,7 +47,7 @@ const ProjectSlider = ({ totalSlides }) => {
 							return (
 								<div
 									key={id}
-									className={`keen-slider__slide number-slide ${isCenterSlide ? ' keen-slider__slide--center ' : ''}`}
+									className={`keen-slider__slide number-slide ${isCenterSlide ? 'keen-slider__slide--center' : ''}`}
 									style={{ width: isCenterSlide ? '35rem' : slideWidth }}
 								>
 									<div className="slide-text_box">
@@ -55,7 +55,7 @@ const ProjectSlider = ({ totalSlides }) => {
 										<p className="slide-description">
 											{description}{' '}
 											<Link href={more} className="slide-link">
-												Read more
+												See more
 											</Link>
 										</p>
 									</div>

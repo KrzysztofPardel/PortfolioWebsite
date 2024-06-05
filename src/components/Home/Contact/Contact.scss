@@ -1,9 +1,10 @@
 @import '../../../style/main.scss';
+@import '../HomeGeneral.module.scss';
 
 .container-contact_form {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-end;
 	font-family: $font-alt;
 
 	.line {
@@ -15,9 +16,7 @@
 }
 .contact_form_small_cont {
 	width: 100%;
-	// display: flex;
-	// flex-direction: column;
-	// justify-content: space-around;
+
 	.contact_form_title {
 		color: $color-first-acc;
 		font-size: 2rem;
@@ -60,8 +59,8 @@
 	.submit {
 		width: auto;
 		padding: 0.5rem 1rem;
-		margin: 0.5rem;
-		margin-left: 0;
+		margin-top: 0.5rem;
+		margin-right: 0.5rem;
 		border: 1px solid $color-main;
 		border-radius: 5px;
 		font-family: $font-alt;

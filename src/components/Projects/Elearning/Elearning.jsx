@@ -1,12 +1,11 @@
 import React from 'react';
 import What from './What';
 import Purpose from './Idea';
-import Takeways from './Takeaways';
-import Solution from './Solution';
+import styles from '../General.module.scss';
 
 const Elearning = () => {
 	return (
-		<section className="project-container">
+		<section className={styles['project-container']}>
 			<What />
 			<Purpose />
 		</section>

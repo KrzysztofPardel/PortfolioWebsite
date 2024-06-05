@@ -3,11 +3,12 @@ import What from './What';
 import Purpose from './Idea';
 import Solution from './Solution';
 import Takeways from './Takeaways';
-import './../ProjectStyles.scss';
+import styles from '../General.module.scss';
+import './../SliderStyles.scss';
 
 const CRMSystem = () => {
 	return (
-		<main className="project-container">
+		<main className={styles['project-container']}>
 			<What />
 			<Purpose />
 			<Solution />

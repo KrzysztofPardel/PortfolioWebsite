@@ -1,0 +1,11 @@
+@import '../../style/main.scss';
+
+.project-container {
+	background: transparent;
+	max-width: 1180px;
+	height: auto;
+	margin: auto;
+	padding: 2rem;
+	font-family: $font-base;
+	z-index: 50;
+}
