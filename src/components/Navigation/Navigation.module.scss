@@ -1,16 +1,20 @@
 @import '../../style/main.scss';
 
-.containerNav {
+.container-nav {
 	background: $color-fourth-acc;
 	max-width: screen;
 	height: 10vh;
 	display: flex;
-	justify-content: flex-start;
-	gap: 25%;
+	justify-content: space-between;
+	gap: 5%;
 	margin: auto;
 	padding: 0.5rem;
 	font-family: $font-base;
 	z-index: 10;
+
+	@include lg {
+		gap: 15%;
+	}
 }
 
 .logo {
@@ -19,7 +23,7 @@
 	align-items: center;
 	justify-content: center;
 	color: $color-second-acc;
-	.myLogo {
+	.my-logo {
 		height: 4rem;
 		width: auto;
 		margin-left: 2rem;
@@ -35,15 +39,24 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 2rem;
+	flex-direction: column;
 	height: auto;
+	visibility: hidden;
+
+	@include md {
+		visibility: visible;
+	}
+	@include xl {
+		flex-direction: row;
+		gap: 1.5rem;
+	}
 
 	.mode {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 
-		.modeIcon {
+		.mode-icon {
 			color: $color-second-acc;
 			height: 1.5rem;
 			width: 1.5rem;
@@ -89,15 +102,23 @@
 }
 
 .links,
-.linksMobile {
+.links-mobile {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	width: 35vw;
 	cursor: pointer;
+	visibility: hidden;
+	@include md {
+		visibility: visible;
+		gap: 1rem;
+	}
+	@include md {
+		margin-left: 5rem;
+	}
 
 	.link,
-	.linkMobile {
+	.link-mobile {
 		text-decoration: none;
 		color: $color-second-acc;
 		font-size: 1.2rem;
@@ -110,14 +131,14 @@
 	}
 }
 
-.linksMobile {
+.links-mobile {
 	height: 30%;
 	flex-direction: column;
 	margin: 5rem;
 	width: auto;
 }
 
-.linksContainerMobile {
+.links-container_mobile {
 	width: 100%;
 	flex-direction: column;
 	gap: 2rem;
@@ -134,7 +155,7 @@
 	z-index: 0;
 }
 
-.containerNavMobile {
+.container-nav_mobile {
 	position: fixed;
 	right: 0;
 	top: 0;
@@ -154,7 +175,7 @@
 	transition: right 1s ease-in-out, opacity 1s ease-in-out;
 }
 
-.mobileButtonCont {
+.mobile-button_cont {
 	visibility: hidden;
 }
 
@@ -162,8 +183,8 @@
 	visibility: visible;
 }
 
-.mobileButton,
-.mobileButtonInside {
+.mobile-button,
+.mobile-button_inside {
 	height: 3rem;
 	width: 3rem;
 	background: $color-fourth-acc;
@@ -194,7 +215,7 @@
 	}
 }
 
-.mobileButtonInside {
+.mobile-buttonI_inside {
 	position: static;
 	margin-right: 0%;
 	margin-bottom: 0%;

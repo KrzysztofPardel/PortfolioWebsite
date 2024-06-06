@@ -16,7 +16,7 @@
 		@content;
 	}
 }
-// @include tablet {}
+// @include lg {}
 @mixin xl {
 	@media (min-width: 1280px) {
 		@content;

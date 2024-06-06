@@ -4,11 +4,10 @@ import Link from 'next/link';
 import React, { useState, useEffect, useCallback } from 'react';
 //Styles
 import styles from './Navigation.module.scss';
-import { CgDarkMode } from 'react-icons/cg';
-import { IoSunnyOutline } from 'react-icons/io5';
-import { BsMoon, BsSun } from 'react-icons/bs';
 import { GrMenu, GrFormClose } from 'react-icons/gr';
 import { LuCode2 } from 'react-icons/lu';
+import { BsSun } from 'react-icons/bs';
+import { BsMoon } from 'react-icons/bs';
 //MUI
 import Switch from '@mui/material/Switch';
 //AOS
@@ -63,11 +62,11 @@ export const Navigation = () => {
 
 	return (
 		<>
-			<nav id="navigation" className={styles.containerNav}>
-				<Link className={styles.logo} href="/">
-					<LuCode2 className={styles.myLogo} />
+			<nav id="navigation" className={styles[['container-nav']]}>
+				<Link className={styles['logo']} href="/">
+					<LuCode2 className={styles['my-logo']} />
 				</Link>
-				<div className={styles.links}>
+				<div className={styles['links']}>
 					{NAV_ITEMS.map(({ name, to }) => (
 						<Link
 							key={name}
@@ -80,36 +79,39 @@ export const Navigation = () => {
 						</Link>
 					))}
 				</div>
-				<div className={styles.adjustments}>
-					{/* <div className={styles.mode}>
-						<BsSun className={styles.modeIcon} />
+
+				<div className={styles['adjustments']}>
+					<div className={styles['mode']}>
+						<BsSun className={styles['mode-icon']} />
 						<Switch onChange={handleMode} />
-						<BsMoon className={styles.modeIcon} />
+						<BsMoon className={styles['mode-icon']} />
 					</div>
-					<div className={styles.languages}>
-						<button className={styles.language}>ENG</button>
+					<div className={styles['languages']}>
+						<button className={styles['language']}>ENG</button>
 						<Switch onChange={handleLanguage} />
-						<button className={styles.language}>PL</button>
-					</div> */}
+						<button className={styles['language']}>PL</button>
+					</div>
 				</div>
 			</nav>
 
-			<div className={mobile ? `${styles.mobileButtonCont} ${styles.visible}` : styles.mobileButtonCont}>
+			<div
+				className={mobile ? `${styles['mobile-button_cont']} ${styles['visible']}` : `${styles['mobile-button_cont']}`}
+			>
 				<button
 					onClick={handleNav}
 					data-aos="fade-down"
-					className={nav ? `${styles.mobileButton} ${styles.off}` : `${styles.mobileButton} ${styles.on}`}
+					className={nav ? `${styles['mobile-button']} ${styles['off']}` : `${styles['mobile-button']} ${styles['on']}`}
 				>
 					{nav ? 'hidden' : <GrMenu />}
 				</button>
 			</div>
 
-			<div className={nav ? styles.containerNavMobile : `${styles.containerNavMobile} ${styles.hidden}`}>
-				<div className={styles.logo}>
-					<LuCode2 className={`${styles.myLogo} ${styles.center}`} />
+			<div className={nav ? styles['container-nav_mobile'] : `${styles['container-nav_mobile']} ${styles['hidden']}`}>
+				<div className={styles['logo']}>
+					<LuCode2 className={`${styles['my-logo']} ${styles['center']}`} />
 				</div>
-				<div className={styles.linksMobile}>
-					<div className={`${styles.links} ${styles.linksContainerMobile}`}>
+				<div className={styles['links-mobile']}>
+					<div className={`${styles['links']} ${styles['links-container_mobile']}`}>
 						{NAV_ITEMS.map(({ name, to }) => (
 							<Link
 								key={name}
@@ -117,28 +119,28 @@ export const Navigation = () => {
 								href={to}
 								scroll={true}
 								// duration={1000}
-								className={styles.linkMobile}
+								className={styles['links-mobile']}
 							>
 								{name}
 							</Link>
 						))}
 					</div>
 				</div>
-				<div className={`${styles.adjustments} ${styles.reverse}`}>
-					{/* <div className={styles.mode}>
-						<BsSun className={styles.modeIcon} />
+				{/* <div className={`${styles['adjustments']} ${styles['reverse']}`}>
+					<div className={styles['mode']}>
+						<BsSun className={styles['mode-icon']} />
 						<Switch onChange={handleMode} />
-						<BsMoon className={styles.modeIcon} />
+						<BsMoon className={styles['mode-icon']} />
 					</div>
-					<div className={styles.languages}>
-						<button className={`${styles.language} eng`}>ENG</button>
+					<div className={styles['languages']}>
+						<button className={styles['language']}>ENG</button>
 						<Switch onChange={handleLanguage} />
-						<button className={`${styles.language} pol`}>PL</button>
-					</div> */}
-					<button onClick={handleNav} className={styles.mobileButtonInside}>
-						<GrFormClose className={styles.iconSs} />
+						<button className={styles['language']}>PL</button>
+					</div>
+					<button onClick={handleNav} className={styles['mobile-button_inside']}>
+						<GrFormClose className={styles['icon-ss']} />
 					</button>
-				</div>
+				</div> */}
 			</div>
 		</>
 	);

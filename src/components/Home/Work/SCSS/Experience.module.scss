@@ -21,6 +21,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+
 }
 
 .work-box {
@@ -31,6 +32,10 @@
 	border: 1px solid $color-fourth-acc;
 	border-radius: 25px;
 	padding: 2rem;
+	
+	@include md {
+
+	}
 }
 
 .work-box_partOne {
