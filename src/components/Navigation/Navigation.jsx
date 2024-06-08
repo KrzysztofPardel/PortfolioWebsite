@@ -6,14 +6,12 @@ import React, { useState, useEffect, useCallback } from 'react';
 import styles from './Navigation.module.scss';
 import { GrMenu, GrFormClose } from 'react-icons/gr';
 import { LuCode2 } from 'react-icons/lu';
-import { BsSun } from 'react-icons/bs';
-import { BsMoon } from 'react-icons/bs';
+import { BsSun, BsMoon } from 'react-icons/bs';
 //MUI
 import Switch from '@mui/material/Switch';
 //AOS
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { redirect } from 'next/dist/server/api-utils';
 
 const NAV_ITEMS = [
 	{ name: 'work', to: '/#work' },
@@ -68,13 +66,7 @@ export const Navigation = () => {
 				</Link>
 				<div className={styles['links']}>
 					{NAV_ITEMS.map(({ name, to }) => (
-						<Link
-							key={name}
-							className={styles.link}
-							href={to}
-							scroll={true}
-							// duration={1000}
-						>
+						<Link key={name} className={styles['link']} href={to} scroll={true}>
 							{name}
 						</Link>
 					))}
@@ -111,22 +103,22 @@ export const Navigation = () => {
 					<LuCode2 className={`${styles['my-logo']} ${styles['center']}`} />
 				</div>
 				<div className={styles['links-mobile']}>
-					<div className={`${styles['links']} ${styles['links-container_mobile']}`}>
-						{NAV_ITEMS.map(({ name, to }) => (
-							<Link
-								key={name}
-								onClick={handleNav}
-								href={to}
-								scroll={true}
-								// duration={1000}
-								className={styles['links-mobile']}
-							>
-								{name}
-							</Link>
-						))}
-					</div>
+					{/* <div className={`${styles['links']} ${styles['links-container_mobile']}`}> */}
+					{NAV_ITEMS.map(({ name, to }) => (
+						<Link
+							key={name}
+							onClick={handleNav}
+							href={to}
+							scroll={true}
+							// duration={1000}
+							className={styles['link-mobile']}
+						>
+							{name}
+						</Link>
+					))}
+					{/* </div> */}
 				</div>
-				{/* <div className={`${styles['adjustments']} ${styles['reverse']}`}>
+				<div className={`${styles['adjustments']} ${styles['reverse']}`}>
 					<div className={styles['mode']}>
 						<BsSun className={styles['mode-icon']} />
 						<Switch onChange={handleMode} />
@@ -140,7 +132,7 @@ export const Navigation = () => {
 					<button onClick={handleNav} className={styles['mobile-button_inside']}>
 						<GrFormClose className={styles['icon-ss']} />
 					</button>
-				</div> */}
+				</div>
 			</div>
 		</>
 	);

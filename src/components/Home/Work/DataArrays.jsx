@@ -93,23 +93,24 @@ export const PROJECT_ITEMS = [
 		id: 0,
 		title: 'Give',
 		description: 'Be the connection between those who HAVE and those who NEED.',
-		more: 'projects/give',
+		more: '/projects/give',
 		src: GiveHome,
 	},
 	{
 		id: 1,
 		title: 'CRM',
 		description: 'As part of my internship, I took was developing the fornt-end layer for a CRM for SoftwareHouse360.',
-		more: 'projects/crm',
+		more: '/projects/crm',
 		src: Calendar,
 	},
 	{
 		id: 2,
 		title: 'New Project!',
 		description: 'Under development. Stay tuned!',
-		more: 'projects/elearning',
+		more: '/projects/elearning',
 		src: hourglass3,
 	},
+
 	// {
 	// 	id: 3,
 	// 	title: 'Portfolio Website',
