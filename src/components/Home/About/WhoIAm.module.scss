@@ -1,56 +1,87 @@
 @import '../../../style/main.scss';
 
-.whoIAmContainer {
+.whoIAm-container {
 	@include part-Container;
-	align-items: flex-start;
-	flex-direction: row-reverse;
+	align-items: center;
+	flex-direction: column-reverse;
 	height: auto;
 	margin-bottom: 2rem;
-	gap: 4rem;
-}
-
-.whoIAmText {
-	height: 25rem;
-	width: 50%;
-	display: flex;
-	flex-direction: column;
 	gap: 1rem;
-}
-
-.textH {
-	@include section-Subheader;
-}
-
-.textP {
-	font-size: 1.2rem;
-	line-height: 1.5rem;
-	margin-bottom: 2rem;
-}
-
-.textLink {
-	width: 5rem;
-	height: 1.5rem;
-	border: 1px solid $color-fourth-acc;
-	border-radius: 10px;
-	padding: 0.5rem;
-	margin-right: 2rem;
-	text-transform: none;
-	text-decoration: none;
-	color: $color-third-acc;
-	font-weight: 500;
-
-	&:hover {
-		background-color: $color-main;
-		color: $color-fourth-acc;
+	@include md {
+		flex-direction: row-reverse;
+		align-items: flex-start;
+		gap: 4rem;
+		margin-bottom: 4rem;
+	}
+	@include lg {
+		margin-bottom: 2rem;
 	}
 }
 
-.whoIAmVisual {
+.whoIAm-text {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	text-align: justify;
+	@include md {
+		width: 50%;
+		text-align: start;
+		height: 25rem;
+	}
+}
+
+.text-h {
+	@include section-Subheader;
+	@include md {
+		margin-bottom: 0rem;
+	}
+}
+
+.text-p {
+	width: 100%;
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	margin-bottom: 1rem;
+	@include md {
+		text-align: justify;
+		width: auto;
+	}
+	@include lg {
+		margin-bottom: 2rem;
+		width: auto;
+	}
+}
+.link-container {
+	.text-link:nth-child(1) {
+		margin-right: 0.5rem;
+	}
+	.text-link {
+		width: 5rem;
+		height: 1.5rem;
+		border: 1px solid $color-fourth-acc;
+		border-radius: 10px;
+		padding: 0.5rem;
+		text-transform: none;
+		text-decoration: none;
+		color: $color-third-acc;
+		font-weight: 500;
+		@include md {
+			margin-right: 2rem;
+		}
+		&:hover {
+			background-color: $color-main;
+			color: $color-fourth-acc;
+		}
+	}
+}
+
+.whoIAm-visual {
 	position: relative;
 	display: flex;
 	align-items: flex-start;
 
-	.visualImage {
+	.visual-image {
 		height: 20rem;
 		width: auto;
 		z-index: 1;
@@ -77,7 +108,7 @@
 		}
 	}
 
-	.visualBackgroundFigure {
+	.visual-background_figure {
 		position: absolute;
 		width: 10rem;
 		height: 10rem;
@@ -107,7 +138,7 @@
 		right: 3rem;
 	}
 
-	.visualSignature {
+	.visual-signature {
 		position: absolute;
 		bottom: 0;
 		right: 0;

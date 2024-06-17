@@ -1,16 +1,16 @@
 @import '../../../../style/main.scss';
 
 // Certifications
-.certificationsContainer {
+.certifications-container {
 	@include part-Container;
 	flex-direction: column;
 }
 
-.certificationsH {
+.certifications-h {
 	@include section-Subheader;
 }
 
-.certificationBox {
+.certification-box {
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -19,11 +19,12 @@
 	gap: 1rem;
 }
 
-.certificationDataBox {
+.certification-data_box {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 	padding: 1rem;
 	border: 2px solid transparent;
 	border-radius: 10px solid transparent;
@@ -36,29 +37,44 @@
 		border: 2px solid $color-third-acc;
 	}
 
-	.certificationH {
+	.certification-h {
 		display: flex;
 		font-size: 1.5rem;
 		font-weight: 600;
 		color: $color-third-acc;
 	}
 
-	.certificationIcon {
+	.certification-icon {
 		margin-right: 0.5rem;
 		color: $color-first-acc;
 	}
+	.certification-details {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 0.5rem;
 
-	.certificationLink {
-		font-size: 1rem;
-		text-decoration: none;
-		border-bottom: 1px solid $color-fourth-acc;
-		color: $color-fourth-acc;
-		padding-bottom: 0.2rem;
-		opacity: 0.75;
+		@include md {
+			flex-direction: row;
+			gap: 0;
+		}
+
+		.certification-date {
+		}
+
+		.certification-link {
+			font-size: 1rem;
+			text-decoration: none;
+			border-bottom: 1px solid $color-fourth-acc;
+			color: $color-fourth-acc;
+			padding-bottom: 0.2rem;
+			opacity: 0.75;
+		}
 	}
 }
 
-.certificationsConfirmation {
+.certifications-confirmation {
 	margin-top: 1rem;
 	font-size: 1rem;
 	color: $color-third-acc;

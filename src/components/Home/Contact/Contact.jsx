@@ -54,7 +54,7 @@ export const Contact = () => {
 			<div className="container-contact_form">
 				<div className="contact_form_small_cont">
 					<h2 className="contact_form_title">
-						Let&apos;s connect and <span className="contact_form_title_span">develop</span> something{' '}
+						Let&apos;s connect and <span className="contact_form_title_span">develop</span> something
 						<span className="contact_form_title_span">valueable</span> together!
 					</h2>
 					<Image src={connect2} alt="lets connect image" className="contact_form_img" />

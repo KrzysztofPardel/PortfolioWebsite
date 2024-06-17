@@ -35,7 +35,8 @@
 	}
 }
 
-.adjustments {
+.adjustments,
+.adjustments-mobile {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -93,6 +94,9 @@
 		}
 	}
 }
+.adjustments-mobile {
+	visibility: visible;
+}
 
 .reverse {
 	display: flex;
@@ -103,17 +107,17 @@
 
 .links {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
-	width: 35vw;
+	width: 75vw;
 	cursor: pointer;
 	visibility: hidden;
+
 	@include md {
 		visibility: visible;
 		gap: 1rem;
-	}
-	@include md {
 		margin-left: 5rem;
+		width: 35vw;
 	}
 
 	.link {
@@ -130,7 +134,6 @@
 }
 
 .links-container_mobile {
-	// width: 100%;
 	height: 30rem;
 	flex-direction: column;
 	gap: 2rem;
@@ -170,7 +173,6 @@
 	position: fixed;
 	right: 0;
 	top: 0;
-	width: 25%;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -198,7 +200,7 @@
 }
 
 .mobile-button,
-.mobile-button_inside {
+.mobile-button_sidebar {
 	height: 3rem;
 	width: 3rem;
 	background: $color-fourth-acc;
@@ -214,12 +216,13 @@
 	cursor: pointer;
 	z-index: 10;
 	box-shadow: $color-main 0px 0px 10px;
+
 	&:hover {
 		background: $color-fourth-acc;
 		box-shadow: rgba($color-main, 0.25) 0px 30px 60px -12px inset, rgba($color-main, 0.3) 0px 18px 36px -18px inset;
 	}
 
-	.iconSs {
+	.icon-ss {
 		width: 100%;
 		height: 100%;
 		display: flex;
@@ -228,10 +231,11 @@
 	}
 }
 
-.mobile-button_inside {
+.mobile-button_sidebar {
 	position: static;
 	margin-right: 0%;
 	margin-bottom: 0%;
+	margin-top: 1rem;
 }
 
 .on {

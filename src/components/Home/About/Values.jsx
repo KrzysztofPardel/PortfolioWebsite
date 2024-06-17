@@ -18,12 +18,12 @@ const ARTICLES_DATA = [
 
 const Values = () => {
 	return (
-		<main id="values" className={styles.aboutContainer}>
+		<main id="values" className={styles['about-container']}>
 			{ARTICLES_DATA.map(({ h, p }) => {
 				return (
-					<div key={h} className={styles.articleContainer}>
-						<h2 className={styles.articleH}>{h}</h2>
-						<p className={styles.articleP}>{p}</p>
+					<div key={h} className={styles['article-container']}>
+						<h2 className={styles['article-h']}>{h}</h2>
+						<p className={styles['article-p']}>{p}</p>
 					</div>
 				);
 			})}

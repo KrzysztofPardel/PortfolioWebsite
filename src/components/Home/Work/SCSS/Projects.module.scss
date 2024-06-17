@@ -3,12 +3,27 @@
 
 .projects-container {
 	@include part-Container;
-	flex-direction: column;
+	padding: 0rem;
+	margin-bottom: 0rem;
+	align-items: flex-start;
+	gap: 0rem;
+	@include md {
+		padding: 1rem;
+	}
+	@include lg {
+		align-items: center;
+		gap: 1rem;
+		padding: 2rem;
+		margin-bottom: 2rem;
+	}
 }
 
 .projects-h {
 	@include section-Subheader;
 	color: $color-fourth-acc;
+	margin-bottom: 0rem;
+	@include md {
+	}
 }
 
 .projects-slider {

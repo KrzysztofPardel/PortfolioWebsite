@@ -21,20 +21,20 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-
 }
 
 .work-box {
 	width: 100%;
 	display: flex;
+	flex-direction: column;
 	gap: 2rem;
 	margin-bottom: 2rem;
 	border: 1px solid $color-fourth-acc;
 	border-radius: 25px;
 	padding: 2rem;
-	
-	@include md {
 
+	@include md {
+		flex-direction: row;
 	}
 }
 

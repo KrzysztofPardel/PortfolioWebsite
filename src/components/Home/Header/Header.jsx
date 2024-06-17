@@ -7,21 +7,21 @@ import { SiGithub, SiLinkedin } from 'react-icons/si';
 
 export const Header = () => {
 	return (
-		<main id="header" className={styles.headerContainer}>
-			<section className={styles.headerIntro}>
-				<h1 className={styles.introTitle}>
-					Hi! I&apos;m <span className={styles.introName}>Krzysztof Pardel</span>.
+		<main id="header" className={styles['header-container']}>
+			<section className={styles['header-intro']}>
+				<h1 className={styles['intro-title']}>
+					<span className={styles['intro-name']}>Krzysztof Pardel</span>
 				</h1>
-				<h2 className={styles.headerProfession}>Frontend Developer </h2>
-				<div className={styles.headerLinks}>
-					<Link href="https://github.com/KrzysztofPardel" className={styles.headerLink}>
+				<h2 className={styles['header-profession']}>Frontend Developer </h2>
+				<div className={styles['header-links']}>
+					<Link href="https://github.com/KrzysztofPardel" className={styles['header-link']}>
 						<SiGithub />
 					</Link>
-					<Link href="https://www.linkedin.com/in/krzysztof-pardel/" className={styles.headerLink}>
+					<Link href="https://www.linkedin.com/in/krzysztof-pardel/" className={styles['header-link']}>
 						<SiLinkedin />
 					</Link>
 				</div>
-				<LinkScroll to="navigation" spy smooth duration={1200} className={styles.professionInvitation}>
+				<LinkScroll to="navigation" spy smooth duration={1200} className={styles['profession-invitation']}>
 					See more
 				</LinkScroll>
 			</section>

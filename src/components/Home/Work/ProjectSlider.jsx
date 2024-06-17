@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useKeenSlider } from 'keen-slider/react';
@@ -8,15 +8,17 @@ import './SCSS/Slider.scss';
 import { PROJECT_ITEMS } from './DataArrays';
 
 const ProjectSlider = ({ totalSlides }) => {
+	const [mobileViewForProjects, setMobileViewForProjects] = useState(false);
 	const [currentSlide, setCurrentSlide] = useState(0);
 	const [loaded, setLoaded] = useState(false);
 	const [slideWidth, setSlideWidth] = useState('10rem');
 	const [sliderRef, instanceRef] = useKeenSlider({
 		initial: -1,
+		// initial: -1,
 		loop: true,
 		slides: {
-			perView: 3,
-			spacing: 15,
+			perView: `${mobileViewForProjects ? 1 : 3}`,
+			spacing: `${mobileViewForProjects ? 100 : 15}`,
 		},
 		slideChanged(slider) {
 			const centerIndex = Math.floor(totalSlides / 1);
@@ -36,6 +38,34 @@ const ProjectSlider = ({ totalSlides }) => {
 		},
 	});
 
+	useEffect(() => {
+		const changeMobile = () => {
+			if (window.innerWidth <= 700) {
+				setMobileViewForProjects(true);
+			} else {
+				setMobileViewForProjects(false);
+			}
+		};
+		//Update the state the moment component mounts up
+		changeMobile();
+		//Does it run in the browser? If yes, addEventListener to
+		//check the condition for changeMobile
+		if (typeof window !== 'undefined') {
+			window.addEventListener('scroll', changeMobile);
+		}
+
+		//clan-up when component unmounts
+		const handleRemoveListener = () => {
+			if (typeof window !== 'undefined') {
+				window.removeEventListener('scroll', changeMobile);
+			}
+		};
+
+		return () => {
+			handleRemoveListener;
+		};
+	}, [scrollX]);
+
 	return (
 		<main className="projects-wrapper">
 			{/* Projects */}
@@ -47,7 +77,8 @@ const ProjectSlider = ({ totalSlides }) => {
 							return (
 								<div
 									key={id}
-									className={`keen-slider__slide number-slide ${isCenterSlide ? 'keen-slider__slide--center' : ''}`}
+									className={`keen-slider__slide number-slide ${isCenterSlide ? 'keen-slider__slide--center' : ''}
+									${mobileViewForProjects ? 'keen-slider__slide--center' : ''}`}
 									style={{ width: isCenterSlide ? '35rem' : slideWidth }}
 								>
 									<div className="slide-text_box">
@@ -73,7 +104,9 @@ const ProjectSlider = ({ totalSlides }) => {
 								<button
 									key={idx}
 									onClick={() => {
-										instanceRef.current?.moveToIdx(idx - 1);
+										// instanceRef.current?.moveToIdx(idx - 1);
+										instanceRef.current?.moveToIdx(idx - `${mobileViewForProjects ? 0 : -1}`);
+										// `${mobileViewForProjects ? 0 : -1}`;
 									}}
 									className={'dot' + (currentSlide === idx ? ' active' : '')}
 								></button>

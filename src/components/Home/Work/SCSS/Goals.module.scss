@@ -23,16 +23,25 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+	flex-direction: column;
+	gap: 1rem;
+
+	@include md {
+		flex-direction: row;
+	}
 }
 
 .goals-box {
 	height: 10rem;
-	width: 25%;
+	width: 90%;
 	border: 1px solid white;
-	font-size: 1.5rem;
 	border-radius: 15px;
 	padding: 2rem;
 	transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s, opacity 0.2s;
+
+	@include md {
+		width: 25%;
+	}
 
 	&:hover {
 		box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.5);

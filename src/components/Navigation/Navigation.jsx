@@ -37,8 +37,8 @@ export const Navigation = () => {
 	};
 
 	useEffect(() => {
-		AOS.init({ duration: 2000 });
-
+		AOS.init({ duration: 1500 });
+		//check vertical position of window
 		const changeMobile = () => {
 			if (window.scrollY >= 1100) {
 				setMobile(true);
@@ -46,15 +46,22 @@ export const Navigation = () => {
 				setMobile(false);
 			}
 		};
-
+		//Update the state the moment component mounts up
+		changeMobile();
+		//Does it run in the browser? If yes, addEventListener to
+		//check the condition for changeMobile
 		if (typeof window !== 'undefined') {
 			window.addEventListener('scroll', changeMobile);
 		}
-
-		return () => {
+		//clan-up when component unmounts
+		const handleRemoveListener = () => {
 			if (typeof window !== 'undefined') {
 				window.removeEventListener('scroll', changeMobile);
 			}
+		};
+
+		return () => {
+			handleRemoveListener;
 		};
 	}, []);
 
@@ -73,7 +80,7 @@ export const Navigation = () => {
 				</div>
 
 				<div className={styles['adjustments']}>
-					<div className={styles['mode']}>
+					{/* <div className={styles['mode']}>
 						<BsSun className={styles['mode-icon']} />
 						<Switch onChange={handleMode} />
 						<BsMoon className={styles['mode-icon']} />
@@ -82,10 +89,10 @@ export const Navigation = () => {
 						<button className={styles['language']}>ENG</button>
 						<Switch onChange={handleLanguage} />
 						<button className={styles['language']}>PL</button>
-					</div>
+					</div> */}
 				</div>
 			</nav>
-
+			{/* Mobile */}
 			<div
 				className={mobile ? `${styles['mobile-button_cont']} ${styles['visible']}` : `${styles['mobile-button_cont']}`}
 			>
@@ -118,8 +125,8 @@ export const Navigation = () => {
 					))}
 					{/* </div> */}
 				</div>
-				<div className={`${styles['adjustments']} ${styles['reverse']}`}>
-					<div className={styles['mode']}>
+				<div className={`${styles['adjustments-mobile']} ${styles['reverse']}`}>
+					{/* <div className={styles['mode']}>
 						<BsSun className={styles['mode-icon']} />
 						<Switch onChange={handleMode} />
 						<BsMoon className={styles['mode-icon']} />
@@ -128,8 +135,8 @@ export const Navigation = () => {
 						<button className={styles['language']}>ENG</button>
 						<Switch onChange={handleLanguage} />
 						<button className={styles['language']}>PL</button>
-					</div>
-					<button onClick={handleNav} className={styles['mobile-button_inside']}>
+					</div> */}
+					<button onClick={handleNav} className={styles['mobile-button_sidebar']}>
 						<GrFormClose className={styles['icon-ss']} />
 					</button>
 				</div>

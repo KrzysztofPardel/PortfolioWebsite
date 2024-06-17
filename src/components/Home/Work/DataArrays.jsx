@@ -178,20 +178,20 @@ export const FRONT_ITEMS = [
 		technology: 'Context API',
 	},
 	{
-		logo: <SiSass />,
-		technology: 'SCSS/SASS (RWD)',
-	},
-	{
 		logo: <SiTailwindcss />,
 		technology: 'TailwindCSS',
 	},
 	{
-		logo: <SiBootstrap />,
-		technology: 'Bootstrap',
+		logo: <SiSass />,
+		technology: 'SCSS/SASS (RWD)',
 	},
 	{
 		logo: <SiMui />,
 		technology: 'MUI',
+	},
+	{
+		logo: <SiBootstrap />,
+		technology: 'Bootstrap',
 	},
 	{
 		logo: <SiHtml5 />,
@@ -204,6 +204,10 @@ export const FRONT_ITEMS = [
 	{
 		logo: <SiWebpack />,
 		technology: 'Webpack',
+	},
+	{
+		logo: <SiEslint />,
+		technology: 'ESLint/TSLint',
 	},
 ];
 export const BACK_ITEMS = [
@@ -231,10 +235,6 @@ export const BACK_ITEMS = [
 
 export const GRAPHICS_ITEMS = [
 	{
-		logo: <SiFigma />,
-		technology: 'Figma',
-	},
-	{
 		logo: <SiAffinityphoto />,
 		technology: 'Affinity Photo',
 	},
@@ -245,6 +245,10 @@ export const GRAPHICS_ITEMS = [
 	{
 		logo: <SiAffinitypublisher />,
 		technology: 'Affinity Publisher',
+	},
+	{
+		logo: <SiFigma />,
+		technology: 'Figma',
 	},
 ];
 
@@ -272,10 +276,5 @@ export const OTHER_ITEMS = [
 	{
 		logo: <SiMicrosoftoffice />,
 		technology: 'MS Office/ Office 365',
-	},
-
-	{
-		logo: <SiEslint />,
-		technology: 'ESLint/TSLint',
 	},
 ];
