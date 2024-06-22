@@ -73,7 +73,6 @@ const What = () => {
 						<Image key={id} id={id} src={src} alt={alt} className="keen-slider__slide number-slide" />
 					))}
 				</div>
-
 				<div ref={thumbnailRef} className="keen-slider thumbnail">
 					{IMAGES_ITEMS.map(({ id, src, alt }) => (
 						<Image key={id} id={id} src={src} alt={alt} className="keen-slider__slide number-slide" />

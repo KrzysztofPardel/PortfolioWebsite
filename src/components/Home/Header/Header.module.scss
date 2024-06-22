@@ -21,10 +21,19 @@
 	line-height: 3rem;
 
 	.intro-title {
-		font-size: 3rem;
-		color: $color-first-acc;
+		font-size: 5rem;
+		line-height: 5rem;
+		color: $color-third-acc;
+		display: flex;
+		@include md {
+			font-size: 3rem;
+			line-height: 3rem;
+		}
 		.intro-name {
-			color: $color-third-acc;
+			text-align: center;
+			@include sm {
+				text-align: start;
+			}
 		}
 	}
 	.header-profession {

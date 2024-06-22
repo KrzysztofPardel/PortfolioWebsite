@@ -26,40 +26,41 @@
 
 .idea-background {
 	position: absolute;
-	width: 40rem;
-	height: 20rem;
-	opacity: 0.9;
+	width: 15rem;
+	height: 40rem;
+	opacity: 50%;
+	@include md {
+		width: 40rem;
+		height: 20rem;
+	}
 }
-.first,
-.first-give,
-.first-crm {
+
+.first-give {
 	border-radius: 15px 0 0 0;
 	top: -5%;
-	right: 40%;
+	right: 15%;
 	background-color: #fff;
 	// opacity: 0.1;
 	z-index: -10;
+
+	@include md {
+		top: -5%;
+		right: 40%;
+	}
 }
-.second,
-.second-give,
-.second-crm {
+
+.second-give {
 	border-radius: 0 0 15px 0;
-	top: 15%;
+	top: 30%;
 	right: 5%;
 	z-index: -5;
-	background-color: #fff;
+
+	@include md {
+		top: 15%;
+		right: 5%;
+	}
 }
 .first-give,
 .second-give {
 	background: #fad648;
-}
-.first-crm {
-	border-top: 2px solid rgb(0, 39, 107);
-	border-left: 2px solid rgb(0, 39, 107);
-	opacity: 1;
-}
-.second-crm {
-	border-right: 2px solid rgb(0, 39, 107);
-	border-bottom: 2px solid rgb(0, 39, 107);
-	opacity: 1;
 }

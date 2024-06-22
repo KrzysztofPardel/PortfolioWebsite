@@ -14,6 +14,10 @@
 	.idea-header {
 		font-size: 2rem;
 		margin-bottom: 2rem;
+		text-align: center;
+		@include md {
+			text-align: start;
+		}
 	}
 
 	.idea-p {
@@ -26,32 +30,39 @@
 }
 .idea-background {
 	position: absolute;
-	width: 40rem;
-	height: 20rem;
+	width: 15rem;
+	height: 40rem;
+	opacity: 50%;
+	@include md {
+		width: 40rem;
+		height: 20rem;
+	}
 }
-.first,
-.first-give,
+
 .first-crm {
 	border-radius: 15px 0 0 0;
 	top: -5%;
-	right: 40%;
+	right: 15%;
 	background-color: #fff;
-	opacity: 0.1;
+	// opacity: 0.1;
 	z-index: -10;
+
+	@include md {
+		top: -5%;
+		right: 40%;
+	}
 }
-.second,
-.second-give,
+
 .second-crm {
 	border-radius: 0 0 15px 0;
-	top: 10%;
+	top: 32%;
 	right: 5%;
 	z-index: -5;
-	background-color: #fff;
-	opacity: 0.1;
-}
-.first-give,
-.second-give {
-	background: #fad648;
+
+	@include md {
+		top: 15%;
+		right: 5%;
+	}
 }
 
 .first-crm {

@@ -13,10 +13,13 @@
 	.projectnav-link {
 		cursor: pointer;
 		font-family: $font-base;
-		font-size: 1.2rem;
+		font-size: 1rem;
 		color: $color-second-acc;
 		text-decoration: none;
 		border-bottom: 0.5px solid transparent;
+		@include md {
+			font-size: 1.2rem;
+		}
 		&:hover {
 			border-bottom: 0.5px solid $color-main;
 		}

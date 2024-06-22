@@ -64,7 +64,7 @@ const ProjectSlider = ({ totalSlides }) => {
 		return () => {
 			handleRemoveListener;
 		};
-	}, [scrollX]);
+	}, []);
 
 	return (
 		<main className="projects-wrapper">

@@ -15,56 +15,91 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	gap: 2rem;
+	gap: 0rem;
+
+	@include md {
+		gap: 1rem;
+	}
+	@include lg {
+		gap: 2rem;
+	}
 
 	.takeaways-box {
 		width: 100%;
 		display: flex;
 		justify-content: flex-start;
-		align-items: center;
-		gap: 2rem;
+		align-items: flex-start;
+		flex-direction: column;
 		font-size: 1.2rem;
 		overflow: hidden;
 
+		@include md {
+			flex-direction: row;
+			align-items: center;
+			gap: 1rem;
+		}
+
+		@include lg {
+			gap: 2rem;
+		}
 		&:hover {
 			.takeaways-item_icon {
-				transform: rotate(0);
+				transform: rotate(90deg);
 				color: $color-first-acc;
 				background-color: $color-second-acc;
+				@include lg {
+					transform: rotate(0);
+				}
 			}
 
 			.takeway-comment {
-				visibility: visible;
+				display: block;
 			}
 		}
 	}
-
-	.takeaways-item_icon {
-		width: 2rem;
-		height: 2rem;
+	.takeway-box_subbox {
 		display: flex;
-		justify-content: center;
 		align-items: center;
-		border: 1px solid $color-main;
-		border-radius: 50%;
-		z-index: 10;
-		font-size: 2rem;
-		transform: rotate(-45deg);
-		transition: transform 0.3s ease-in-out;
-	}
+		gap: 1rem;
+		width: 100%;
 
-	.takeway-item {
-		width: 15%;
-		font-weight: 500;
-		z-index: 10;
-	}
+		.takeaways-item_icon {
+			width: 2rem;
+			height: 2rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: 1px solid $color-main;
+			border-radius: 50%;
+			z-index: 10;
+			font-size: 2rem;
+			transform: rotate(0deg);
+			transition: transform 0.5s ease-in-out;
+			@include lg {
+				transform: rotate(-45deg);
+			}
+		}
 
+		.takeway-item {
+			width: 80%;
+			font-weight: 500;
+			z-index: 10;
+			@include lg {
+				width: 15%;
+			}
+		}
+	}
 	.takeway-comment {
-		width: 80%;
+		width: 100%;
 		line-height: 1.5;
-		visibility: hidden;
-		transition: visibility 0.3s ease-in-out;
+		display: none;
+		transition: display 0.5s ease-in-out;
 		color: $color-main;
 		opacity: 0.7;
+		margin: none;
+
+		@include lg {
+			width: 80%;
+		}
 	}
 }
