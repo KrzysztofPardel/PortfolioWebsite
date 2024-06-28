@@ -35,14 +35,6 @@
 	width: 80%;
 }
 
-// [class^='number-slide'],
-// [class*=' number-slide'] {
-// 	background: grey;
-// 	color: #000000;
-// 	height: 300px;
-// 	max-height: 100vh;
-// }
-
 .number-slide {
 	display: flex;
 	align-items: flex-start;
@@ -55,7 +47,6 @@
 }
 
 //bottom navigation
-
 .dots {
 	display: flex;
 	padding: 10px 0;
@@ -85,6 +76,7 @@
 .keen-slider__slide .keen-slider__slide--center {
 	transition: width 0.3s ease;
 	width: 45rem;
+	background-color: $color-fourth-acc;
 }
 .keen-slider__slide:not(.keen-slider__slide--center) {
 	opacity: 30%;
@@ -97,6 +89,7 @@
 	flex-direction: column;
 	gap: 0.5rem;
 	padding: 0.5rem;
+
 	.slide-title {
 		font-size: 1.5rem;
 		color: $color-second-acc;

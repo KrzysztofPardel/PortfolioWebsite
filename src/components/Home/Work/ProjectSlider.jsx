@@ -72,8 +72,9 @@ const ProjectSlider = ({ totalSlides }) => {
 			<div className="projects-scene">
 				<div className="container-keen_slider">
 					<div ref={sliderRef} className="keen-slider">
-						{PROJECT_ITEMS.map(({ id, title, description, more, src }) => {
+						{PROJECT_ITEMS.map(({ id, title, description, href, src }) => {
 							const isCenterSlide = id === currentSlide;
+
 							return (
 								<div
 									key={id}
@@ -84,8 +85,8 @@ const ProjectSlider = ({ totalSlides }) => {
 									<div className="slide-text_box">
 										<h2 className="slide-title">{title}</h2>
 										<p className="slide-description">
-											{description}{' '}
-											<Link href={more} className="slide-link">
+											{description}
+											<Link href={`/projects/${href}`} className="slide-link">
 												See more
 											</Link>
 										</p>

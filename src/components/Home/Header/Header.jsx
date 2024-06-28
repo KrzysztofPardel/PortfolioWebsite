@@ -12,7 +12,7 @@ export const Header = () => {
 				<h1 className={styles['intro-title']}>
 					<span className={styles['intro-name']}>Krzysztof Pardel</span>
 				</h1>
-				<h2 className={styles['header-profession']}>Frontend Developer </h2>
+				<h2 className={styles['header-profession']}>Frontend Developer</h2>
 				<div className={styles['header-links']}>
 					<Link href="https://github.com/KrzysztofPardel" className={styles['header-link']}>
 						<SiGithub />

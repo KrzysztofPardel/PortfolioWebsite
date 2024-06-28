@@ -93,31 +93,23 @@ export const PROJECT_ITEMS = [
 		id: 0,
 		title: 'Give',
 		description: 'Be the connection between those who HAVE and those who NEED.',
-		more: '/projects/give',
+		href: 'give',
 		src: GiveHome,
 	},
 	{
 		id: 1,
 		title: 'CRM',
 		description: 'As part of my internship, I took was developing the fornt-end layer for a CRM for SoftwareHouse360.',
-		more: '/projects/crm',
+		href: 'crm',
 		src: Calendar,
 	},
 	{
 		id: 2,
 		title: 'New Project!',
 		description: 'Under development. Stay tuned!',
-		more: '/projects/elearning',
+		href: 'elearning',
 		src: hourglass3,
 	},
-
-	// {
-	// 	id: 3,
-	// 	title: 'Portfolio Website',
-	// 	description: 'Personal website showcasing my experience, skills and personality',
-	// 	more: 'projects/portfolio',
-	// 	src: Calendar,
-	// },
 ];
 //TechStack
 import { TbApi } from 'react-icons/tb';

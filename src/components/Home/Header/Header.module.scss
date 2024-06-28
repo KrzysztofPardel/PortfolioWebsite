@@ -21,8 +21,8 @@
 	line-height: 3rem;
 
 	.intro-title {
-		font-size: 5rem;
-		line-height: 5rem;
+		font-size: 2.5rem;
+		line-height: 3rem;
 		color: $color-third-acc;
 		display: flex;
 		@include md {
@@ -38,7 +38,10 @@
 	}
 	.header-profession {
 		color: $color-fourth-acc;
-		font-size: 2rem;
+		font-size: 1.5rem;
+		@include lg {
+			font-size: 2rem;
+		}
 	}
 	.profession-invitation {
 		background: none;
@@ -46,7 +49,6 @@
 		border: none;
 		font-size: 1.2rem;
 		cursor: pointer;
-		font-weight: 600;
 		&:hover {
 			transition: border-bottom ease-in-out;
 			color: $color-third-acc;

@@ -23,11 +23,14 @@
 	align-items: center;
 	justify-content: center;
 	color: $color-second-acc;
+
 	.my-logo {
 		height: 4rem;
 		width: auto;
-		margin-left: 2rem;
 		margin-top: -0.5rem;
+		@include md {
+			margin-left: 2rem;
+		}
 	}
 
 	.center {
