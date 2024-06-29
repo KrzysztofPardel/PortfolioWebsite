@@ -14,7 +14,6 @@ const ProjectSlider = ({ totalSlides }) => {
 	const [slideWidth, setSlideWidth] = useState('10rem');
 	const [sliderRef, instanceRef] = useKeenSlider({
 		initial: -1,
-		// initial: -1,
 		loop: true,
 		slides: {
 			perView: `${mobileViewForProjects ? 1 : 3}`,
@@ -85,7 +84,7 @@ const ProjectSlider = ({ totalSlides }) => {
 										<h2 className="slide-title">{title}</h2>
 										<p className="slide-description">
 											{description}
-											<Link href={href} className="slide-link">
+											<Link href={`/projects/${href}`} className="slide-link">
 												See more
 											</Link>
 										</p>
