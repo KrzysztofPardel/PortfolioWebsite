@@ -84,9 +84,7 @@ const ProjectSlider = ({ totalSlides }) => {
 										<h2 className="slide-title">{title}</h2>
 										<p className="slide-description">
 											{description}
-											<Link href={`/projects/${href}`} className="slide-link">
-												See more
-											</Link>
+											<Link href={`/projects/${href}`}>See more</Link>
 										</p>
 									</div>
 									<Image src={src} alt="" className="slide-image" />

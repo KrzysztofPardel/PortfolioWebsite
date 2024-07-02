@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Home from './Home/page';
+import Home from './home/page';
 import '../style/reset.scss';
 import '../style/main.scss';
 
