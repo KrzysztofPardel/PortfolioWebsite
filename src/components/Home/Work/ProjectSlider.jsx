@@ -103,12 +103,10 @@ const ProjectSlider = ({ totalSlides }) => {
 								<button
 									key={idx}
 									onClick={() => {
-										// instanceRef.current?.moveToIdx(idx - 1);
 										instanceRef.current?.moveToIdx(idx - `${mobileViewForProjects ? 0 : -1}`);
-										// `${mobileViewForProjects ? 0 : -1}`;
 									}}
 									className={'dot' + (currentSlide === idx ? ' active' : '')}
-								></button>
+								/>
 							);
 						})}
 					</div>

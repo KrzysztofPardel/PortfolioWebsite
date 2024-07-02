@@ -89,7 +89,8 @@
 	flex-direction: column;
 	gap: 0.5rem;
 	padding: 0.5rem;
-
+	height: 5rem;
+	background-color: $color-fourth-acc;
 	.slide-title {
 		font-size: 1.5rem;
 		color: $color-second-acc;
