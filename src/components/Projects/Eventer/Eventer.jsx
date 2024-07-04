@@ -3,7 +3,7 @@ import What from './What';
 import Purpose from './Idea';
 import styles from '../General.module.scss';
 
-const Elearning = () => {
+const Eventer = () => {
 	return (
 		<section className={styles['project-container']}>
 			<What />
@@ -12,4 +12,4 @@ const Elearning = () => {
 	);
 };
 
-export default Elearning;
+export default Eventer;

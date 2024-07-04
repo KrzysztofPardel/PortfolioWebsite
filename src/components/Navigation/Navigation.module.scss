@@ -1,7 +1,6 @@
 @import '../../style/main.scss';
 
 .container-nav {
-	background: $color-fourth-acc;
 	max-width: screen;
 	height: 10vh;
 	display: flex;
@@ -10,6 +9,7 @@
 	margin: auto;
 	padding: 0.5rem;
 	font-family: $font-base;
+	background: $color-fourth-acc;
 	z-index: 10;
 
 	@include lg {
@@ -35,6 +35,64 @@
 
 	.center {
 		margin-left: 0rem;
+	}
+}
+
+.links {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 75vw;
+	cursor: pointer;
+	visibility: hidden;
+
+	@include sm {
+		visibility: visible;
+	}
+	@include md {
+		visibility: visible;
+		justify-content: space-between;
+		width: 65vw;
+	}
+	@include lg {
+		width: 45vw;
+	}
+
+	.link {
+		text-decoration: none;
+		color: $color-second-acc;
+		font-size: 1.2rem;
+		border-bottom: 1px solid transparent;
+		transition: border-bottom 0.5s ease-in-out;
+
+		&:hover {
+			border-bottom: 1px solid $color-main;
+		}
+	}
+}
+
+.links-container_mobile {
+	height: 30rem;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.links-mobile {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3.5rem;
+	cursor: pointer;
+	.link-mobile {
+		text-decoration: none;
+		color: $color-second-acc;
+		font-size: 1.2rem;
+		border-bottom: 1px solid transparent;
+		transition: border-bottom 0.5s ease-in-out;
+
+		&:hover {
+			border-bottom: 1px solid $color-main;
+		}
 	}
 }
 
@@ -106,63 +164,6 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-}
-
-.links {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	width: 75vw;
-	cursor: pointer;
-	visibility: hidden;
-
-	@include md {
-		visibility: visible;
-		gap: 1rem;
-		margin-left: 5rem;
-		width: 35vw;
-	}
-	@include lg {
-		margin-left: 0rem;
-		width: 65vw;
-	}
-
-	.link {
-		text-decoration: none;
-		color: $color-second-acc;
-		font-size: 1.2rem;
-		border-bottom: 1px solid transparent;
-		transition: border-bottom 0.5s ease-in-out;
-
-		&:hover {
-			border-bottom: 1px solid $color-main;
-		}
-	}
-}
-
-.links-container_mobile {
-	height: 30rem;
-	flex-direction: column;
-	gap: 2rem;
-}
-
-.links-mobile {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 3.5rem;
-	cursor: pointer;
-	.link-mobile {
-		text-decoration: none;
-		color: $color-second-acc;
-		font-size: 1.2rem;
-		border-bottom: 1px solid transparent;
-		transition: border-bottom 0.5s ease-in-out;
-
-		&:hover {
-			border-bottom: 1px solid $color-main;
-		}
-	}
 }
 
 .shadow {

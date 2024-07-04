@@ -1,12 +1,12 @@
 import React from 'react';
-import Elearning from '@/components/Projects/Eventer/Eventer';
+import Eventer from '@/components/Projects/Eventer/Eventer';
 
-const ElearningPage = () => {
+const EventerPage = () => {
 	return (
 		<>
-			<Elearning />
+			<Eventer />
 		</>
 	);
 };
 
-export default ElearningPage;
+export default EventerPage;
