@@ -9,11 +9,11 @@
 	justify-content: center;
 	gap: 1rem;
 	font-size: 1rem;
-	// color: #fff;
 	color: #000000;
 	font-weight: 500;
 	height: 20rem;
 	max-height: 100vh;
+	border-radius: 20px;
 
 	&:hover {
 		opacity: 1;
@@ -32,7 +32,7 @@
 }
 
 .keen-slider {
-	width: 80%;
+	width: 100%;
 }
 
 .number-slide {
@@ -85,12 +85,15 @@
 }
 
 .slide-text_box {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	gap: 0.5rem;
 	padding: 0.5rem;
 	height: 5rem;
 	background-color: $color-fourth-acc;
+	text-align: center;
+
 	.slide-title {
 		font-size: 1.5rem;
 		color: $color-second-acc;
@@ -99,12 +102,13 @@
 		font-size: 1rem;
 	}
 	.slide-link {
+		display: block;
 		font-size: 1rem;
-		color: #c5c5c5;
+		color: $color-second-acc;
 		text-decoration: none;
-		font-weight: 600;
 		&:hover {
-			color: $color-second-acc;
+			font-weight: 600;
+			// color: $color-second-acc;
 		}
 	}
 }

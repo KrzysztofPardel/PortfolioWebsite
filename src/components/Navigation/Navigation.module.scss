@@ -122,6 +122,10 @@
 		margin-left: 5rem;
 		width: 35vw;
 	}
+	@include lg {
+		margin-left: 0rem;
+		width: 65vw;
+	}
 
 	.link {
 		text-decoration: none;
@@ -184,6 +188,10 @@
 	padding: 2rem;
 	transition: right 1s ease-in-out;
 	z-index: 1;
+
+	@include md {
+		width: 25vw;
+	}
 }
 
 .hidden {

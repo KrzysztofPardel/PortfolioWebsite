@@ -20,9 +20,9 @@ const Goals = () => {
 							data-aos-offset="400"
 							data-aos-easing="ease-in-sine"
 						>
-							<p className={styles['goals-box_nr']}>#{id}</p>
+							<span className={styles['goals-box_nr']}>#{id}</span>
+							<span className={styles['goals-box_timeline']}>{data}</span>
 							<p className={styles['goals-box_p']}>{p}</p>
-							<p className={styles['goals-box_timeline']}>{data}</p>
 						</div>
 					);
 				})}

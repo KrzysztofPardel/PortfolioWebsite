@@ -15,11 +15,8 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	gap: 0rem;
+	gap: 1rem;
 
-	@include md {
-		gap: 1rem;
-	}
 	@include lg {
 		gap: 2rem;
 	}
@@ -32,6 +29,7 @@
 		flex-direction: column;
 		font-size: 1.2rem;
 		overflow: hidden;
+		gap: 1rem;
 
 		@include md {
 			flex-direction: row;
@@ -42,7 +40,9 @@
 		@include lg {
 			gap: 2rem;
 		}
-		&:hover {
+
+		&:hover,
+		&:active {
 			.takeaways-item_icon {
 				transform: rotate(90deg);
 				color: $color-first-acc;
@@ -57,11 +57,17 @@
 			}
 		}
 	}
+
 	.takeway-box_subbox {
 		display: flex;
 		align-items: center;
 		gap: 1rem;
 		width: 100%;
+
+		@include md {
+			max-width: 15rem;
+			width: auto;
+		}
 
 		.takeaways-item_icon {
 			width: 2rem;
@@ -84,11 +90,12 @@
 			width: 80%;
 			font-weight: 500;
 			z-index: 10;
-			@include lg {
-				width: 15%;
+			@include md {
+				width: auto;
 			}
 		}
 	}
+
 	.takeway-comment {
 		width: 100%;
 		line-height: 1.5;
@@ -96,10 +103,11 @@
 		transition: display 0.5s ease-in-out;
 		color: $color-main;
 		opacity: 0.7;
-		margin: none;
+		text-align: center;
 
-		@include lg {
+		@include md {
 			width: 80%;
+			text-align: start;
 		}
 	}
 }

@@ -13,11 +13,11 @@ const Takeaways = () => {
 				{TAKEAWAYS_ITEMS.map(({ id, p_text, p_comment }) => {
 					return (
 						<div key={id} className={styles['takeaways-box']}>
-							<div className={styles['takeway-box_subbox']}>
+							<div className={styles['takeaway-box_subbox']}>
 								<MdOutlineKeyboardDoubleArrowRight className={styles['takeaways-item_icon']} />
-								<p className={styles['takeway-item']}>{p_text}</p>
+								<p className={styles['takeaway-item']}>{p_text}</p>
 							</div>
-							<p className={styles['takeway-comment']}>{p_comment}</p>
+							<p className={styles['takeaway-comment']}>{p_comment}</p>
 						</div>
 					);
 				})}

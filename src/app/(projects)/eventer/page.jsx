@@ -1,5 +1,5 @@
 import React from 'react';
-import Elearning from '@/components/Projects/Elearning/Elearning';
+import Elearning from '@/components/Projects/Eventer/Eventer';
 
 const ElearningPage = () => {
 	return (

@@ -33,7 +33,16 @@
 	width: 15rem;
 	height: 40rem;
 	opacity: 50%;
+
+	@include sm {
+		width: 17.5rem;
+		height: 25rem;
+	}
 	@include md {
+		width: 20rem;
+		height: 10rem;
+	}
+	@include lg {
 		width: 40rem;
 		height: 20rem;
 	}
@@ -42,12 +51,21 @@
 .first-crm {
 	border-radius: 15px 0 0 0;
 	top: -5%;
-	right: 15%;
-	background-color: #fff;
-	// opacity: 0.1;
+	right: 20%;
 	z-index: -10;
+	border-top: 2px solid rgb(0, 39, 107);
+	border-left: 2px solid rgb(0, 39, 107);
 
+	@include sm {
+		top: -5%;
+		right: 50%;
+	}
 	@include md {
+		top: -7%;
+		right: 62%;
+	}
+
+	@include lg {
 		top: -5%;
 		right: 40%;
 	}
@@ -55,23 +73,22 @@
 
 .second-crm {
 	border-radius: 0 0 15px 0;
-	top: 32%;
+	top: 20%;
 	right: 5%;
 	z-index: -5;
-
+	border-right: 2px solid rgb(0, 39, 107);
+	border-bottom: 2px solid rgb(0, 39, 107);
+	
+	@include sm {
+		top: 10%;
+		right: 5%;
+	}
 	@include md {
+		top: 50%;
+		right: 5%;
+	}
+	@include lg {
 		top: 15%;
 		right: 5%;
 	}
-}
-
-.first-crm {
-	border-top: 2px solid rgb(0, 39, 107);
-	border-left: 2px solid rgb(0, 39, 107);
-	opacity: 1;
-}
-.second-crm {
-	border-right: 2px solid rgb(0, 39, 107);
-	border-bottom: 2px solid rgb(0, 39, 107);
-	opacity: 1;
 }

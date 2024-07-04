@@ -39,7 +39,7 @@ const ProjectSlider = ({ totalSlides }) => {
 
 	useEffect(() => {
 		const changeMobile = () => {
-			if (window.innerWidth <= 700) {
+			if (window.innerWidth <= 850) {
 				setMobileViewForProjects(true);
 			} else {
 				setMobileViewForProjects(false);
@@ -82,10 +82,10 @@ const ProjectSlider = ({ totalSlides }) => {
 								>
 									<div className="slide-text_box">
 										<h2 className="slide-title">{title}</h2>
-										<p className="slide-description">
-											{description}
-											<Link href={`/${href}`}>See more</Link>
-										</p>
+										<p className="slide-description">{description}</p>
+										<Link className="slide-link" href={`/${href}`}>
+											See more
+										</Link>
 									</div>
 									<Image src={src} alt="" className="slide-image" />
 								</div>

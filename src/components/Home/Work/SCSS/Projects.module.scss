@@ -6,12 +6,12 @@
 	padding: 0rem;
 	margin-bottom: 0rem;
 	align-items: flex-start;
-	gap: 0rem;
-	@include md {
+	@include sm {
+		align-items: center;
 		padding: 1rem;
 	}
+
 	@include lg {
-		align-items: center;
 		gap: 1rem;
 		padding: 2rem;
 		margin-bottom: 2rem;
@@ -28,6 +28,16 @@
 
 .projects-slider {
 	width: 100%;
+
+	@include sm {
+		width: 75%;
+	}
+	@include md {
+		width: 90%;
+	}
+	@include lg {
+		width: 100%;
+	}
 }
 
 .projects-p {

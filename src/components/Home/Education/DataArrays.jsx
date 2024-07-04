@@ -52,7 +52,7 @@ export const MINOR_COURSES = [
 		name: 'How to Learn: Effective Approaches for Self-Guided Learning',
 		link: 'https://www.udemy.com/course/how-to-learn-effective-approaches-for-self-guided-learning/#:~:text=Set%20goals%20in%20order%20to,a%20way%20to%20boost%20motivation',
 		description:
-			'Learning is an import investment in you and your future. If you look at it that way, how could you miss it?”- Padraig Nash, PhD in Learning Sciences',
+			'Understand better the mechanics of learning, the motivations that drive us and how to take advantage of them for the grater benefit and enjoyment of learning',
 		progress: '',
 		takeway1: 'Setting a learning goal needs to be: SMART Specific, Measurable, Attainable, Relevant, Time-Based',
 		takeway2: 'Feedback- the most fundamental mechanism of learning.',

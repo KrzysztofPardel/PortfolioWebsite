@@ -3,7 +3,7 @@
 .challenges-container {
 	@include part-Container;
 	flex-direction: column;
-	margin-bottom: 1rem;
+	margin: 4rem 0rem 1rem 0rem;
 }
 
 .challenges-h,
@@ -15,11 +15,11 @@
 .challenges-h2 {
 	color: $color-third-acc;
 	font-weight: 600;
-	font-size: 1.5rem;
 }
 
 .challenges-h2,
 .challenges-h3 {
+	font-size: 1.5rem;
 	text-align: center;
 	@include md {
 		text-align: start;

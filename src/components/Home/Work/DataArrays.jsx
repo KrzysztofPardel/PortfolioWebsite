@@ -64,24 +64,6 @@ export const WORK_ITEMS = [
 		skill3: 'MS Office',
 	},
 ];
-//Goals
-export const GOALS_DATA = [
-	{
-		id: 1,
-		p: 'Perfecting my skills in React with TypeScript by developing another project.',
-		data: 'April-June',
-	},
-	{
-		id: 2,
-		p: 'Expanding my knowledge of new technologies- Java and Python.',
-		data: 'July-September',
-	},
-	{
-		id: 3,
-		p: 'Begin studying Applied IT on the Masters level at the University of Lodz. (part-time)',
-		data: 'October',
-	},
-];
 
 //Projects - Project SLIDER
 import GiveHome from '../../../../public/assets/GiveHome.png';
@@ -92,22 +74,22 @@ export const PROJECT_ITEMS = [
 	{
 		id: 0,
 		title: 'Give',
-		description: 'Be the connection between those who HAVE and those who NEED.',
+		description: 'Conntecting those who HAVE with those who NEED.',
 		href: 'give',
 		src: GiveHome,
 	},
 	{
 		id: 1,
 		title: 'CRM',
-		description: 'As part of my internship, I took was developing the fornt-end layer for a CRM for SoftwareHouse360.',
+		description: 'Fornt-end layer of a CRM system for 360SoftwareHouse.',
 		href: 'crm',
 		src: Calendar,
 	},
 	{
 		id: 2,
-		title: 'New Project!',
-		description: 'Under development. Stay tuned!',
-		href: 'elearning',
+		title: 'Eventer',
+		description: 'The MVP of robust event organizer (Under development)',
+		href: 'eventer',
 		src: hourglass3,
 	},
 ];
@@ -268,5 +250,24 @@ export const OTHER_ITEMS = [
 	{
 		logo: <SiMicrosoftoffice />,
 		technology: 'MS Office/ Office 365',
+	},
+];
+
+//Goals
+export const GOALS_DATA = [
+	{
+		id: 1,
+		p: 'Create Eventer project in Figma',
+		data: 'July',
+	},
+	{
+		id: 2,
+		p: 'Create Eventer projet in React.ts with TailwingCSS and Supabase',
+		data: 'July-Sept.',
+	},
+	{
+		id: 3,
+		p: 'Embark on the journey of studing Applied Computer Science, MEng (part-time)',
+		data: 'October',
 	},
 ];

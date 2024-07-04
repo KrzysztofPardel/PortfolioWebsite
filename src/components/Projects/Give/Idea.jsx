@@ -8,7 +8,7 @@ const Idea = () => {
 	return (
 		<div className={styles['idea-wrapper']}>
 			<div className={styles['idea-text_container']}>
-				<h1 className="idea-header">Idea behing the project</h1>
+				<h1 className={styles['idea-header']}>Idea behing the project</h1>
 				{PURPOSE_TEXT.map(({ id, text }) => {
 					return (
 						<p key={id} className={styles['idea-p']}>

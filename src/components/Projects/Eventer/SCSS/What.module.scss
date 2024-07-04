@@ -74,16 +74,17 @@
 	width: 100%;
 	height: auto;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
 	gap: 0rem 1rem;
-	margin: 0rem;
+	margin: 1rem;
 	@include md {
+		width: auto;
 		height: 2rem;
 		justify-content: space-between;
 		gap: 0rem 0rem;
-		margin: 1rem 0rem 1rem 1rem;
+		margin: 1rem;
 	}
 }
 

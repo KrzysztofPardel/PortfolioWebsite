@@ -85,6 +85,8 @@
 			}
 
 			.course-link {
+				width: 5rem;
+				text-align: end;
 				text-decoration: none;
 				border-bottom: 1px solid $color-first-acc;
 				padding-bottom: 0.25rem;
@@ -96,8 +98,9 @@
 
 	.course-description {
 		width: 100%;
+		text-align: center;
 		@include md {
-			font-size: 1.5rem;
+			text-align: start;
 		}
 	}
 
@@ -116,7 +119,7 @@
 .minor-courses_box {
 	.course-h2 {
 		width: 100%;
-		font-size: 1.2rem;
+		font-size: 1.5rem;
 		font-weight: 400;
 		color: $color-third-acc;
 		text-align: center;
@@ -139,5 +142,35 @@
 	width: 75%;
 	text-align: center;
 	text-decoration: double;
+	font-size: 1.2rem;
 	line-height: 2rem;
+}
+
+.course-quote_container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: $font-base;
+	text-transform: unset;
+
+	.course-quote {
+		width: 100%;
+		font-size: 1.5rem;
+		display: block;
+		text-align: center;
+		line-height: 2rem;
+		font-family: cursive;
+		color: #ffc0d7;
+		@include md {
+			width: 75%;
+		}
+	}
+
+	.course-quote_author {
+		margin-top: 1rem;
+		font-size: 1rem;
+		border-top: 1px solid white;
+		padding-top: 0.5rem;
+	}
 }

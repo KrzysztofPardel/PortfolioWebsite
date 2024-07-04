@@ -3,7 +3,7 @@ import Image from 'next/image';
 //Slider
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
-import ThumbnailPlugin from './../Give/What';
+import ThumbnailPlugin from '../Give/What';
 //Data
 import { SKILL_ITEMS, IMAGES_ITEMS } from './DataArray';
 import hourglass3 from '../../../../public/assets/hourglass3.jpg';

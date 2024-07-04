@@ -52,6 +52,13 @@ const Courses = () => {
 						</div>
 					);
 				})}
+				<div className={styles['course-quote_container']}>
+					<span className={styles['course-quote']}>
+						"Learning is an import investment in you and your future. If you look at it that way, how could you miss
+						it?"
+					</span>
+					<span className={styles['course-quote_author']}>Padraig Nash, PhD in Learning Sciences</span>
+				</div>
 			</section>
 		</main>
 	);

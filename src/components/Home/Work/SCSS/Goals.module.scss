@@ -40,7 +40,7 @@
 	transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s, opacity 0.2s;
 
 	@include md {
-		width: 25%;
+		width: 30%;
 	}
 
 	&:hover {
@@ -53,16 +53,18 @@
 	.goals-box_nr {
 		color: $color-first-acc;
 		font-weight: 600;
-	}
-
-	.goals-box_p {
-		font-size: 1rem;
-		line-height: 1.1rem;
+		margin-right: 1rem;
 	}
 
 	.goals-box_timeline {
 		font-size: 1rem;
 		color: $color-third-acc;
 		margin-top: 1rem;
+	}
+
+	.goals-box_p {
+		font-size: 1rem;
+		line-height: 1.1rem;
+		margin-top: 0.5rem;
 	}
 }
