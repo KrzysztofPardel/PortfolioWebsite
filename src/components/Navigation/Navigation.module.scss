@@ -193,6 +193,12 @@
 	@include md {
 		width: 25vw;
 	}
+	@include lg {
+		width: 20vw;
+	}
+	@include xl {
+		width: 15vw;
+	}
 }
 
 .hidden {

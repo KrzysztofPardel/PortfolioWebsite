@@ -56,8 +56,17 @@
 @mixin section-Header {
 	font-size: 3rem;
 	text-align: center;
-	color: $color-main;
-	background-color: $color-fourth-acc;
+	color: $color-third-acc;
+	// background: rgb(186, 232, 224);
+	// background: linear-gradient(189deg, rgba(186, 232, 224, 1) 40%, rgba(57, 62, 70, 1) 60%);
+	// background: rgb(186, 232, 224);
+	// background: linear-gradient(189deg, rgba(186, 232, 224, 1) 40%, rgba(39, 35, 67, 1) 60%);
+	// background: rgb(39, 35, 67);
+	// background: radial-gradient(circle, rgba(39, 35, 67, 1) 0%, rgba(186, 232, 232, 1) 100%);
+	background: rgb(39, 35, 67);
+	background: radial-gradient(circle, rgba(39, 35, 67, 1) 45%, rgba(186, 232, 232, 1) 100%);
+	// background: rgb(186, 232, 232);
+	// background: radial-gradient(circle, rgba(186, 232, 232, 1) 0%, rgba(39, 35, 67, 1) 100%);
 	margin-bottom: 2rem;
 	@content;
 }
