@@ -81,6 +81,7 @@
 	opacity: 30%;
 	transition: width 0.3s ease;
 	width: 10rem;
+	background-color: $color-fourth-acc;
 }
 
 .slide-text_box {
@@ -89,26 +90,41 @@
 	flex-direction: column;
 	gap: 0.5rem;
 	padding: 0.5rem;
-	height: 5rem;
+	height: 6rem;
 	background-color: $color-fourth-acc;
 	text-align: center;
+	color: $color-second-acc;
 
 	.slide-title {
 		font-size: 1.5rem;
-		color: $color-second-acc;
+		border-bottom: 0.1px solid;
+		font-weight: 600;
 	}
+
 	.slide-description {
 		font-size: 1rem;
 	}
+
 	.slide-link {
-		display: block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		font-size: 1rem;
-		color: $color-second-acc;
 		text-decoration: none;
+		color: $color-second-acc;
+		font-weight: 600;
+
 		&:hover {
 			font-weight: 600;
-			// color: $color-second-acc;
+			border-bottom: 0.1px solid;
+			.slide-icon {
+				color: $color-first-acc;
+			}
 		}
+	}
+	.slide-icon {
+		height: 1.2rem;
+		width: 1.2rem;
 	}
 }
 

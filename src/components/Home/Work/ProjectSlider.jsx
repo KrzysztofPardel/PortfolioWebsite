@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { TbClick } from 'react-icons/tb';
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
 import './SCSS/Slider.scss';
@@ -84,7 +85,7 @@ const ProjectSlider = ({ totalSlides }) => {
 										<h2 className="slide-title">{title}</h2>
 										<p className="slide-description">{description}</p>
 										<Link className="slide-link" href={`/${href}`}>
-											See more
+											See more <TbClick className='slide-icon'/>
 										</Link>
 									</div>
 									<Image src={src} alt="" className="slide-image" />
