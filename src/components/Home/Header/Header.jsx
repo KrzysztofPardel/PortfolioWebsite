@@ -15,10 +15,10 @@ export const Header = () => {
 				<h2 className={styles['header-profession']}>Frontend Developer</h2>
 				<div className={styles['header-links']}>
 					<Link href="https://github.com/KrzysztofPardel" className={styles['header-link']}>
-						<SiGithub />
+						<SiGithub className="header-link_icon" />
 					</Link>
 					<Link href="https://www.linkedin.com/in/krzysztof-pardel/" className={styles['header-link']}>
-						<SiLinkedin />
+						<SiLinkedin className="header-link_icon" />
 					</Link>
 				</div>
 				<LinkScroll to="navigation" spy smooth duration={1200} className={styles['profession-invitation']}>

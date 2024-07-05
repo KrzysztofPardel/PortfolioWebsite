@@ -60,12 +60,28 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 1rem;
+	gap: 1.2rem;
+	z-index: 5;
+	// height: 2rem;
+	// width: 2rem;
 	.header-link {
+		height: auto;
 		font-size: 2rem;
 		color: $color-first-acc;
+
 		&:hover {
 			color: $color-third-acc;
+		}
+
+		.header-link_icon {
+			box-shadow: transparent;
+			transition: box-shadow 0.5s ease-in-out;
+			color: $color-first-acc;
+			&:hover {
+				color: $color-third-acc;
+				transition: box-shadow 0.5s ease-in-out;
+				box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.75);
+			}
 		}
 	}
 }

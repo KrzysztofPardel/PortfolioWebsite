@@ -88,7 +88,7 @@ export const PROJECT_ITEMS = [
 	{
 		id: 2,
 		title: 'Eventer',
-		description: 'The MVP of robust event organizer (Under development)',
+		description: 'The MVP of a handy event organizer (Under development)',
 		href: 'eventer',
 		src: hourglass3,
 	},
