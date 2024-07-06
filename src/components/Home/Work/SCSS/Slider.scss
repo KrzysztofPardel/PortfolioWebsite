@@ -75,6 +75,7 @@
 	transition: width 0.3s ease;
 	width: 45rem;
 	background-color: $color-fourth-acc;
+	background: $color-fourth-acc;
 }
 .keen-slider__slide:not(.keen-slider__slide--center) {
 	opacity: 30%;
