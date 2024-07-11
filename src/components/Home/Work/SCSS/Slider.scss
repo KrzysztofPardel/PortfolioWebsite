@@ -29,10 +29,12 @@
 
 .projects-scene {
 	width: 100%;
+	// background: $color-fourth-acc;
 }
 
 .keen-slider {
 	width: 100%;
+	// background: $color-fourth-acc;
 }
 
 .number-slide {
@@ -74,13 +76,10 @@
 //slides
 .keen-slider__slide .keen-slider__slide--center {
 	transition: width 0.3s ease;
-	width: 45rem;
 	background: $color-fourth-acc;
 }
 .keen-slider__slide:not(.keen-slider__slide--center) {
-	opacity: 30%;
 	transition: width 0.3s ease;
-	width: 10rem;
 	background: $color-fourth-acc;
 }
 

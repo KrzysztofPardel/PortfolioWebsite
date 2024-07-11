@@ -59,6 +59,7 @@
 	color: $color-third-acc;
 	background: rgb(39, 35, 67);
 	background: radial-gradient(circle, rgba(39, 35, 67, 1) 45%, rgba(186, 232, 232, 1) 100%);
+
 	margin-bottom: 2rem;
 	@content;
 }
