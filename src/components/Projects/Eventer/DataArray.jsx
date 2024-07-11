@@ -1,6 +1,6 @@
 export const SKILL_ITEMS = [
 	{
-		skill: 'Next',
+		skill: 'React',
 	},
 	{
 		skill: 'TypeScript',
@@ -9,7 +9,10 @@ export const SKILL_ITEMS = [
 		skill: 'Supabase',
 	},
 	{
-		skill: 'SCSS',
+		skill: 'Chakra UI',
+	},
+	{
+		skill: 'TailwingCSS',
 	},
 ];
 
@@ -19,15 +22,14 @@ export const IMAGES_ITEMS = [{}];
 export const IDEA_TEXT = [
 	{
 		id: 1,
-		text: `I love to learn. Being able to possess a new ability or understanding of triggers excitement and fascination like early anything else. What does not surprise me is that there are more like us out there. People who crave to understand and know. There is a reason why applications such as Quilt or Duolingo are vastly popular.`,
+		text: `How many events that you have been to, were well organized? If you asked me that qiestion, I would have to say that only a handful of them. Memorable events require dedication to details which. Those tend to be overwhelming and if you don't have supportive team  or a useful rool, you are more than likeliy to forget about things.`,
 	},
 	{
 		id: 2,
-		text: `In addition, I have observed at my current work how fascinating certain e-learning platforms can be. Their ability to present things with animations, sound and short messages makes me understand and remember things for months. Even if I have seen them just once. 
-		Desiring to understand better what it takes to create an e-learning platform, I decided to build one myself and encompass in it all the best features I have seen in other apps.`,
+		text: `How could I know? Well, I speak from the experience of someone who has helped organize a few events and is currently working out the details concerning his own wedding. The amounts of time spend planning the big and the small matters is comparable with additional part-time vocation.`,
 	},
 	{
 		id: 3,
-		text: `This project thrills me and I am sure it will increase my skills in front-end technologies I am going to use, one the one hand. On the other, it will allow me to better understand better understand how to build applications for teenagers and young adults, who are my target group.`,
+		text: `Dute to this, I have decided to create an app, which allows the user to squeez the important data, typically spread across few emails, notes and some excel sheets, in one place. Developing eventer will certainly make me excel at addressing real-world problems with my projects.`,
 	},
 ];

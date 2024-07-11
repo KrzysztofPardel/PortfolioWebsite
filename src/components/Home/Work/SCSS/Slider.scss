@@ -80,6 +80,7 @@
 }
 .keen-slider__slide:not(.keen-slider__slide--center) {
 	transition: width 0.3s ease;
+	opacity: 0.3;
 	background: $color-fourth-acc;
 }
 

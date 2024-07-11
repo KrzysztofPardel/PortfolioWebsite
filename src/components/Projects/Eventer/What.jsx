@@ -35,11 +35,11 @@ const What = () => {
 				<Image src={hourglass3} alt="hourglass" className={styles['what-image_temporary']} />
 			</div>
 			<div className={styles['what-container_second']}>
-				<h1 className={styles['second-header']}>LearnNow</h1>
+				<h1 className={styles['second-header']}>Eventer</h1>
 				<p className={styles['second-summary']}>
-					Tired of cramming into your heads for long hours? This platform will help you make a headway in learning the
-					language and will see to it that you remember it for good. Learn through theory and through practice. Learn
-					and remember for the rest of your life. LearnNow.
+					Eventer is the MVP of an app which is here to help you bring your dream party to live. Whether that be your
+					friends birtday, anniversary or your very own wedding. Eventer is like a good friend that reminds will not let
+					you forget the important details. 
 				</p>
 				<div className={styles['second-techstack_box']}>
 					{SKILL_ITEMS.map(({ skill }) => {
