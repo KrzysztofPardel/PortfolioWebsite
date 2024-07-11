@@ -85,7 +85,7 @@ const ProjectSlider = ({ totalSlides }) => {
 										<h2 className="slide-title">{title}</h2>
 										<p className="slide-description">{description}</p>
 										<Link className="slide-link" href={`/${href}`}>
-											See more <TbClick className='slide-icon'/>
+											See more <TbClick className="slide-icon" />
 										</Link>
 									</div>
 									<Image src={src} alt="" className="slide-image" />
