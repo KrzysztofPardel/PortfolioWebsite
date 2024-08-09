@@ -35,10 +35,10 @@ export const ITWORK_ITEMS = [
 export const WORK_ITEMS = [
 	{
 		id: 3,
-		position: 'Junior Process Officer',
+		position: 'Process Officer',
 		company: 'Nordea',
 		where: 'Łódź',
-		date: '08.2023-now',
+		date: '08.2023-10.2024',
 		reference: '',
 		intro: 'My experience at Nordea:',
 		point1: 'Processing data related to operations between clients and the bank',
@@ -262,7 +262,7 @@ export const GOALS_DATA = [
 	},
 	{
 		id: 2,
-		p: 'Create Eventer projet in React.ts with TailwingCSS and Supabase',
+		p: 'Create Eventer projet in React.ts with Chakra UI and Supabase',
 		data: 'July-Sept.',
 	},
 	{

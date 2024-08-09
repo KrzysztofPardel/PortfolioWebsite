@@ -11,9 +11,6 @@ export const SKILL_ITEMS = [
 	{
 		skill: 'Chakra UI',
 	},
-	{
-		skill: 'TailwingCSS',
-	},
 ];
 
 export const IMAGES_ITEMS = [{}];
