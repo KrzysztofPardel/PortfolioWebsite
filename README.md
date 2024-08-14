@@ -1,6 +1,6 @@
 # Portfolio
 
-_This project existis so that people could understand better why they might be interested in cooperating with me._
+_Krzysztof Pardel Frontend Dev._
 
 ## Non-Tech Features
 
