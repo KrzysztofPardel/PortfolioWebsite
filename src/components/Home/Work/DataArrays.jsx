@@ -286,17 +286,17 @@ export const OTHER_ITEMS = [
 export const GOALS_DATA = [
 	{
 		id: 1,
-		p: 'Create Eventer project in Figma',
-		data: 'July',
+		p: 'Complete work on the CRM proejct',
+		data: 'March',
 	},
 	{
 		id: 2,
-		p: 'Create Eventer projet in React.ts with Chakra UI and Supabase',
-		data: 'July-Sept.',
+		p: 'Learn and implement unit testing across Eventer application',
+		data: 'April',
 	},
 	{
 		id: 3,
-		p: 'Embark on the journey of studing Applied Computer Science, MEng (part-time)',
-		data: 'October',
+		p: 'Complete work on Eventer project',
+		data: 'April-May',
 	},
 ];
