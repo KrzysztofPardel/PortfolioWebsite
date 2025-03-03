@@ -132,16 +132,21 @@ export const COLUMN_B = [
 export const COLUMN_C = [
 	{
 		id: '11',
+		source: 'CodeCademy',
+		link: 'https://www.codecademy.com/',
+	},
+	{
+		id: '12',
 		source: 'Kurs JavaScript',
 		link: 'https://kursjs.pl',
 	},
 	{
-		id: '12',
+		id: '13',
 		source: 'Frontend Masters',
 		link: 'https://frontendmasters.com',
 	},
 	{
-		id: '13',
+		id: '14',
 		source: 'Udemy',
 		link: 'https://www.udemy.com',
 	},

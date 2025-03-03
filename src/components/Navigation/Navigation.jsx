@@ -110,7 +110,6 @@ export const Navigation = () => {
 					<LuCode2 className={`${styles['my-logo']} ${styles['center']}`} />
 				</div>
 				<div className={styles['links-mobile']}>
-					{/* <div className={`${styles['links']} ${styles['links-container_mobile']}`}> */}
 					{NAV_ITEMS.map(({ name, to }) => (
 						<Link
 							key={name}
@@ -126,16 +125,6 @@ export const Navigation = () => {
 					{/* </div> */}
 				</div>
 				<div className={`${styles['adjustments-mobile']} ${styles['reverse']}`}>
-					{/* <div className={styles['mode']}>
-						<BsSun className={styles['mode-icon']} />
-						<Switch onChange={handleMode} />
-						<BsMoon className={styles['mode-icon']} />
-					</div>
-					<div className={styles['languages']}>
-						<button className={styles['language']}>ENG</button>
-						<Switch onChange={handleLanguage} />
-						<button className={styles['language']}>PL</button>
-					</div> */}
 					<button onClick={handleNav} className={styles['mobile-button_sidebar']}>
 						<GrFormClose className={styles['icon-ss']} />
 					</button>

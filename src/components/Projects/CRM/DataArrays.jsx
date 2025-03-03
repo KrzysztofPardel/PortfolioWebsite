@@ -12,6 +12,9 @@ export const SKILL_ITEMS = [
 	{
 		skill: 'Vite',
 	},
+	{
+		skill: 'Context API',
+	},
 ];
 
 import LogIn from '../../../../public/assets/LogIn.png';
