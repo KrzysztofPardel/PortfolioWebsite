@@ -296,7 +296,7 @@ export const GOALS_DATA = [
 	},
 	{
 		id: 3,
-		p: 'Complete work on Eventer project',
+		p: 'Complete work on the Eventer project',
 		data: 'April-May',
 	},
 ];
